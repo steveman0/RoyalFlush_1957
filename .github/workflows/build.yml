@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    outputs:
+      build_number: ${{ steps.version.outputs.build_number }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history for versioning
+
+      - name: Read Game Name from File
+        id: gamename
+        run: |
+          $game_name = Get-Content gamename.txt | Select-Object -First 1
+          echo "game_name=$game_name" >> $env:GITHUB_OUTPUT
+        shell: pwsh
+
+      - name: Calculate Build Number
+        id: version
+        run: |
+          git fetch --unshallow || true  # Ensures full commit history is available
+          $first_commit = git rev-list --max-parents=0 HEAD
+          $build_number = git rev-list $first_commit..HEAD --count
+          echo "build_number=$build_number" >> $env:GITHUB_OUTPUT
+        shell: pwsh
+
+      - name: Install Node.js and Grunt
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+
+      - name: Install Grunt CLI
+        run: npm install -g grunt-cli
+        shell: pwsh
+
+      - name: Run Grunt to Concat VPX Files
+        run: |
+          cd scripts
+          npm install
+          grunt concat:vpx
+          Move-Item -Path dest/vpx/tablescript.vbs -Destination ../${{ steps.gamename.outputs.game_name }}/script.vbs -Force
+        shell: pwsh
+
+      - name: Install jq (JSON Processor)
+        run: |
+          choco install jq -y
+        shell: pwsh
+
+      - name: Modify Locked Property in JSON
+        run: |
+          jq '.locked = 1' ${{ steps.gamename.outputs.game_name }}/gamedata.json > temp.json
+          mv temp.json ${{ steps.gamename.outputs.game_name }}/gamedata.json
+        shell: bash
+
+      - name: Download vpxtool
+        run: |
+          Invoke-WebRequest -Uri https://github.com/francisdb/vpxtool/releases/download/v0.13.0/vpxtool-Windows-x86_64-v0.13.0.zip -OutFile vpxtool.zip
+          Expand-Archive vpxtool.zip -DestinationPath .\vpxtool
+        shell: pwsh
+
+      - name: Assemble VPX File
+        run: |
+          .\vpxtool\vpxtool.exe assemble ${{ steps.gamename.outputs.game_name }}
+          Rename-Item -Path .\${{ steps.gamename.outputs.game_name }}.vpx -NewName "${{ steps.gamename.outputs.game_name }}${{ steps.version.outputs.build_number }}.vpx"
+        shell: pwsh
+
+      - name: Upload VPX Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.gamename.outputs.game_name }}_${{ steps.version.outputs.build_number }}
+          path: ./${{ steps.gamename.outputs.game_name }}${{ steps.version.outputs.build_number }}.vpx

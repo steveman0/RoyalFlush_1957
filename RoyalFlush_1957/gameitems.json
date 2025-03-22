@@ -1,0 +1,2284 @@
+[
+  {
+    "file_name": "TextBox.ScoreText.json",
+    "is_locked": false,
+    "editor_layer": 0,
+    "editor_layer_name": "Playfield",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.playfield_mesh.json",
+    "is_locked": false,
+    "editor_layer": 0,
+    "editor_layer_name": "Playfield",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Rubber.Rubber22.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber23.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.plastic1.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT19.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT20.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw5.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw6.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post027.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post028.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber001.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber002.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.plastic001.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT001.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT002.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw001.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw002.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post001.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap001.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post002.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber003.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber004.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.plastic002.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT003.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT004.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw003.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw004.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post003.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap002.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post004.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber005.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber006.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.plastic003.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT005.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT006.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw005.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw006.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post005.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap003.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post006.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallOutsideT.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Plunger.Plunger.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.CutoutRoto.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout002.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout003.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout004.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout005.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout006.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout007.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout008.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout009.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout010.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout011.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout012.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout013.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout014.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout015.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout016.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout017.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout018.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout019.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout020.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout021.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.CutoutL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.CutoutR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout022.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout023.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout024.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout025.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout026.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout027.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout028.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout029.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Cutouts",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.CutoutRoto001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout030.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout031.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout032.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout033.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout034.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout035.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout036.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout037.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout038.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout039.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout040.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout041.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout042.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout043.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout044.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout045.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout046.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout047.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout048.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.CutoutL001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.CutoutR001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout049.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout050.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout051.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout052.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout053.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout054.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout055.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout056.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout057.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.Cutout058.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "SidewallVisuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight002.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Rubber.Rubber007.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber008.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT007.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT008.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw007.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw008.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post007.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post008.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap004.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber009.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber010.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand001.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT009.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT010.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw009.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw010.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap005.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post009.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post010.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.EMWheelWall.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber013.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber014.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand002.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT013.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT014.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw013.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw014.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post013.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post014.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap006.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber015.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber016.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand003.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT015.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT016.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw015.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw016.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post015.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PostVisualCap007.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post016.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.GobbleL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.GobbleR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Gate.Gate.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Bumper.Bumper001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Bumper.Bumper002.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Bumper.Bumper003.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Bumper.BumperTL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Bumper.BumperTR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Bumper.BumperBL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Bumper.BumperBR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber017.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT017.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw017.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post017.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber018.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT018.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw018.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post018.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber019.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT019.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw019.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post019.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber020.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT020.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw020.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post020.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber021.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT021.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw021.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post021.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber022.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT022.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw022.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post022.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber023.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT023.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw023.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post023.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber024.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT024.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw024.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post024.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber025.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT025.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw025.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post025.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber026.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT026.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw026.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post026.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber027.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT027.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw027.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post029.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber028.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT028.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw028.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post030.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber029.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT029.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw029.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post031.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber030.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT030.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw030.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post032.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber031.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT031.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw031.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post033.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber032.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT032.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw032.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post034.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber033.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT033.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw033.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post035.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber034.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT034.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw034.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post036.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber035.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT035.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw035.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post037.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber011.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT011.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw011.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post011.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber012.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT012.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw012.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post012.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Light.GIlight005.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight006.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight007.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight008.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight011.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight012.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight013.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight014.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight015.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight016.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight017.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight018.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight019.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight020.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.GIlight021.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "GILights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.ls1.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.ls2.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.ls3.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.ls4.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.ls5.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.lstarget.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.l1.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.l2.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.l3.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.l4.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Light.l5.json",
+    "is_locked": true,
+    "editor_layer": 8,
+    "editor_layer_name": "Insert Lights",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Wall.WallOutsideL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallOutsideB.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallOutsideR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand004.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand005.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand006.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand007.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand008.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand009.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand010.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RubberBand011.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber036.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT036.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw036.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post038.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Rubber.Rubber037.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.PegPlasticT037.json",
+    "is_locked": true,
+    "editor_layer": 3,
+    "editor_layer_name": "Visual Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.screw037.json",
+    "is_locked": true,
+    "editor_layer": 4,
+    "editor_layer_name": "Screws and Bolts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.zCol_Rubber_Post039.json",
+    "is_locked": true,
+    "editor_layer": 1,
+    "editor_layer_name": "Collidable Rubbers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Lane4WallL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Lane4WallR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Lane5WallL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Lane5WallR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.ShooterLaneWall.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.Drain.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.Trough1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.Trough5.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.Trough2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.Trough4.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.Trough3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.LaneKicker.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.ElevatorWall.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallBRCorner.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallOutsideRVisual.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallDrainL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallDrainB.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.WallDrainT.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "HitTarget.RotoTarget.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLane2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLane3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLane4.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLane5.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLaneL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLaneLR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerRF.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Flippers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.TriggerLF.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Flippers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Flipper.LeftFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Flippers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Flipper.RightFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Flippers",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Apron.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Plastics",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.PlungerCover.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Plastics",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.LSlingCover.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Plastics",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RSlingCover.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Plastics",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.RotoTargetCover.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Plastics",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Timer.Glf_GameTimer.json",
+    "is_locked": false,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  }
+]

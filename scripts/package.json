@@ -1,0 +1,27 @@
+{
+  "name": "vpx-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "extract-vpx": "powershell -Command \"$gameName = Get-Content ../gamename.txt | Select-Object -First 1; vpxtool extract ../$gameName.vpx\"",
+    "assemble-vpx": "powershell -Command \"$gameName = Get-Content ../gamename.txt | Select-Object -First 1; vpxtool assemble ../$gameName\"",
+    "grunt-vpx": "grunt watch:vpx",
+    "concat-vpx": "grunt concat:vpx",
+    
+    "update-glf": "curl -o ./src/glf/glf.vbs https://raw.githubusercontent.com/mpcarr/vpx-glf/refs/heads/main/scripts/vpx-glf.vbs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-exec": "^3.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4"
+  }
+}

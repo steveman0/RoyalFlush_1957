@@ -1,0 +1,22 @@
+{
+  "Kicker": {
+    "center": {
+      "x": 326.64142,
+      "y": 1034.5538
+    },
+    "radius": 30.0,
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "material": "",
+    "surface": "",
+    "is_enabled": true,
+    "name": "GobbleL",
+    "kicker_type": "hole",
+    "scatter": 0.0,
+    "hit_accuracy": 0.5,
+    "hit_height": -5.0,
+    "orientation": 180.0,
+    "fall_through": true,
+    "legacy_mode": false
+  }
+}
