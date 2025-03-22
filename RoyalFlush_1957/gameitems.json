@@ -1,12 +1,5 @@
 [
   {
-    "file_name": "TextBox.ScoreText.json",
-    "is_locked": false,
-    "editor_layer": 0,
-    "editor_layer_name": "Playfield",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.playfield_mesh.json",
     "is_locked": false,
     "editor_layer": 0,
