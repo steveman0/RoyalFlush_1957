@@ -25,7 +25,7 @@
     "wrap_lighting": 1.0,
     "roughness": 0.0,
     "glossy_image_lerp": 1.0,
-    "thickness": 0.047058824,
+    "thickness": 0.04705882,
     "edge": 0.0,
     "edge_alpha": 1.0,
     "opacity": 0.9,
@@ -3418,5 +3418,25 @@
     "friction": 0.0,
     "scatter_angle": 0.0,
     "refraction_tint": "#00ffffff"
+  },
+  {
+    "name": "BallShadow13",
+    "type_": "Basic",
+    "wrap_lighting": 1.0,
+    "roughness": 0.0,
+    "glossy_image_lerp": 0.0,
+    "thickness": 0.047058824,
+    "edge": 0.0,
+    "edge_alpha": 1.0,
+    "opacity": 0.7,
+    "base_color": "#00000000",
+    "glossy_color": "#00000000",
+    "clearcoat_color": "#00000000",
+    "opacity_active": true,
+    "elasticity": 0.0,
+    "elasticity_falloff": 0.0,
+    "friction": 0.0,
+    "scatter_angle": 0.0,
+    "refraction_tint": "#ffffffff"
   }
 ]

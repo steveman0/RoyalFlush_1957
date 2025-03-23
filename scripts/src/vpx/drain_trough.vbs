@@ -1,6 +1,9 @@
 '*******************************************
 '	ZDRN: Drain, Trough, and Ball Release
 '*******************************************
+
+' Original code retained for reference - largely replaced by GLF trough management
+
 ' It is best practice to never destroy balls. This leads to more stable and accurate pinball game simulations.
 ' The following code supports a "physical trough" where balls are not destroyed.
 ' To use this,
@@ -11,62 +14,62 @@
 
 
 'TROUGH
-Sub swTrough1_Hit
-	UpdateTrough
-End Sub
-Sub swTrough1_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough2_Hit
-	UpdateTrough
-End Sub
-Sub swTrough2_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough3_Hit
-	UpdateTrough
-End Sub
-Sub swTrough3_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough4_Hit
-	UpdateTrough
-End Sub
-Sub swTrough4_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough5_Hit
-	UpdateTrough
-End Sub
-Sub swTrough5_UnHit
-	UpdateTrough
-End Sub
+' Sub swTrough1_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough1_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough2_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough2_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough3_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough3_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough4_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough4_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough5_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough5_UnHit
+	' UpdateTrough
+' End Sub
 
-Sub UpdateTrough
-	UpdateTroughTimer.Interval = 300
-	UpdateTroughTimer.Enabled = 1
-End Sub
+' Sub UpdateTrough
+	' UpdateTroughTimer.Interval = 300
+	' UpdateTroughTimer.Enabled = 1
+' End Sub
 
-Sub UpdateTroughTimer_Timer
-	If swTrough1.BallCntOver = 0 Then swTrough2.kick 57, 10
-	If swTrough2.BallCntOver = 0 Then swTrough3.kick 57, 10
-	If swTrough3.BallCntOver = 0 Then swTrough4.kick 57, 10
-	If swTrough4.BallCntOver = 0 Then swTrough5.kick 57, 10
-	Me.Enabled = 0
-End Sub
+' Sub UpdateTroughTimer_Timer
+	' If swTrough1.BallCntOver = 0 Then swTrough2.kick 57, 10
+	' If swTrough2.BallCntOver = 0 Then swTrough3.kick 57, 10
+	' If swTrough3.BallCntOver = 0 Then swTrough4.kick 57, 10
+	' If swTrough4.BallCntOver = 0 Then swTrough5.kick 57, 10
+	' Me.Enabled = 0
+' End Sub
 
-' DRAIN & RELEASE
-Sub Drain_Hit
-	BIP = BIP - 1
-	DMDBigText "DRAIN BLOCK",77,1
-	RandomSoundDrain Drain
-	vpmTimer.AddTimer 500, "Drain.kick 57, 20'"
-End Sub
+' ' DRAIN & RELEASE
+' Sub Drain_Hit
+	' BIP = BIP - 1
+	' DMDBigText "DRAIN BLOCK",77,1
+	' RandomSoundDrain Drain
+	' vpmTimer.AddTimer 500, "Drain.kick 57, 20'"
+' End Sub
 
-Sub SolRelease(enabled)
-	If enabled Then
-		BIP = BIP + 1
-		swTrough1.kick 90, 10
-		RandomSoundBallRelease swTrough1
-	End If
-End Sub
+' Sub SolRelease(enabled)
+	' If enabled Then
+		' BIP = BIP + 1
+		' swTrough1.kick 90, 10
+		' RandomSoundBallRelease swTrough1
+	' End If
+' End Sub

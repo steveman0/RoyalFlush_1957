@@ -35,7 +35,7 @@ Sub Table1_OptionEvent(ByVal eventId)
 	RotoDofMode = Table1.Option("Roto DOF Mode", 1, 4, 1, 0, 0, Array("Both", "Gear Motor Only", "Shaker Motor Only", "None"))
 	
 	' Difficulty
-	TiltWarnings = Table1.Options("Tilt Warnings", 0, 5, 1, 2, 0)
+	TiltWarnings = Table1.Option("Tilt Warnings", 0, 5, 1, 2, 0)
 	
 	' Color Saturation
     ColorLUT = Table1.Option("Color Saturation", 1, 11, 1, 1, 0, _
