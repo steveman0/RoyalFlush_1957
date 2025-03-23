@@ -16,6 +16,8 @@ Dim VolumeDial : VolumeDial = 0.8           	' Overall Mechanical sound effect v
 Dim BallRollVolume : BallRollVolume = 0.5   	' Level of ball rolling volume. Value between 0 and 1
 Dim RampRollVolume : RampRollVolume = 0.5 		' Level of ramp rolling volume. Value between 0 and 1
 Dim StagedFlippers : StagedFlippers = 0         ' Staged Flippers. 0 = Disabled, 1 = Enabled
+Dim RotoDofMode : RotoDofMode = 0				' Shaker/Gear motor DOF preference. 1 = Both, 2 = Gear Only, 3 = Shaker Only, 4 = None
+Dim TiltWarnings : TiltWarnings = 2				' Number of tilt warnings before full tilt.
 
 
 ' Called when options are tweaked by the player. 
@@ -29,6 +31,12 @@ Dim dspTriggered : dspTriggered = False
 Sub Table1_OptionEvent(ByVal eventId)
 	If eventId = 1 And Not dspTriggered Then dspTriggered = True : DisableStaticPreRendering = True : End If
 
+	' DOF
+	RotoDofMode = Table1.Option("Roto DOF Mode", 1, 4, 1, 0, 0, Array("Both", "Gear Motor Only", "Shaker Motor Only", "None"))
+	
+	' Difficulty
+	TiltWarnings = Table1.Options("Tilt Warnings", 0, 5, 1, 2, 0)
+	
 	' Color Saturation
     ColorLUT = Table1.Option("Color Saturation", 1, 11, 1, 1, 0, _
 		Array("Normal", "Desaturated 10%", "Desaturated 20%", "Desaturated 30%", "Desaturated 40%", "Desaturated 50%", _
