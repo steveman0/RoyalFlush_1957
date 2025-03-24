@@ -244,117 +244,117 @@ Sub Table1_Exit
 	Glf_Exit()
 End Sub
 
-'******************************************************
-' 	Z3DI:   3D INSERTS
-'******************************************************
-'
-'
-' Before you get started adding the inserts to your playfield in VPX, there are a few things you need to have done to prepare:
-'	 1. Cut out all the inserts on the playfield image so there is alpha transparency where they should be.
-'	  Make sure the playfield material has Opacity Active checkbox checked.
-'	2. All the  insert text and/or images that lie over the insert plastic needs to be in its own file with
-'	   alpha transparency. Many playfields may require finding the original font and remaking the insert text.
-'
-' To add the inserts:
-'	1. Import all the textures (images) and materials from this file that start with the word "Insert" into your Table
-'   2. Copy and past the two primitves that make up the insert you want to use. One primitive is for the on state, the other for the off state.
-'   3. Align the primitives with the associated insert light. Name the on and off primitives correctly.
-'   5. You will need to manually tweak the disable lighting value and material parameters to achielve the effect you want.
-'
-'
-' Quick Reference:  Laying the Inserts ( Tutorial From Iaakki)
-' - Each insert consists of two primitives. On and Off primitive. Suggested naming convention is to use lamp number in the name. For example
-'   is lamp number is 57, the On primitive is "p57" and the Off primitive is "p57off". This makes it easier to work on script side.
-' - When starting from a new table, I'd first select to make few inserts that look quite similar. Lets say there is total of 6 small triangle
-'   inserts, 4 yellow and 2 blue ones.
-' - Import the insert on/off images from the image manager and the vpx materials used from the sample project first, and those should appear
-'   selected properly in the primitive settings when you paste your actual insert trays in your target table . Then open up your target project
-'   at same time as the sample project and use copy&paste to copy desired inserts to target project.
-' - There are quite many parameters in primitive that affect a lot how they will look. I wouldn't mess too much with them. Use Size options to
-'   scale the insert properly into PF hole. Some insert primitives may have incorrect pivot point, which means that changing the depth, you may
-'   also need to alter the Z-position too.
-' - Once you have the first insert in place, wire it up in the script (detailed in part 3 below). Then set the light bulb's intensity to zero,
-'   so it won't harass the adjustment.
-' - Start up the game with F6 and visually see if the On-primitive blinks properly. If it is too dim, hit D and open editor. Write:
-' - p57.BlendDisableLighting = 300 and hit enter
-' - -> The insert should appear differently. Find good looking brightness level. Not too bright as the light bulb is still missing. Just generic good light.
-'	 - If you cannot find proper light color or "mood", you can also fiddle with primitive material values. Provided material should be
-'	   quite ok for most of the cases.
-'	 - Now when you have found proper DL value (165), but that into script:
-' - That one insert is now adjusted and you should be able to copy&paste rest of the triangle inserts in place and name them correctly. And add them
-'   into script. And fine tune their brightness and color.
-'
-' Light bulbs and ball reflection:
-'
-' - This kind of lighted primitives are not giving you ball reflections. Also some more glow vould be needed to make the insert to bloom correctly.
-' - Take the original lamp (l57), set the bulb mode enabled, set Halo Height to -3 (something that is inside the 2 insert primitives). I'd start with
-'   falloff 100, falloff Power 2-2.5, Intensity 10, scale mesh 10, Transmit 5.
-' - Start the game with F6, throw a ball on it and move the ball near the blinking insert. Visually see how the reflection looks.
-' - Hit D once the reflection is the highest. Open light editor and start fine tuning the bulb values to achieve realistic look for the reflection.
-' - Falloff Power value is the one that will affect reflection creatly. The higher the power value is, the brighter the reflection on the ball is.
-'   This is the reason why falloff is rather large and falloff power is quite low. Change scale mesh if reflection is too small or large.
-' - Transmit value can bring nice bloom for the insert, but it may also affect to other primitives nearby. Sometimes one need to set transmit to
-'   zero to avoid affecting surrounding plastics. If you really need to have higher transmit value, you may set Disable Lighting From Below to 1
-'   in surrounding primitive. This may remove the problem, but can make the primitive look worse too.
+' '******************************************************
+' ' 	Z3DI:   3D INSERTS
+' '******************************************************
+' ' No 3d inserts on this table (yet)
+' '
+' ' Before you get started adding the inserts to your playfield in VPX, there are a few things you need to have done to prepare:
+' '	 1. Cut out all the inserts on the playfield image so there is alpha transparency where they should be.
+' '	  Make sure the playfield material has Opacity Active checkbox checked.
+' '	2. All the  insert text and/or images that lie over the insert plastic needs to be in its own file with
+' '	   alpha transparency. Many playfields may require finding the original font and remaking the insert text.
+' '
+' ' To add the inserts:
+' '	1. Import all the textures (images) and materials from this file that start with the word "Insert" into your Table
+' '   2. Copy and past the two primitves that make up the insert you want to use. One primitive is for the on state, the other for the off state.
+' '   3. Align the primitives with the associated insert light. Name the on and off primitives correctly.
+' '   5. You will need to manually tweak the disable lighting value and material parameters to achielve the effect you want.
+' '
+' '
+' ' Quick Reference:  Laying the Inserts ( Tutorial From Iaakki)
+' ' - Each insert consists of two primitives. On and Off primitive. Suggested naming convention is to use lamp number in the name. For example
+' '   is lamp number is 57, the On primitive is "p57" and the Off primitive is "p57off". This makes it easier to work on script side.
+' ' - When starting from a new table, I'd first select to make few inserts that look quite similar. Lets say there is total of 6 small triangle
+' '   inserts, 4 yellow and 2 blue ones.
+' ' - Import the insert on/off images from the image manager and the vpx materials used from the sample project first, and those should appear
+' '   selected properly in the primitive settings when you paste your actual insert trays in your target table . Then open up your target project
+' '   at same time as the sample project and use copy&paste to copy desired inserts to target project.
+' ' - There are quite many parameters in primitive that affect a lot how they will look. I wouldn't mess too much with them. Use Size options to
+' '   scale the insert properly into PF hole. Some insert primitives may have incorrect pivot point, which means that changing the depth, you may
+' '   also need to alter the Z-position too.
+' ' - Once you have the first insert in place, wire it up in the script (detailed in part 3 below). Then set the light bulb's intensity to zero,
+' '   so it won't harass the adjustment.
+' ' - Start up the game with F6 and visually see if the On-primitive blinks properly. If it is too dim, hit D and open editor. Write:
+' ' - p57.BlendDisableLighting = 300 and hit enter
+' ' - -> The insert should appear differently. Find good looking brightness level. Not too bright as the light bulb is still missing. Just generic good light.
+' '	 - If you cannot find proper light color or "mood", you can also fiddle with primitive material values. Provided material should be
+' '	   quite ok for most of the cases.
+' '	 - Now when you have found proper DL value (165), but that into script:
+' ' - That one insert is now adjusted and you should be able to copy&paste rest of the triangle inserts in place and name them correctly. And add them
+' '   into script. And fine tune their brightness and color.
+' '
+' ' Light bulbs and ball reflection:
+' '
+' ' - This kind of lighted primitives are not giving you ball reflections. Also some more glow vould be needed to make the insert to bloom correctly.
+' ' - Take the original lamp (l57), set the bulb mode enabled, set Halo Height to -3 (something that is inside the 2 insert primitives). I'd start with
+' '   falloff 100, falloff Power 2-2.5, Intensity 10, scale mesh 10, Transmit 5.
+' ' - Start the game with F6, throw a ball on it and move the ball near the blinking insert. Visually see how the reflection looks.
+' ' - Hit D once the reflection is the highest. Open light editor and start fine tuning the bulb values to achieve realistic look for the reflection.
+' ' - Falloff Power value is the one that will affect reflection creatly. The higher the power value is, the brighter the reflection on the ball is.
+' '   This is the reason why falloff is rather large and falloff power is quite low. Change scale mesh if reflection is too small or large.
+' ' - Transmit value can bring nice bloom for the insert, but it may also affect to other primitives nearby. Sometimes one need to set transmit to
+' '   zero to avoid affecting surrounding plastics. If you really need to have higher transmit value, you may set Disable Lighting From Below to 1
+' '   in surrounding primitive. This may remove the problem, but can make the primitive look worse too.
 
-' ---- FOR EXAMPLE PUROSE ONLY. DELETE BELOW WHEN USING FOR REAL -----
-' NOTE: The below timer is for flashing the inserts as a demonstration. Should be replaced by actual lamp states.
-'	   In other words, delete this sub (InsertFlicker_timer) and associated timer if you are going to use with a ROM.
-Dim flickerX, FlickerState
-FlickerState = 0
-Sub InsertFlicker_timer
-	If FlickerState = 0 Then
-		For flickerX = 0 To 19
-			If flickerX < 6 Or flickerX > 9 Then
-				AllLamps(flickerX).state = False
-			ElseIf BonusX(flickerX - 6) = False Then
-				AllLamps(flickerX).state = False
-			End If
-		Next
-		FlickerState = 1
-	Else
-		For flickerX = 0 To 19
-			If flickerX < 6 Or flickerX > 9 Then
-				AllLamps(flickerX).state = True
-			ElseIf BonusX(flickerX - 6) = False Then
-				AllLamps(flickerX).state = True
-			End If
-		Next
-		FlickerState = 0
-	End If
-End Sub
+' ' ---- FOR EXAMPLE PUROSE ONLY. DELETE BELOW WHEN USING FOR REAL -----
+' ' NOTE: The below timer is for flashing the inserts as a demonstration. Should be replaced by actual lamp states.
+' '	   In other words, delete this sub (InsertFlicker_timer) and associated timer if you are going to use with a ROM.
+' Dim flickerX, FlickerState
+' FlickerState = 0
+' Sub InsertFlicker_timer
+	' If FlickerState = 0 Then
+		' For flickerX = 0 To 19
+			' If flickerX < 6 Or flickerX > 9 Then
+				' AllLamps(flickerX).state = False
+			' ElseIf BonusX(flickerX - 6) = False Then
+				' AllLamps(flickerX).state = False
+			' End If
+		' Next
+		' FlickerState = 1
+	' Else
+		' For flickerX = 0 To 19
+			' If flickerX < 6 Or flickerX > 9 Then
+				' AllLamps(flickerX).state = True
+			' ElseIf BonusX(flickerX - 6) = False Then
+				' AllLamps(flickerX).state = True
+			' End If
+		' Next
+		' FlickerState = 0
+	' End If
+' End Sub
 
 
 
-Sub l1_animate: p1.BlendDisableLighting = 200 * (l1.GetInPlayIntensity / l1.Intensity): End Sub
-Sub l2_animate: p2.BlendDisableLighting = 200 * (l2.GetInPlayIntensity / l2.Intensity): End Sub
-Sub l3_animate: p3.BlendDisableLighting = 200 * (l3.GetInPlayIntensity / l3.Intensity): End Sub
-' Sub l4_animate: p4.BlendDisableLighting = 200 * (l4.GetInPlayIntensity / l4.Intensity): End Sub
-' Sub l5_animate: p5.BlendDisableLighting = 200 * (l5.GetInPlayIntensity / l5.Intensity): End Sub
-Sub l6_animate: p6.BlendDisableLighting = 200 * (l6.GetInPlayIntensity / l6.Intensity): End Sub
-Sub l7_animate: p7.BlendDisableLighting = 200 * (l7.GetInPlayIntensity / l7.Intensity): End Sub
-Sub l8_animate: p8.BlendDisableLighting = 200 * (l8.GetInPlayIntensity / l8.Intensity): End Sub
-Sub l9_animate: p9.BlendDisableLighting = 200 * (l9.GetInPlayIntensity / l9.Intensity): End Sub
+' Sub l1_animate: p1.BlendDisableLighting = 200 * (l1.GetInPlayIntensity / l1.Intensity): End Sub
+' Sub l2_animate: p2.BlendDisableLighting = 200 * (l2.GetInPlayIntensity / l2.Intensity): End Sub
+' Sub l3_animate: p3.BlendDisableLighting = 200 * (l3.GetInPlayIntensity / l3.Intensity): End Sub
+' ' Sub l4_animate: p4.BlendDisableLighting = 200 * (l4.GetInPlayIntensity / l4.Intensity): End Sub
+' ' Sub l5_animate: p5.BlendDisableLighting = 200 * (l5.GetInPlayIntensity / l5.Intensity): End Sub
+' Sub l6_animate: p6.BlendDisableLighting = 200 * (l6.GetInPlayIntensity / l6.Intensity): End Sub
+' Sub l7_animate: p7.BlendDisableLighting = 200 * (l7.GetInPlayIntensity / l7.Intensity): End Sub
+' Sub l8_animate: p8.BlendDisableLighting = 200 * (l8.GetInPlayIntensity / l8.Intensity): End Sub
+' Sub l9_animate: p9.BlendDisableLighting = 200 * (l9.GetInPlayIntensity / l9.Intensity): End Sub
 
-' Sub l10_animate: p10.BlendDisableLighting = 200 * (l10.GetInPlayIntensity / l10.Intensity): End Sub
-Sub l11_animate: p11.BlendDisableLighting = 200 * (l11.GetInPlayIntensity / l11.Intensity): End Sub
-Sub l12_animate: p12.BlendDisableLighting = 200 * (l12.GetInPlayIntensity / l12.Intensity): End Sub
-Sub l13_animate: p13.BlendDisableLighting = 200 * (l13.GetInPlayIntensity / l13.Intensity): End Sub
-Sub l14_animate: p14.BlendDisableLighting = 200 * (l14.GetInPlayIntensity / l14.Intensity): End Sub
-Sub l15_animate: p15.BlendDisableLighting = 200 * (l15.GetInPlayIntensity / l15.Intensity): End Sub
-Sub l16_animate: p16.BlendDisableLighting = 200 * (l16.GetInPlayIntensity / l16.Intensity): End Sub
-Sub l17_animate: p17.BlendDisableLighting = 200 * (l17.GetInPlayIntensity / l17.Intensity): End Sub
-Sub l18_animate: p18.BlendDisableLighting = 200 * (l18.GetInPlayIntensity / l18.Intensity): End Sub
-Sub l19_animate: p19.BlendDisableLighting = 200 * (l19.GetInPlayIntensity / l19.Intensity): End Sub
+' ' Sub l10_animate: p10.BlendDisableLighting = 200 * (l10.GetInPlayIntensity / l10.Intensity): End Sub
+' Sub l11_animate: p11.BlendDisableLighting = 200 * (l11.GetInPlayIntensity / l11.Intensity): End Sub
+' Sub l12_animate: p12.BlendDisableLighting = 200 * (l12.GetInPlayIntensity / l12.Intensity): End Sub
+' Sub l13_animate: p13.BlendDisableLighting = 200 * (l13.GetInPlayIntensity / l13.Intensity): End Sub
+' Sub l14_animate: p14.BlendDisableLighting = 200 * (l14.GetInPlayIntensity / l14.Intensity): End Sub
+' Sub l15_animate: p15.BlendDisableLighting = 200 * (l15.GetInPlayIntensity / l15.Intensity): End Sub
+' Sub l16_animate: p16.BlendDisableLighting = 200 * (l16.GetInPlayIntensity / l16.Intensity): End Sub
+' Sub l17_animate: p17.BlendDisableLighting = 200 * (l17.GetInPlayIntensity / l17.Intensity): End Sub
+' Sub l18_animate: p18.BlendDisableLighting = 200 * (l18.GetInPlayIntensity / l18.Intensity): End Sub
+' Sub l19_animate: p19.BlendDisableLighting = 200 * (l19.GetInPlayIntensity / l19.Intensity): End Sub
 
-Sub l20_animate: p20.BlendDisableLighting = 200 * (l20.GetInPlayIntensity / l20.Intensity): End Sub
-Sub l21_animate: p21.BlendDisableLighting = 200 * (l21.GetInPlayIntensity / l21.Intensity): End Sub
-Sub l22_animate: p22.BlendDisableLighting = 200 * (l22.GetInPlayIntensity / l22.Intensity): End Sub
-Sub l23_animate: p23.BlendDisableLighting = 200 * (l23.GetInPlayIntensity / l23.Intensity): End Sub
+' Sub l20_animate: p20.BlendDisableLighting = 200 * (l20.GetInPlayIntensity / l20.Intensity): End Sub
+' Sub l21_animate: p21.BlendDisableLighting = 200 * (l21.GetInPlayIntensity / l21.Intensity): End Sub
+' Sub l22_animate: p22.BlendDisableLighting = 200 * (l22.GetInPlayIntensity / l22.Intensity): End Sub
+' Sub l23_animate: p23.BlendDisableLighting = 200 * (l23.GetInPlayIntensity / l23.Intensity): End Sub
 
-'******************************************************
-'*****   END 3D INSERTS
-'******************************************************
+' '******************************************************
+' '*****   END 3D INSERTS
+' '******************************************************
 
 '******************************************************
 '  ZANI: Misc Animations
@@ -363,14 +363,14 @@ Sub l23_animate: p23.BlendDisableLighting = 200 * (l23.GetInPlayIntensity / l23.
 Sub LeftFlipper_Animate
 	dim a: a = LeftFlipper.CurrentAngle
 	FlipperLSh.RotZ = a
-	LFLogo.RotZ = a
+'	LFLogo.RotZ = a
 	'Add any left flipper related animations here
 End Sub
 
 Sub RightFlipper_Animate
 	dim a: a = RightFlipper.CurrentAngle
 	FlipperRSh.RotZ = a
-	RFlogo.RotZ = a
+'	RFlogo.RotZ = a
 	'Add any right flipper related animations here
 End Sub
 
@@ -885,6 +885,9 @@ End Sub
 '*******************************************
 '	ZDRN: Drain, Trough, and Ball Release
 '*******************************************
+
+' Original code retained for reference - largely replaced by GLF trough management
+
 ' It is best practice to never destroy balls. This leads to more stable and accurate pinball game simulations.
 ' The following code supports a "physical trough" where balls are not destroyed.
 ' To use this,
@@ -895,434 +898,454 @@ End Sub
 
 
 'TROUGH
-Sub swTrough1_Hit
-	UpdateTrough
-End Sub
-Sub swTrough1_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough2_Hit
-	UpdateTrough
-End Sub
-Sub swTrough2_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough3_Hit
-	UpdateTrough
-End Sub
-Sub swTrough3_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough4_Hit
-	UpdateTrough
-End Sub
-Sub swTrough4_UnHit
-	UpdateTrough
-End Sub
-Sub swTrough5_Hit
-	UpdateTrough
-End Sub
-Sub swTrough5_UnHit
-	UpdateTrough
-End Sub
-
-Sub UpdateTrough
-	UpdateTroughTimer.Interval = 300
-	UpdateTroughTimer.Enabled = 1
-End Sub
-
-Sub UpdateTroughTimer_Timer
-	If swTrough1.BallCntOver = 0 Then swTrough2.kick 57, 10
-	If swTrough2.BallCntOver = 0 Then swTrough3.kick 57, 10
-	If swTrough3.BallCntOver = 0 Then swTrough4.kick 57, 10
-	If swTrough4.BallCntOver = 0 Then swTrough5.kick 57, 10
-	Me.Enabled = 0
-End Sub
-
-' DRAIN & RELEASE
-Sub Drain_Hit
-	BIP = BIP - 1
-	DMDBigText "DRAIN BLOCK",77,1
-	RandomSoundDrain Drain
-	vpmTimer.AddTimer 500, "Drain.kick 57, 20'"
-End Sub
-
-Sub SolRelease(enabled)
-	If enabled Then
-		BIP = BIP + 1
-		swTrough1.kick 90, 10
-		RandomSoundBallRelease swTrough1
-	End If
-End Sub
-
-'******************************************************
-' 	ZRDT:  DROP TARGETS by Rothbauerw
-'******************************************************
-' The Stand Up and Drop Target solutions improve the physics for targets to create more realistic behavior. It allows the ball
-' to move through the target enabling the ability to score more than one target with a well placed shot.
-' It also handles full target animation, switch handling and deflection on hit. For drop targets there is also a slight lift when
-' the drop targets raise, bricking, and popping the ball up if it's over the drop target when it raises.
-'
-' Add a Timers named DTAnim and STAnim to editor to handle drop & standup target animations, or run them off an always-on 10ms timer (GameTimer)
-' DTAnim.interval = 10
-' DTAnim.enabled = True
-
-' Sub DTAnim_Timer
-' 	DoDTAnim
-'	DoSTAnim
+' Sub swTrough1_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough1_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough2_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough2_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough3_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough3_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough4_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough4_UnHit
+	' UpdateTrough
+' End Sub
+' Sub swTrough5_Hit
+	' UpdateTrough
+' End Sub
+' Sub swTrough5_UnHit
+	' UpdateTrough
 ' End Sub
 
-' For each drop target, we'll use two wall objects for physics calculations and one primitive for visuals and
-' animation. We will not use target objects.  Place your drop target primitive the same as you would a VP drop target.
-' The primitive should have it's pivot point centered on the x and y axis and at or just below the playfield
-' level on the z axis. Orientation needs to be set using Rotz and bending deflection using Rotx. You'll find a hooded
-' target mesh in this table's example. It uses the same texture map as the VP drop targets.
-'
-' For each stand up target we'll use a vp target, a laid back collidable primitive, and one primitive for visuals and animation.
-' The visual primitive should should have it's pivot point centered on the x and y axis and the z should be at or just below the playfield.
-' The target should animate backwards using transy.
-'
-' To create visual target primitives that work with the stand up and drop target code, follow the below instructions:
-' (Other methods will work as well, but this is easy for even non-blender users to do)
-' 1) Open a new blank table. Delete everything off the table in editor.
-' 2) Copy and paste the VP target from your table into this blank table.
-' 3) Place the target at x = 0, y = 0  (upper left hand corner) with an orientation of 0 (target facing the front of the table)
-' 4) Under the file menu, select Export "OBJ Mesh"
-' 5) Go to "https://threejs.org/editor/". Here you can modify the exported obj file. When you export, it exports your target and also 
-'    the playfield mesh. You need to delete the playfield mesh here. Under the file menu, chose import, and select the obj you exported
-'    from VPX. In the right hand panel, find the Playfield object and click on it and delete. Then use the file menu to Export OBJ.
-' 6) In VPX, you can add a primitive and use "Import Mesh" to import the exported obj from the previous step. X,Y,Z scale should be 1.
-'    The primitive will use the same target texture as the VP target object. 
-'
-' * Note, each target must have a unique switch number. If they share a same number, add 100 to additional target with that number.
-' For example, three targets with switch 32 would use 32, 132, 232 for their switch numbers.
-' The 100 and 200 will be removed when setting the switch value for the target.
-
-'******************************************************
-'  DROP TARGETS INITIALIZATION
-'******************************************************
-
-Class DropTarget
-  Private m_primary, m_secondary, m_prim, m_sw, m_animate, m_isDropped
-
-  Public Property Get Primary(): Set Primary = m_primary: End Property
-  Public Property Let Primary(input): Set m_primary = input: End Property
-
-  Public Property Get Secondary(): Set Secondary = m_secondary: End Property
-  Public Property Let Secondary(input): Set m_secondary = input: End Property
-
-  Public Property Get Prim(): Set Prim = m_prim: End Property
-  Public Property Let Prim(input): Set m_prim = input: End Property
-
-  Public Property Get Sw(): Sw = m_sw: End Property
-  Public Property Let Sw(input): m_sw = input: End Property
-
-  Public Property Get Animate(): Animate = m_animate: End Property
-  Public Property Let Animate(input): m_animate = input: End Property
-
-  Public Property Get IsDropped(): IsDropped = m_isDropped: End Property
-  Public Property Let IsDropped(input): m_isDropped = input: End Property
-
-  Public default Function init(primary, secondary, prim, sw, animate, isDropped)
-    Set m_primary = primary
-    Set m_secondary = secondary
-    Set m_prim = prim
-    m_sw = sw
-    m_animate = animate
-    m_isDropped = isDropped
-
-    Set Init = Me
-  End Function
-End Class
-
-'Define a variable for each drop target
-Dim DT1, DT2, DT3
-
-'Set array with drop target objects
-'
-'DropTargetvar = Array(primary, secondary, prim, swtich, animate)
-'   primary:	primary target wall to determine drop
-'   secondary:  wall used to simulate the ball striking a bent or offset target after the initial Hit
-'   prim:	   primitive target used for visuals and animation
-'				   IMPORTANT!!!
-'				   rotz must be used for orientation
-'				   rotx to bend the target back
-'				   transz to move it up and down
-'				   the pivot point should be in the center of the target on the x, y and at or below the playfield (0) on z
-'   switch:	 ROM switch number
-'   animate:	Array slot for handling the animation instrucitons, set to 0
-'				   Values for animate: 1 - bend target (hit to primary), 2 - drop target (hit to secondary), 3 - brick target (high velocity hit to secondary), -1 - raise target
-'   isDropped:  Boolean which determines whether a drop target is dropped. Set to false if they are initially raised, true if initially dropped.
-'					Use the function DTDropped(switchid) to check a target's drop status.
-
-Set DT1 = (new DropTarget)(sw1, sw1a, sw1p, 1, 0, False)
-Set DT2 = (new DropTarget)(sw2, sw2a, sw2p, 2, 0, False)
-Set DT3 = (new DropTarget)(sw3, sw3a, sw3p, 3, 0, False)
-
-Dim DTArray
-DTArray = Array(DT1, DT2, DT3)
-
-'Configure the behavior of Drop Targets.
-Const DTDropSpeed = 90 'in milliseconds
-Const DTDropUpSpeed = 40 'in milliseconds
-Const DTDropUnits = 44 'VP units primitive drops so top of at or below the playfield
-Const DTDropUpUnits = 10 'VP units primitive raises above the up position on drops up
-Const DTMaxBend = 8 'max degrees primitive rotates when hit
-Const DTDropDelay = 20 'time in milliseconds before target drops (due to friction/impact of the ball)
-Const DTRaiseDelay = 40 'time in milliseconds before target drops back to normal up position after the solenoid fires to raise the target
-Const DTBrickVel = 30 'velocity at which the target will brick, set to '0' to disable brick
-Const DTEnableBrick = 0 'Set to 0 to disable bricking, 1 to enable bricking
-Const DTMass = 0.2 'Mass of the Drop Target (between 0 and 1), higher values provide more resistance
-
-'******************************************************
-'  DROP TARGETS FUNCTIONS
-'******************************************************
-
-Sub DTHit(switch)
-	Dim i
-	i = DTArrayID(switch)
-	
-	PlayTargetSound
-	DTArray(i).animate = DTCheckBrick(ActiveBall,DTArray(i).prim)
-	If DTArray(i).animate = 1 Or DTArray(i).animate = 3 Or DTArray(i).animate = 4 Then
-		DTBallPhysics ActiveBall, DTArray(i).prim.rotz, DTMass
+Sub TroughTeleport_Hit
+	Dim b : Set b = GetBallNear(TroughTeleport)
+	If Not b Is Nothing Then 
+		TroughTeleport.kick 90, 10
+		b.X = LaneKicker.X
+		b.Y = LaneKicker.Y
+		KickBall b, -90, 2, 0, 0
 	End If
-	DoDTAnim
 End Sub
 
-Sub DTRaise(switch)
-	Dim i
-	i = DTArrayID(switch)
-	
-	DTArray(i).animate =  - 1
-	DoDTAnim
-End Sub
-
-Sub DTDrop(switch)
-	Dim i
-	i = DTArrayID(switch)
-	
-	DTArray(i).animate = 1
-	DoDTAnim
-End Sub
-
-Function DTArrayID(switch)
-	Dim i
-	For i = 0 To UBound(DTArray)
-		If DTArray(i).sw = switch Then
-			DTArrayID = i
-			Exit Function
+Function GetBallNear(obj)
+	Dim b
+	For b = 0 To UBound(gBOT)
+		If abs(obj.X - gBOT(b).X) < 25 And abs(obj.Y - gBOT(b).Y) < 25 Then
+			Set GetBallNear = gBOT(b)
 		End If
 	Next
 End Function
 
-Sub DTBallPhysics(aBall, angle, mass)
-	Dim rangle,bangle,calc1, calc2, calc3
-	rangle = (angle - 90) * 3.1416 / 180
-	bangle = atn2(cor.ballvely(aball.id),cor.ballvelx(aball.id))
-	
-	calc1 = cor.BallVel(aball.id) * Cos(bangle - rangle) * (aball.mass - mass) / (aball.mass + mass)
-	calc2 = cor.BallVel(aball.id) * Sin(bangle - rangle) * Cos(rangle + 4 * Atn(1) / 2)
-	calc3 = cor.BallVel(aball.id) * Sin(bangle - rangle) * Sin(rangle + 4 * Atn(1) / 2)
-	
-	aBall.velx = calc1 * Cos(rangle) + calc2
-	aBall.vely = calc1 * Sin(rangle) + calc3
-End Sub
+' Sub UpdateTrough
+	' UpdateTroughTimer.Interval = 300
+	' UpdateTroughTimer.Enabled = 1
+' End Sub
 
-'Check if target is hit on it's face or sides and whether a 'brick' occurred
-Function DTCheckBrick(aBall, dtprim)
-	Dim bangle, bangleafter, rangle, rangle2, Xintersect, Yintersect, cdist, perpvel, perpvelafter, paravel, paravelafter
-	rangle = (dtprim.rotz - 90) * 3.1416 / 180
-	rangle2 = dtprim.rotz * 3.1416 / 180
-	bangle = atn2(cor.ballvely(aball.id),cor.ballvelx(aball.id))
-	bangleafter = Atn2(aBall.vely,aball.velx)
-	
-	Xintersect = (aBall.y - dtprim.y - Tan(bangle) * aball.x + Tan(rangle2) * dtprim.x) / (Tan(rangle2) - Tan(bangle))
-	Yintersect = Tan(rangle2) * Xintersect + (dtprim.y - Tan(rangle2) * dtprim.x)
-	
-	cdist = Distance(dtprim.x, dtprim.y, Xintersect, Yintersect)
-	
-	perpvel = cor.BallVel(aball.id) * Cos(bangle - rangle)
-	paravel = cor.BallVel(aball.id) * Sin(bangle - rangle)
-	
-	perpvelafter = BallSpeed(aBall) * Cos(bangleafter - rangle)
-	paravelafter = BallSpeed(aBall) * Sin(bangleafter - rangle)
-	
-	If perpvel > 0 And  perpvelafter <= 0 Then
-		If DTEnableBrick = 1 And  perpvel > DTBrickVel And DTBrickVel <> 0 And cdist < 8 Then
-			DTCheckBrick = 3
-		Else
-			DTCheckBrick = 1
-		End If
-	ElseIf perpvel > 0 And ((paravel > 0 And paravelafter > 0) Or (paravel < 0 And paravelafter < 0)) Then
-		DTCheckBrick = 4
-	Else
-		DTCheckBrick = 0
-	End If
-End Function
+' Sub UpdateTroughTimer_Timer
+	' If swTrough1.BallCntOver = 0 Then swTrough2.kick 57, 10
+	' If swTrough2.BallCntOver = 0 Then swTrough3.kick 57, 10
+	' If swTrough3.BallCntOver = 0 Then swTrough4.kick 57, 10
+	' If swTrough4.BallCntOver = 0 Then swTrough5.kick 57, 10
+	' Me.Enabled = 0
+' End Sub
 
-Sub DoDTAnim()
-	Dim i
-	For i = 0 To UBound(DTArray)
-		DTArray(i).animate = DTAnimate(DTArray(i).primary,DTArray(i).secondary,DTArray(i).prim,DTArray(i).sw,DTArray(i).animate)
-	Next
-End Sub
+' ' DRAIN & RELEASE
+' Sub Drain_Hit
+	' BIP = BIP - 1
+	' DMDBigText "DRAIN BLOCK",77,1
+	' RandomSoundDrain Drain
+	' vpmTimer.AddTimer 500, "Drain.kick 57, 20'"
+' End Sub
 
-Function DTAnimate(primary, secondary, prim, switch, animate)
-	Dim transz, switchid
-	Dim animtime, rangle
+' Sub SolRelease(enabled)
+	' If enabled Then
+		' BIP = BIP + 1
+		' swTrough1.kick 90, 10
+		' RandomSoundBallRelease swTrough1
+	' End If
+' End Sub
+
+' '******************************************************
+' ' 	ZRDT:  DROP TARGETS by Rothbauerw
+' '******************************************************
+' ' No Drop targets on this table.
+' ' The Stand Up and Drop Target solutions improve the physics for targets to create more realistic behavior. It allows the ball
+' ' to move through the target enabling the ability to score more than one target with a well placed shot.
+' ' It also handles full target animation, switch handling and deflection on hit. For drop targets there is also a slight lift when
+' ' the drop targets raise, bricking, and popping the ball up if it's over the drop target when it raises.
+' '
+' ' Add a Timers named DTAnim and STAnim to editor to handle drop & standup target animations, or run them off an always-on 10ms timer (GameTimer)
+' ' DTAnim.interval = 10
+' ' DTAnim.enabled = True
+
+' ' Sub DTAnim_Timer
+' ' 	DoDTAnim
+' '	DoSTAnim
+' ' End Sub
+
+' ' For each drop target, we'll use two wall objects for physics calculations and one primitive for visuals and
+' ' animation. We will not use target objects.  Place your drop target primitive the same as you would a VP drop target.
+' ' The primitive should have it's pivot point centered on the x and y axis and at or just below the playfield
+' ' level on the z axis. Orientation needs to be set using Rotz and bending deflection using Rotx. You'll find a hooded
+' ' target mesh in this table's example. It uses the same texture map as the VP drop targets.
+' '
+' ' For each stand up target we'll use a vp target, a laid back collidable primitive, and one primitive for visuals and animation.
+' ' The visual primitive should should have it's pivot point centered on the x and y axis and the z should be at or just below the playfield.
+' ' The target should animate backwards using transy.
+' '
+' ' To create visual target primitives that work with the stand up and drop target code, follow the below instructions:
+' ' (Other methods will work as well, but this is easy for even non-blender users to do)
+' ' 1) Open a new blank table. Delete everything off the table in editor.
+' ' 2) Copy and paste the VP target from your table into this blank table.
+' ' 3) Place the target at x = 0, y = 0  (upper left hand corner) with an orientation of 0 (target facing the front of the table)
+' ' 4) Under the file menu, select Export "OBJ Mesh"
+' ' 5) Go to "https://threejs.org/editor/". Here you can modify the exported obj file. When you export, it exports your target and also 
+' '    the playfield mesh. You need to delete the playfield mesh here. Under the file menu, chose import, and select the obj you exported
+' '    from VPX. In the right hand panel, find the Playfield object and click on it and delete. Then use the file menu to Export OBJ.
+' ' 6) In VPX, you can add a primitive and use "Import Mesh" to import the exported obj from the previous step. X,Y,Z scale should be 1.
+' '    The primitive will use the same target texture as the VP target object. 
+' '
+' ' * Note, each target must have a unique switch number. If they share a same number, add 100 to additional target with that number.
+' ' For example, three targets with switch 32 would use 32, 132, 232 for their switch numbers.
+' ' The 100 and 200 will be removed when setting the switch value for the target.
+
+' '******************************************************
+' '  DROP TARGETS INITIALIZATION
+' '******************************************************
+
+' Class DropTarget
+  ' Private m_primary, m_secondary, m_prim, m_sw, m_animate, m_isDropped
+
+  ' Public Property Get Primary(): Set Primary = m_primary: End Property
+  ' Public Property Let Primary(input): Set m_primary = input: End Property
+
+  ' Public Property Get Secondary(): Set Secondary = m_secondary: End Property
+  ' Public Property Let Secondary(input): Set m_secondary = input: End Property
+
+  ' Public Property Get Prim(): Set Prim = m_prim: End Property
+  ' Public Property Let Prim(input): Set m_prim = input: End Property
+
+  ' Public Property Get Sw(): Sw = m_sw: End Property
+  ' Public Property Let Sw(input): m_sw = input: End Property
+
+  ' Public Property Get Animate(): Animate = m_animate: End Property
+  ' Public Property Let Animate(input): m_animate = input: End Property
+
+  ' Public Property Get IsDropped(): IsDropped = m_isDropped: End Property
+  ' Public Property Let IsDropped(input): m_isDropped = input: End Property
+
+  ' Public default Function init(primary, secondary, prim, sw, animate, isDropped)
+    ' Set m_primary = primary
+    ' Set m_secondary = secondary
+    ' Set m_prim = prim
+    ' m_sw = sw
+    ' m_animate = animate
+    ' m_isDropped = isDropped
+
+    ' Set Init = Me
+  ' End Function
+' End Class
+
+' 'Define a variable for each drop target
+' Dim DT1, DT2, DT3
+
+' 'Set array with drop target objects
+' '
+' 'DropTargetvar = Array(primary, secondary, prim, swtich, animate)
+' '   primary:	primary target wall to determine drop
+' '   secondary:  wall used to simulate the ball striking a bent or offset target after the initial Hit
+' '   prim:	   primitive target used for visuals and animation
+' '				   IMPORTANT!!!
+' '				   rotz must be used for orientation
+' '				   rotx to bend the target back
+' '				   transz to move it up and down
+' '				   the pivot point should be in the center of the target on the x, y and at or below the playfield (0) on z
+' '   switch:	 ROM switch number
+' '   animate:	Array slot for handling the animation instrucitons, set to 0
+' '				   Values for animate: 1 - bend target (hit to primary), 2 - drop target (hit to secondary), 3 - brick target (high velocity hit to secondary), -1 - raise target
+' '   isDropped:  Boolean which determines whether a drop target is dropped. Set to false if they are initially raised, true if initially dropped.
+' '					Use the function DTDropped(switchid) to check a target's drop status.
+
+' Set DT1 = (new DropTarget)(sw1, sw1a, sw1p, 1, 0, False)
+' Set DT2 = (new DropTarget)(sw2, sw2a, sw2p, 2, 0, False)
+' Set DT3 = (new DropTarget)(sw3, sw3a, sw3p, 3, 0, False)
+
+' Dim DTArray
+' DTArray = Array(DT1, DT2, DT3)
+
+' 'Configure the behavior of Drop Targets.
+' Const DTDropSpeed = 90 'in milliseconds
+' Const DTDropUpSpeed = 40 'in milliseconds
+' Const DTDropUnits = 44 'VP units primitive drops so top of at or below the playfield
+' Const DTDropUpUnits = 10 'VP units primitive raises above the up position on drops up
+' Const DTMaxBend = 8 'max degrees primitive rotates when hit
+' Const DTDropDelay = 20 'time in milliseconds before target drops (due to friction/impact of the ball)
+' Const DTRaiseDelay = 40 'time in milliseconds before target drops back to normal up position after the solenoid fires to raise the target
+' Const DTBrickVel = 30 'velocity at which the target will brick, set to '0' to disable brick
+' Const DTEnableBrick = 0 'Set to 0 to disable bricking, 1 to enable bricking
+' Const DTMass = 0.2 'Mass of the Drop Target (between 0 and 1), higher values provide more resistance
+
+' '******************************************************
+' '  DROP TARGETS FUNCTIONS
+' '******************************************************
+
+' Sub DTHit(switch)
+	' Dim i
+	' i = DTArrayID(switch)
 	
-	switchid = switch
+	' PlayTargetSound
+	' DTArray(i).animate = DTCheckBrick(ActiveBall,DTArray(i).prim)
+	' If DTArray(i).animate = 1 Or DTArray(i).animate = 3 Or DTArray(i).animate = 4 Then
+		' DTBallPhysics ActiveBall, DTArray(i).prim.rotz, DTMass
+	' End If
+	' DoDTAnim
+' End Sub
+
+' Sub DTRaise(switch)
+	' Dim i
+	' i = DTArrayID(switch)
 	
-	Dim ind
-	ind = DTArrayID(switchid)
+	' DTArray(i).animate =  - 1
+	' DoDTAnim
+' End Sub
+
+' Sub DTDrop(switch)
+	' Dim i
+	' i = DTArrayID(switch)
 	
-	rangle = prim.rotz * PI / 180
+	' DTArray(i).animate = 1
+	' DoDTAnim
+' End Sub
+
+' Function DTArrayID(switch)
+	' Dim i
+	' For i = 0 To UBound(DTArray)
+		' If DTArray(i).sw = switch Then
+			' DTArrayID = i
+			' Exit Function
+		' End If
+	' Next
+' End Function
+
+' Sub DTBallPhysics(aBall, angle, mass)
+	' Dim rangle,bangle,calc1, calc2, calc3
+	' rangle = (angle - 90) * 3.1416 / 180
+	' bangle = atn2(cor.ballvely(aball.id),cor.ballvelx(aball.id))
 	
-	DTAnimate = animate
+	' calc1 = cor.BallVel(aball.id) * Cos(bangle - rangle) * (aball.mass - mass) / (aball.mass + mass)
+	' calc2 = cor.BallVel(aball.id) * Sin(bangle - rangle) * Cos(rangle + 4 * Atn(1) / 2)
+	' calc3 = cor.BallVel(aball.id) * Sin(bangle - rangle) * Sin(rangle + 4 * Atn(1) / 2)
 	
-	If animate = 0 Then
-		primary.uservalue = 0
-		DTAnimate = 0
-		Exit Function
-	ElseIf primary.uservalue = 0 Then
-		primary.uservalue = GameTime
-	End If
+	' aBall.velx = calc1 * Cos(rangle) + calc2
+	' aBall.vely = calc1 * Sin(rangle) + calc3
+' End Sub
+
+' 'Check if target is hit on it's face or sides and whether a 'brick' occurred
+' Function DTCheckBrick(aBall, dtprim)
+	' Dim bangle, bangleafter, rangle, rangle2, Xintersect, Yintersect, cdist, perpvel, perpvelafter, paravel, paravelafter
+	' rangle = (dtprim.rotz - 90) * 3.1416 / 180
+	' rangle2 = dtprim.rotz * 3.1416 / 180
+	' bangle = atn2(cor.ballvely(aball.id),cor.ballvelx(aball.id))
+	' bangleafter = Atn2(aBall.vely,aball.velx)
 	
-	animtime = GameTime - primary.uservalue
+	' Xintersect = (aBall.y - dtprim.y - Tan(bangle) * aball.x + Tan(rangle2) * dtprim.x) / (Tan(rangle2) - Tan(bangle))
+	' Yintersect = Tan(rangle2) * Xintersect + (dtprim.y - Tan(rangle2) * dtprim.x)
 	
-	If (animate = 1 Or animate = 4) And animtime < DTDropDelay Then
-		primary.collidable = 0
-		If animate = 1 Then secondary.collidable = 1 Else secondary.collidable = 0
-		prim.rotx = DTMaxBend * Cos(rangle)
-		prim.roty = DTMaxBend * Sin(rangle)
-		DTAnimate = animate
-		Exit Function
-	ElseIf (animate = 1 Or animate = 4) And animtime > DTDropDelay Then
-		primary.collidable = 0
-		If animate = 1 Then secondary.collidable = 1 Else secondary.collidable = 1 'If animate = 1 Then secondary.collidable = 1 Else secondary.collidable = 0 'updated by rothbauerw to account for edge case
-		prim.rotx = DTMaxBend * Cos(rangle)
-		prim.roty = DTMaxBend * Sin(rangle)
-		animate = 2
-		SoundDropTargetDrop prim
-	End If
+	' cdist = Distance(dtprim.x, dtprim.y, Xintersect, Yintersect)
 	
-	If animate = 2 Then
-		transz = (animtime - DTDropDelay) / DTDropSpeed * DTDropUnits *  - 1
-		If prim.transz >  - DTDropUnits  Then
-			prim.transz = transz
-		End If
+	' perpvel = cor.BallVel(aball.id) * Cos(bangle - rangle)
+	' paravel = cor.BallVel(aball.id) * Sin(bangle - rangle)
+	
+	' perpvelafter = BallSpeed(aBall) * Cos(bangleafter - rangle)
+	' paravelafter = BallSpeed(aBall) * Sin(bangleafter - rangle)
+	
+	' If perpvel > 0 And  perpvelafter <= 0 Then
+		' If DTEnableBrick = 1 And  perpvel > DTBrickVel And DTBrickVel <> 0 And cdist < 8 Then
+			' DTCheckBrick = 3
+		' Else
+			' DTCheckBrick = 1
+		' End If
+	' ElseIf perpvel > 0 And ((paravel > 0 And paravelafter > 0) Or (paravel < 0 And paravelafter < 0)) Then
+		' DTCheckBrick = 4
+	' Else
+		' DTCheckBrick = 0
+	' End If
+' End Function
+
+' Sub DoDTAnim()
+	' Dim i
+	' For i = 0 To UBound(DTArray)
+		' DTArray(i).animate = DTAnimate(DTArray(i).primary,DTArray(i).secondary,DTArray(i).prim,DTArray(i).sw,DTArray(i).animate)
+	' Next
+' End Sub
+
+' Function DTAnimate(primary, secondary, prim, switch, animate)
+	' Dim transz, switchid
+	' Dim animtime, rangle
+	
+	' switchid = switch
+	
+	' Dim ind
+	' ind = DTArrayID(switchid)
+	
+	' rangle = prim.rotz * PI / 180
+	
+	' DTAnimate = animate
+	
+	' If animate = 0 Then
+		' primary.uservalue = 0
+		' DTAnimate = 0
+		' Exit Function
+	' ElseIf primary.uservalue = 0 Then
+		' primary.uservalue = GameTime
+	' End If
+	
+	' animtime = GameTime - primary.uservalue
+	
+	' If (animate = 1 Or animate = 4) And animtime < DTDropDelay Then
+		' primary.collidable = 0
+		' If animate = 1 Then secondary.collidable = 1 Else secondary.collidable = 0
+		' prim.rotx = DTMaxBend * Cos(rangle)
+		' prim.roty = DTMaxBend * Sin(rangle)
+		' DTAnimate = animate
+		' Exit Function
+	' ElseIf (animate = 1 Or animate = 4) And animtime > DTDropDelay Then
+		' primary.collidable = 0
+		' If animate = 1 Then secondary.collidable = 1 Else secondary.collidable = 1 'If animate = 1 Then secondary.collidable = 1 Else secondary.collidable = 0 'updated by rothbauerw to account for edge case
+		' prim.rotx = DTMaxBend * Cos(rangle)
+		' prim.roty = DTMaxBend * Sin(rangle)
+		' animate = 2
+		' SoundDropTargetDrop prim
+	' End If
+	
+	' If animate = 2 Then
+		' transz = (animtime - DTDropDelay) / DTDropSpeed * DTDropUnits *  - 1
+		' If prim.transz >  - DTDropUnits  Then
+			' prim.transz = transz
+		' End If
 		
-		prim.rotx = DTMaxBend * Cos(rangle) / 2
-		prim.roty = DTMaxBend * Sin(rangle) / 2
+		' prim.rotx = DTMaxBend * Cos(rangle) / 2
+		' prim.roty = DTMaxBend * Sin(rangle) / 2
 		
-		If prim.transz <= - DTDropUnits Then
-			prim.transz =  - DTDropUnits
-			secondary.collidable = 0
-			DTArray(ind).isDropped = True 'Mark target as dropped
-			If UsingROM Then
-				controller.Switch(Switchid mod 100) = 1
-			Else
-				DTAction switchid
-			End If
-			primary.uservalue = 0
-			DTAnimate = 0
-			Exit Function
-		Else
-			DTAnimate = 2
-			Exit Function
-		End If
-	End If
+		' If prim.transz <= - DTDropUnits Then
+			' prim.transz =  - DTDropUnits
+			' secondary.collidable = 0
+			' DTArray(ind).isDropped = True 'Mark target as dropped
+			' If UsingROM Then
+				' controller.Switch(Switchid mod 100) = 1
+			' Else
+				' DTAction switchid
+			' End If
+			' primary.uservalue = 0
+			' DTAnimate = 0
+			' Exit Function
+		' Else
+			' DTAnimate = 2
+			' Exit Function
+		' End If
+	' End If
 	
-	If animate = 3 And animtime < DTDropDelay Then
-		primary.collidable = 0
-		secondary.collidable = 1
-		prim.rotx = DTMaxBend * Cos(rangle)
-		prim.roty = DTMaxBend * Sin(rangle)
-	ElseIf animate = 3 And animtime > DTDropDelay Then
-		primary.collidable = 1
-		secondary.collidable = 0
-		prim.rotx = 0
-		prim.roty = 0
-		primary.uservalue = 0
-		DTAnimate = 0
-		Exit Function
-	End If
+	' If animate = 3 And animtime < DTDropDelay Then
+		' primary.collidable = 0
+		' secondary.collidable = 1
+		' prim.rotx = DTMaxBend * Cos(rangle)
+		' prim.roty = DTMaxBend * Sin(rangle)
+	' ElseIf animate = 3 And animtime > DTDropDelay Then
+		' primary.collidable = 1
+		' secondary.collidable = 0
+		' prim.rotx = 0
+		' prim.roty = 0
+		' primary.uservalue = 0
+		' DTAnimate = 0
+		' Exit Function
+	' End If
 	
-	If animate =  - 1 Then
-		transz = (1 - (animtime) / DTDropUpSpeed) * DTDropUnits *  - 1
+	' If animate =  - 1 Then
+		' transz = (1 - (animtime) / DTDropUpSpeed) * DTDropUnits *  - 1
 		
-		If prim.transz =  - DTDropUnits Then
-			Dim b
-			'Dim gBOT
-			'gBOT = GetBalls
+		' If prim.transz =  - DTDropUnits Then
+			' Dim b
+			' 'Dim gBOT
+			' 'gBOT = GetBalls
 			
-			For b = 0 To UBound(gBOT)
-				If InRotRect(gBOT(b).x,gBOT(b).y,prim.x, prim.y, prim.rotz, - 25, - 10,25, - 10,25,25, - 25,25) And gBOT(b).z < prim.z + DTDropUnits + 25 Then
-					gBOT(b).velz = 20
-				End If
-			Next
-		End If
+			' For b = 0 To UBound(gBOT)
+				' If InRotRect(gBOT(b).x,gBOT(b).y,prim.x, prim.y, prim.rotz, - 25, - 10,25, - 10,25,25, - 25,25) And gBOT(b).z < prim.z + DTDropUnits + 25 Then
+					' gBOT(b).velz = 20
+				' End If
+			' Next
+		' End If
 		
-		If prim.transz < 0 Then
-			prim.transz = transz
-		ElseIf transz > 0 Then
-			prim.transz = transz
-		End If
+		' If prim.transz < 0 Then
+			' prim.transz = transz
+		' ElseIf transz > 0 Then
+			' prim.transz = transz
+		' End If
 		
-		If prim.transz > DTDropUpUnits Then
-			DTAnimate =  - 2
-			prim.transz = DTDropUpUnits
-			prim.rotx = 0
-			prim.roty = 0
-			primary.uservalue = GameTime
-		End If
-		primary.collidable = 0
-		secondary.collidable = 1
-		DTArray(ind).isDropped = False 'Mark target as not dropped
-		If UsingROM Then controller.Switch(Switchid mod 100) = 0
-	End If
+		' If prim.transz > DTDropUpUnits Then
+			' DTAnimate =  - 2
+			' prim.transz = DTDropUpUnits
+			' prim.rotx = 0
+			' prim.roty = 0
+			' primary.uservalue = GameTime
+		' End If
+		' primary.collidable = 0
+		' secondary.collidable = 1
+		' DTArray(ind).isDropped = False 'Mark target as not dropped
+		' If UsingROM Then controller.Switch(Switchid mod 100) = 0
+	' End If
 	
-	If animate =  - 2 And animtime > DTRaiseDelay Then
-		prim.transz = (animtime - DTRaiseDelay) / DTDropSpeed * DTDropUnits *  - 1 + DTDropUpUnits
-		If prim.transz < 0 Then
-			prim.transz = 0
-			primary.uservalue = 0
-			DTAnimate = 0
+	' If animate =  - 2 And animtime > DTRaiseDelay Then
+		' prim.transz = (animtime - DTRaiseDelay) / DTDropSpeed * DTDropUnits *  - 1 + DTDropUpUnits
+		' If prim.transz < 0 Then
+			' prim.transz = 0
+			' primary.uservalue = 0
+			' DTAnimate = 0
 			
-			primary.collidable = 1
-			secondary.collidable = 0
-		End If
-	End If
-End Function
+			' primary.collidable = 1
+			' secondary.collidable = 0
+		' End If
+	' End If
+' End Function
 
-Function DTDropped(switchid)
-	Dim ind
-	ind = DTArrayID(switchid)
+' Function DTDropped(switchid)
+	' Dim ind
+	' ind = DTArrayID(switchid)
 	
-	DTDropped = DTArray(ind).isDropped
-End Function
+	' DTDropped = DTArray(ind).isDropped
+' End Function
 
-Sub DTAction(switchid)
-	Select Case switchid
-		Case 1
-			Addscore 1000
-			ShadowDT(0).visible = False
+' Sub DTAction(switchid)
+	' Select Case switchid
+		' Case 1
+			' Addscore 1000
+			' ShadowDT(0).visible = False
 			
-		Case 2
-			Addscore 1000
-			ShadowDT(1).visible = False
+		' Case 2
+			' Addscore 1000
+			' ShadowDT(1).visible = False
 			
-		Case 3
-			Addscore 1000
-			ShadowDT(2).visible = False
-	End Select
-End Sub
+		' Case 3
+			' Addscore 1000
+			' ShadowDT(2).visible = False
+	' End Select
+' End Sub
 
 
-'******************************************************
-'****  END DROP TARGETS
-'******************************************************
+' '******************************************************
+' '****  END DROP TARGETS
+' '******************************************************
 
 '*****************************************************************************************************************************************
 '  	ZLOG: ERROR LOGS by baldgeek
@@ -2561,11 +2584,11 @@ For cnt = 1 To 6
 Next
 
 ' colors available are red, white, blue, orange, yellow, green, purple and blacklight
-FlInitBumper 1, "red"
-FlInitBumper 2, "white"
-FlInitBumper 3, "blue"
-FlInitBumper 4, "orange"
-FlInitBumper 5, "yellow"
+' FlInitBumper 1, "red"
+' FlInitBumper 2, "white"
+' FlInitBumper 3, "blue"
+' FlInitBumper 4, "orange"
+' FlInitBumper 5, "yellow"
 
 ' ### uncomment the statement below to change the color for all bumpers ###
 '   Dim ind
@@ -2896,10 +2919,10 @@ Dim ObjLevel(20), objbase(20), objlit(20), objflasher(20), objbloom(20), objligh
 'Dim tablewidth, tableheight : tablewidth = TableRef.width : tableheight = TableRef.height
 
 'initialise the flasher color, you can only choose from "green", "red", "purple", "blue", "white" and "yellow"
-InitFlasher 1, "green"
-InitFlasher 2, "red"
-InitFlasher 3, "blue"
-InitFlasher 4, "white"
+' InitFlasher 1, "green"
+' InitFlasher 2, "red"
+' InitFlasher 3, "blue"
+' InitFlasher 4, "white"
 
 ' rotate the flasher with the command below (first argument = flasher nr, second argument = angle in degrees)
 '   RotateFlasher 1,17
@@ -4686,7 +4709,7 @@ Set LS = New SlingshotCorrection
 Dim RS
 Set RS = New SlingshotCorrection
 
-InitSlingCorrection
+' InitSlingCorrection
 
 Sub InitSlingCorrection
 	LS.Object = LeftSlingshot
@@ -4959,14 +4982,15 @@ Dim ST11, ST12, ST13
 'these are inclined primitives to simulate hitting a bent target and should provide so z velocity on high speed impacts
 
 
-Set ST11 = (new StandupTarget)(sw11, psw11,11, 0)
-Set ST12 = (new StandupTarget)(sw12, psw12,12, 0)
-Set ST13 = (new StandupTarget)(sw13, psw13,13, 0)
+' Set ST11 = (new StandupTarget)(sw11, psw11,11, 0)
+' Set ST12 = (new StandupTarget)(sw12, psw12,12, 0)
+' Set ST13 = (new StandupTarget)(sw13, psw13,13, 0)
 
 'Add all the Stand-up Target Arrays to Stand-up Target Animation Array
 '   STAnimationArray = Array(ST1, ST2, ....)
 Dim STArray
-STArray = Array(ST11, ST12, ST13)
+' STArray = Array(ST11, ST12, ST13)
+STArray = Array()
 
 'Configure the behavior of Stand-up Targets
 Const STAnimStep = 1.5  'vpunits per animation step (control return to Start)
@@ -5232,7 +5256,7 @@ Sub FrameTimer_Timer() 'The frame timer interval should be -1, so executes at th
 	InitFrameTime = GameTime	'Count frametime
 	'Add animation stuff here
 	RollingUpdate   		'update rolling sounds
-	DoDTAnim				'handle drop target animations
+'	DoDTAnim				'handle drop target animations
 	DoSTAnim				'handle stand up target animations
 	queue.Tick	      		'handle the queue system
 	BSUpdate
@@ -5369,7 +5393,7 @@ Sub Table1_OptionEvent(ByVal eventId)
 	RotoDofMode = Table1.Option("Roto DOF Mode", 1, 4, 1, 0, 0, Array("Both", "Gear Motor Only", "Shaker Motor Only", "None"))
 	
 	' Difficulty
-	TiltWarnings = Table1.Options("Tilt Warnings", 0, 5, 1, 2, 0)
+	TiltWarnings = Table1.Option("Tilt Warnings", 0, 5, 1, 2, 0)
 	
 	' Color Saturation
     ColorLUT = Table1.Option("Color Saturation", 1, 11, 1, 1, 0, _
@@ -6083,33 +6107,34 @@ End Sub
 ' 	ZVRR: VR Room / VR Cabinet
 '*******************************************
 
-Dim VRThings
-If VRRoom <> 0 Then
-	'	DMDPlayfield.dmd=False
-	DMDPlayfield.visible = False
-	'	DMDbackbox.DMD=True
-	DMDbackbox.visible = True  ' flasher dmd
-	If VRRoom = 1 Then
-		For Each VRThings In VR_Cab
-			VRThings.visible = 1
-		Next
-	End If
-	If VRRoom = 2 Then
-		For Each VRThings In VR_Cab
-			VRThings.visible = 0
-		Next
-		PinCab_Backglass.visible = 1
-	End If
-Else
-	If FlexONPlayfield Then
-		'   DMDPlayfield.dmd=True
-		DMDPlayfield.visible = True
-	End If
-	For Each VRThings In VR_Cab
-		VRThings.visible = 0
-	Next
-End If
+' Disabled as non-functional without unknown "VR_Cab" object
 
+' Dim VRThings
+' If VRRoom <> 0 Then
+	' '	DMDPlayfield.dmd=False
+	' DMDPlayfield.visible = False
+	' '	DMDbackbox.DMD=True
+	' DMDbackbox.visible = True  ' flasher dmd
+	' If VRRoom = 1 Then
+		' For Each VRThings In VR_Cab
+			' VRThings.visible = 1
+		' Next
+	' End If
+	' If VRRoom = 2 Then
+		' For Each VRThings In VR_Cab
+			' VRThings.visible = 0
+		' Next
+		' PinCab_Backglass.visible = 1
+	' End If
+' Else
+	' If FlexONPlayfield Then
+		' '   DMDPlayfield.dmd=True
+		' DMDPlayfield.visible = True
+	' End If
+	' For Each VRThings In VR_Cab
+		' VRThings.visible = 0
+	' Next
+' End If
 
 '******************************************************
 '	ZGCF:  GLF Configurations

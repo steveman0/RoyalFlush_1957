@@ -11,7 +11,7 @@ Set LS = New SlingshotCorrection
 Dim RS
 Set RS = New SlingshotCorrection
 
-InitSlingCorrection
+' InitSlingCorrection
 
 Sub InitSlingCorrection
 	LS.Object = LeftSlingshot

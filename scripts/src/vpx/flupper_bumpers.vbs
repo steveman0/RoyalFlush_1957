@@ -56,11 +56,11 @@ For cnt = 1 To 6
 Next
 
 ' colors available are red, white, blue, orange, yellow, green, purple and blacklight
-FlInitBumper 1, "red"
-FlInitBumper 2, "white"
-FlInitBumper 3, "blue"
-FlInitBumper 4, "orange"
-FlInitBumper 5, "yellow"
+' FlInitBumper 1, "red"
+' FlInitBumper 2, "white"
+' FlInitBumper 3, "blue"
+' FlInitBumper 4, "orange"
+' FlInitBumper 5, "yellow"
 
 ' ### uncomment the statement below to change the color for all bumpers ###
 '   Dim ind

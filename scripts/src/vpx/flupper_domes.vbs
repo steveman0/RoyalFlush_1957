@@ -124,10 +124,10 @@ Dim ObjLevel(20), objbase(20), objlit(20), objflasher(20), objbloom(20), objligh
 'Dim tablewidth, tableheight : tablewidth = TableRef.width : tableheight = TableRef.height
 
 'initialise the flasher color, you can only choose from "green", "red", "purple", "blue", "white" and "yellow"
-InitFlasher 1, "green"
-InitFlasher 2, "red"
-InitFlasher 3, "blue"
-InitFlasher 4, "white"
+' InitFlasher 1, "green"
+' InitFlasher 2, "red"
+' InitFlasher 3, "blue"
+' InitFlasher 4, "white"
 
 ' rotate the flasher with the command below (first argument = flasher nr, second argument = angle in degrees)
 '   RotateFlasher 1,17

@@ -45,6 +45,25 @@
 	' UpdateTrough
 ' End Sub
 
+Sub TroughTeleport_Hit
+	Dim b : Set b = GetBallNear(TroughTeleport)
+	If Not b Is Nothing Then 
+		TroughTeleport.kick 90, 10
+		b.X = LaneKicker.X
+		b.Y = LaneKicker.Y
+		KickBall b, -90, 2, 0, 0
+	End If
+End Sub
+
+Function GetBallNear(obj)
+	Dim b
+	For b = 0 To UBound(gBOT)
+		If abs(obj.X - gBOT(b).X) < 25 And abs(obj.Y - gBOT(b).Y) < 25 Then
+			Set GetBallNear = gBOT(b)
+		End If
+	Next
+End Function
+
 ' Sub UpdateTrough
 	' UpdateTroughTimer.Interval = 300
 	' UpdateTroughTimer.Enabled = 1

@@ -15,7 +15,7 @@ Sub FrameTimer_Timer() 'The frame timer interval should be -1, so executes at th
 	InitFrameTime = GameTime	'Count frametime
 	'Add animation stuff here
 	RollingUpdate   		'update rolling sounds
-	DoDTAnim				'handle drop target animations
+'	DoDTAnim				'handle drop target animations
 	DoSTAnim				'handle stand up target animations
 	queue.Tick	      		'handle the queue system
 	BSUpdate

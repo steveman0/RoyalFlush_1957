@@ -1,0 +1,12 @@
+{
+  "Timer": {
+    "center": {
+      "x": -37.52954,
+      "y": 1743.706
+    },
+    "is_timer_enabled": true,
+    "timer_interval": 10,
+    "name": "CorTimer",
+    "backglass": false
+  }
+}
