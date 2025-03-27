@@ -16,7 +16,7 @@
     "hit_accuracy": 0.5,
     "hit_height": 40.0,
     "orientation": 0.0,
-    "fall_through": true,
+    "fall_through": false,
     "legacy_mode": true
   }
 }

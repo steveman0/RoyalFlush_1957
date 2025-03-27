@@ -13,6 +13,8 @@ End Sub
 Sub Table1_Init
 	ConfigureGlfDevices()
     Glf_Init()
+	glf_ballsPerGame = 5
+	
 End Sub
 
 

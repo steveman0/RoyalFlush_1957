@@ -363,14 +363,14 @@ End Sub
 Sub LeftFlipper_Animate
 	dim a: a = LeftFlipper.CurrentAngle
 	FlipperLSh.RotZ = a
-'	LFLogo.RotZ = a
+	' LFLogo.RotZ = a
 	'Add any left flipper related animations here
 End Sub
 
 Sub RightFlipper_Animate
 	dim a: a = RightFlipper.CurrentAngle
 	FlipperRSh.RotZ = a
-'	RFlogo.RotZ = a
+	' RFlogo.RotZ = a
 	'Add any right flipper related animations here
 End Sub
 
@@ -4966,7 +4966,7 @@ Class StandupTarget
 End Class
 
 'Define a variable for each stand-up target
-Dim ST11, ST12, ST13
+' Dim ST11, ST12, ST13
 
 'Set array with stand-up target objects
 '
@@ -6135,6 +6135,7 @@ End Sub
 		' VRThings.visible = 0
 	' Next
 ' End If
+
 
 '******************************************************
 '	ZGCF:  GLF Configurations

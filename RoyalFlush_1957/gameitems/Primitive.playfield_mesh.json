@@ -52,7 +52,7 @@
     "object_space_normal_map": false,
     "min_aa_bound": null,
     "max_aa_bound": null,
-    "mesh_file_name": "Playfield Mesh v0.6.obj",
+    "mesh_file_name": "Playfield Mesh v0.8.obj",
     "depth_bias": 0.0,
     "add_blend": false,
     "use_depth_mask": true,
