@@ -29,7 +29,7 @@ jobs:
       - name: Calculate Build Number
         id: version
         run: |
-          git fetch --unshallow || true  # Ensures full commit history is available
+          git fetch --depth=10000 || true  # Ensures full commit history is available
           $first_commit = git rev-list --max-parents=0 HEAD
           $build_number = git rev-list $first_commit..HEAD --count
           echo "build_number=$build_number" >> $env:GITHUB_OUTPUT
@@ -72,7 +72,7 @@ jobs:
       - name: Assemble VPX File
         run: |
           .\vpxtool\vpxtool.exe assemble ${{ steps.gamename.outputs.game_name }}
-          Rename-Item -Path .\${{ steps.gamename.outputs.game_name }}.vpx -NewName "${{ steps.gamename.outputs.game_name }}${{ steps.version.outputs.build_number }}.vpx"
+          Rename-Item -Path .\${{ steps.gamename.outputs.game_name }}.vpx -NewName "${{ steps.gamename.outputs.game_name }}_${{ steps.version.outputs.build_number }}.vpx"
         shell: pwsh
 
       - name: Upload VPX Artifact

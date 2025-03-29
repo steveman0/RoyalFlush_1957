@@ -9,6 +9,7 @@
 '	ZCON: Constants and Global Variables
 '	ZDMD: FlexDMD
 '	ZTIM: Timers
+'   ZGAM: Core gameplay logic and scoring
 '	ZINI: Table Initialization and Exiting
 ' 	ZMAT: General Math Functions
 '	ZANI: MISC ANIMATIONS

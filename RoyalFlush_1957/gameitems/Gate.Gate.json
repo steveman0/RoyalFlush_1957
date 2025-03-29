@@ -1,12 +1,12 @@
 {
   "Gate": {
     "center": {
-      "x": 835.9616,
-      "y": 273.23163
+      "x": 837.7804,
+      "y": 277.38885
     },
-    "length": 88.0,
+    "length": 90.0,
     "height": 50.0,
-    "rotation": -30.0,
+    "rotation": -25.0,
     "material": "",
     "is_timer_enabled": false,
     "show_bracket": true,
@@ -16,7 +16,7 @@
     "imgb": null,
     "surface": "",
     "elasticity": 0.3,
-    "angle_max": 0.5235988,
+    "angle_max": 0.43633232,
     "angle_min": 0.0,
     "friction": 0.02,
     "damping": 0.985,
