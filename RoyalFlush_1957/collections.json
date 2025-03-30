@@ -64,7 +64,25 @@
   },
   {
     "name": "glf_lights",
-    "items": [],
+    "items": [
+      "GIlight002",
+      "GIlight021",
+      "GIlight020",
+      "GIlight019",
+      "GIlight018",
+      "GIlight017",
+      "GIlight016",
+      "GIlight015",
+      "GIlight014",
+      "GIlight013",
+      "GIlight012",
+      "GIlight011",
+      "GIlight008",
+      "GIlight007",
+      "GIlight006",
+      "GIlight005",
+      "GIlight001"
+    ],
     "fire_events": false,
     "stop_single_events": false,
     "group_elements": true

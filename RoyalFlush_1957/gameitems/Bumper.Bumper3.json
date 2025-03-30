@@ -1,0 +1,31 @@
+{
+  "Bumper": {
+    "center": {
+      "x": 614.6988,
+      "y": 762.09875
+    },
+    "radius": 45.0,
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "threshold": 1.0,
+    "force": 15.0,
+    "scatter": 0.0,
+    "height_scale": 90.0,
+    "ring_speed": 0.5,
+    "orientation": 0.0,
+    "ring_drop_offset": 0.0,
+    "cap_material": "",
+    "base_material": "",
+    "socket_material": "",
+    "ring_material": "",
+    "surface": "",
+    "name": "Bumper3",
+    "is_cap_visible": false,
+    "is_base_visible": false,
+    "is_ring_visible": false,
+    "is_socket_visible": false,
+    "hit_event": true,
+    "is_collidable": true,
+    "is_reflection_enabled": false
+  }
+}

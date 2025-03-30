@@ -7,7 +7,7 @@ Dim RStep, LStep
 
 Sub RightSlingShot_Slingshot
 	RS.VelocityCorrect(ActiveBall)
-	Addscore 10
+	Addscore 10000
 	RSling1.Visible = 1
 	Sling1.TransY =  - 20   'Sling Metal Bracket
 	RStep = 0
@@ -33,7 +33,7 @@ End Sub
 
 Sub LeftSlingShot_Slingshot
 	LS.VelocityCorrect(ActiveBall)
-	Addscore 10
+	Addscore 10000
 	LSling1.Visible = 1
 	Sling2.TransY =  - 20   'Sling Metal Bracket
 	LStep = 0
