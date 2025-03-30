@@ -67,5 +67,6 @@ Sub ConfigureGlfDevices
 
     CreateBaseMode()
 	CreateGIMode()
+	CreateScoreMode()
 
 End Sub
