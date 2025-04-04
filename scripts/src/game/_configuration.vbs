@@ -29,22 +29,6 @@ Sub ConfigureGlfDevices
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started", "enable_flippers")
     End With
-
-	Sub LeftFlipperAction(Enabled)
-		If Enabled Then
-			LeftFlipper.RotateToEnd
-		Else
-			LeftFlipper.RotateToStart
-		End If
-	End Sub
-
-	Sub RightFlipperAction(Enabled)
-		If Enabled Then
-			RightFlipper.RotateToEnd
-		Else
-			RightFlipper.RotateToStart
-		End If
-	End Sub
 	
 	' Slingshots
     With CreateGlfAutoFireDevice("left_sling")
@@ -69,4 +53,20 @@ Sub ConfigureGlfDevices
 	CreateGIMode()
 	CreateScoreMode()
 
+End Sub
+
+Sub LeftFlipperAction(Enabled)
+	If Enabled Then
+		LeftFlipper.RotateToEnd
+	Else
+		LeftFlipper.RotateToStart
+	End If
+End Sub
+
+Sub RightFlipperAction(Enabled)
+	If Enabled Then
+		RightFlipper.RotateToEnd
+	Else
+		RightFlipper.RotateToStart
+	End If
 End Sub

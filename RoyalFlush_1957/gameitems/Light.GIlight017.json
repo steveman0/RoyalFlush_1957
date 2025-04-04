@@ -22,8 +22,8 @@
     "name": "GIlight017",
     "is_backglass": false,
     "depth_bias": 0.0,
-    "fade_speed_up": 0.2,
-    "fade_speed_down": 0.4,
+    "fade_speed_up": 0.016666668,
+    "fade_speed_down": 0.016666668,
     "is_bulb_light": true,
     "is_image_mode": false,
     "show_bulb_mesh": false,
@@ -33,7 +33,7 @@
     "bulb_modulate_vs_add": 1.0,
     "bulb_halo_height": 1.0,
     "shadows": "raytraced_ball_shadows",
-    "fader": "linear",
+    "fader": "incandescent",
     "visible": true,
     "drag_points": [
       {

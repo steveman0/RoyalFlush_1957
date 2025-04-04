@@ -22,6 +22,8 @@ Sub RollingUpdate()
 	'   Dim BOT
 	'   BOT = GetBalls
 	
+	If Not IsArray(gBOT) Then Exit Sub
+	
 	' stop the sound of deleted balls
 	For b = UBound(gBOT) + 1 To tnob - 1
 		rolling(b) = False

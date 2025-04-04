@@ -9,6 +9,7 @@
 '	ZCON: Constants and Global Variables
 '	ZDMD: FlexDMD
 '	ZTIM: Timers
+'   ZGAM: Core gameplay logic and scoring
 '	ZINI: Table Initialization and Exiting
 ' 	ZMAT: General Math Functions
 '	ZANI: MISC ANIMATIONS
@@ -246,6 +247,17 @@ Sub Table1_Exit
 	Glf_Exit()
 End Sub
 
+'*******************************************
+'	ZGAM: Core gameplay logic and scoring
+'*******************************************
+
+Sub TriggerLaneL_Hit
+	AddScore 100000
+End Sub
+
+Sub TriggerLaneL_Hit
+	AddScore 100000
+End Sub
 ' '******************************************************
 ' ' 	Z3DI:   3D INSERTS
 ' '******************************************************
@@ -499,61 +511,39 @@ End Sub
 '*******************************************
 
 Sub Bumper1_Hit
-	Addscore 250
-	ToggleGI 0
-	RandomSoundBumperTop Bumper1
-	FlBumperFadeTarget(1) = 1   'Flupper bumper demo
-	Bumper1.timerenabled = True
+'	Addscore 250
+	RandomSoundBumperMiddle Bumper1
+'	FlBumperFadeTarget(1) = 1   'Flupper bumper demo
+'	Bumper1.timerenabled = True
 End Sub
 
-Sub Bumper1_Timer
-	FlBumperFadeTarget(1) = 0
-End Sub
+' Sub Bumper1_Timer
+	' FlBumperFadeTarget(1) = 0
+' End Sub
 
 Sub Bumper2_Hit
-	Addscore 250
 	RandomSoundBumperMiddle Bumper2
-	FlBumperFadeTarget(2) = 1   'Flupper bumper demo
-	Bumper2.timerenabled = True
-End Sub
-
-Sub Bumper2_Timer
-	FlBumperFadeTarget(2) = 0
 End Sub
 
 Sub Bumper3_Hit
-	Addscore 250
-	RandomSoundBumperBottom Bumper3
-	FlBumperFadeTarget(3) = 1   'Flupper bumper demo
-	Bumper3.timerenabled = True
+	RandomSoundBumperMiddle Bumper3
 End Sub
 
-Sub Bumper3_Timer
-	FlBumperFadeTarget(3) = 0
+Sub BumperTL_Hit
+	RandomSoundBumperTop BumperTL
 End Sub
 
-Sub Bumper4_Hit
-	Addscore 250
-	RandomSoundBumperTop Bumper4
-	FlBumperFadeTarget(4) = 1   'Flupper bumper demo
-	Bumper4.timerenabled = True
+Sub BumperTR_Hit
+	RandomSoundBumperTop BumperTR
 End Sub
 
-Sub Bumper4_Timer
-	FlBumperFadeTarget(4) = 0
+Sub BumperBL_Hit
+	RandomSoundBumperBottom BumperBL
 End Sub
 
-Sub Bumper5_Hit
-	Addscore 250
-	RandomSoundBumperMiddle Bumper5
-	FlBumperFadeTarget(5) = 1   'Flupper bumper demo
-	Bumper5.timerenabled = True
+Sub BumperBR_Hit
+	RandomSoundBumperBottom BumperBR
 End Sub
-
-Sub Bumper5_Timer
-	FlBumperFadeTarget(5) = 0
-End Sub
-
 '******************************************************
 ' 	ZTST:  Debug Shot Tester
 '******************************************************
@@ -4694,8 +4684,10 @@ End Class
 
 Sub Addscore (value)
 	PlayerScore(CurrentPlayer) = PlayerScore(CurrentPlayer) + value
-	If value > 199 Then DMDBGFlash = 15
-	If value > 4999 Then DMDFire = Flexframe + 50
+	If value > 99999 Then DMDBGFlash = 15
+	If value > 499999 Then DMDFire = Flexframe + 50
+	
+	' Add chimes based on score amount here
 End Sub
 
 '******************************************************
@@ -4855,7 +4847,7 @@ Dim RStep, LStep
 
 Sub RightSlingShot_Slingshot
 	RS.VelocityCorrect(ActiveBall)
-	Addscore 10
+	Addscore 10000
 	RSling1.Visible = 1
 	Sling1.TransY =  - 20   'Sling Metal Bracket
 	RStep = 0
@@ -4881,7 +4873,7 @@ End Sub
 
 Sub LeftSlingShot_Slingshot
 	LS.VelocityCorrect(ActiveBall)
-	Addscore 10
+	Addscore 10000
 	LSling1.Visible = 1
 	Sling2.TransY =  - 20   'Sling Metal Bracket
 	LStep = 0
@@ -6154,9 +6146,59 @@ Sub ConfigureGlfDevices
         .DefaultDevice = True
         .EjectCallback = "PlungerEjectCallback"
     End With
+	
+	' Flippers
+    With CreateGlfFlipper("left")
+        .Switch = "s_left_flipper"
+        .ActionCallback = "LeftFlipperAction"
+        .DisableEvents = Array("kill_flippers")
+        .EnableEvents = Array("ball_started", "enable_flippers")
+    End With
 
+    With CreateGlfFlipper("right")
+        .Switch = "s_right_flipper"
+        .ActionCallback = "RightFlipperAction"
+        .DisableEvents = Array("kill_flippers")
+        .EnableEvents = Array("ball_started", "enable_flippers")
+    End With
+
+	Sub LeftFlipperAction(Enabled)
+		If Enabled Then
+			LeftFlipper.RotateToEnd
+		Else
+			LeftFlipper.RotateToStart
+		End If
+	End Sub
+
+	Sub RightFlipperAction(Enabled)
+		If Enabled Then
+			RightFlipper.RotateToEnd
+		Else
+			RightFlipper.RotateToStart
+		End If
+	End Sub
+	
+	' Slingshots
+    With CreateGlfAutoFireDevice("left_sling")
+        .Switch = "LeftSlingShot"
+        .ActionCallback = "LeftSlingshotAction"
+        .DisabledCallback = "LeftSlingshotDisabled"
+        .EnabledCallback = "LeftSlingshotEnabled"
+        .DisableEvents = Array("kill_flippers")
+        .EnableEvents = Array("ball_started","enable_flippers")
+    End With
+
+    With CreateGlfAutoFireDevice("right_sling")
+        .Switch = "RightSlingShot"
+        .ActionCallback = "RightSlingshotAction"
+        .DisabledCallback = "RightSlingshotDisabled"
+        .EnabledCallback = "RightSlingshotEnabled"
+        .DisableEvents = Array("kill_flippers")
+        .EnableEvents = Array("ball_started","enable_flippers")
+    End With
 
     CreateBaseMode()
+	CreateGIMode()
 
 End Sub
 
@@ -6166,9 +6208,23 @@ Sub CreateBaseMode()
 
     With CreateGlfMode("base", 100)
         .StartEvents = Array("ball_started")
-        .StopEvents = Array("ball_ended")
+        .StopEvents = Array("ball_ended")   
+    End With
 
-        
+End Sub
+
+Public Sub CreateGIMode()
+
+    With CreateGlfMode("gi_control", 1000)
+        .StartEvents = Array("game_started")
+        .StopEvents = Array("game_ended") 
+        With .LightPlayer()
+            With .Events("mode_gi_control_started")
+                With .Lights("GI")
+                    .Color = "ffffff"
+                End With
+            End With
+        End With
     End With
 
 End Sub
