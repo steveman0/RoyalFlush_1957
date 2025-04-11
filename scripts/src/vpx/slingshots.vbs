@@ -5,16 +5,22 @@
 ' RStep and LStep are the variables that increment the animation
 Dim RStep, LStep
 
-Sub RightSlingShot_Slingshot
-	RS.VelocityCorrect(ActiveBall)
-	Addscore 10000
-	RSling1.Visible = 1
-	Sling1.TransY =  - 20   'Sling Metal Bracket
-	RStep = 0
-	RightSlingShot.TimerEnabled = 1
-	RightSlingShot.TimerInterval = 10
-	'   vpmTimer.PulseSw 52	'Slingshot Rom Switch
-	RandomSoundSlingshotRight Sling1
+Sub RightSlingShot_Slingshot(args)
+	Dim enabled, ball : enabled = args(0)
+	If enabled then
+		If Not IsNull(args(1)) Then
+			RS.VelocityCorrect(args(1))
+		End If
+		Addscore 10000
+		RSling1.Visible = 1
+		Sling1.TransY =  - 20   'Sling Metal Bracket
+		RStep = 0
+		RightSlingShot_Timer
+		RightSlingShot.TimerEnabled = 1
+		RightSlingShot.TimerInterval = 17
+		RandomSoundSlingshotRight Sling1
+		'DOF 104, DOFPulse
+	End If
 End Sub
 
 Sub RightSlingShot_Timer
@@ -31,16 +37,22 @@ Sub RightSlingShot_Timer
 	RStep = RStep + 1
 End Sub
 
-Sub LeftSlingShot_Slingshot
-	LS.VelocityCorrect(ActiveBall)
-	Addscore 10000
-	LSling1.Visible = 1
-	Sling2.TransY =  - 20   'Sling Metal Bracket
-	LStep = 0
-	LeftSlingShot.TimerEnabled = 1
-	LeftSlingShot.TimerInterval = 10
-	'   vpmTimer.PulseSw 51	'Slingshot Rom Switch
-	RandomSoundSlingshotLeft Sling2
+Sub LeftSlingShot_Slingshot(args)
+	Dim enabled, ball : enabled = args(0)
+	If enabled then
+		If Not IsNull(args(1)) Then
+			LS.VelocityCorrect(args(1))
+		End If
+		Addscore 10000
+		LSling1.Visible = 1
+		Sling2.TransY =  - 20   'Sling Metal Bracket		
+		LStep = 0
+		LeftSlingShot_Timer
+		LeftSlingShot.TimerEnabled = 1
+		LeftSlingShot.TimerInterval = 17
+		RandomSoundSlingshotLeft Sling2
+		'DOF 103, DOFPulse
+	End If
 End Sub
 
 Sub LeftSlingShot_Timer

@@ -463,6 +463,8 @@ Sub RollingUpdate()
 	'   Dim BOT
 	'   BOT = GetBalls
 	
+	If Not IsArray(gBOT) Then Exit Sub
+	
 	' stop the sound of deleted balls
 	For b = UBound(gBOT) + 1 To tnob - 1
 		rolling(b) = False
@@ -4845,16 +4847,22 @@ End Class
 ' RStep and LStep are the variables that increment the animation
 Dim RStep, LStep
 
-Sub RightSlingShot_Slingshot
-	RS.VelocityCorrect(ActiveBall)
-	Addscore 10000
-	RSling1.Visible = 1
-	Sling1.TransY =  - 20   'Sling Metal Bracket
-	RStep = 0
-	RightSlingShot.TimerEnabled = 1
-	RightSlingShot.TimerInterval = 10
-	'   vpmTimer.PulseSw 52	'Slingshot Rom Switch
-	RandomSoundSlingshotRight Sling1
+Sub RightSlingShot_Slingshot(args)
+	Dim enabled, ball : enabled = args(0)
+	If enabled then
+		If Not IsNull(args(1)) Then
+			RS.VelocityCorrect(args(1))
+		End If
+		Addscore 10000
+		RSling1.Visible = 1
+		Sling1.TransY =  - 20   'Sling Metal Bracket
+		RStep = 0
+		RightSlingShot_Timer
+		RightSlingShot.TimerEnabled = 1
+		RightSlingShot.TimerInterval = 17
+		RandomSoundSlingshotRight Sling1
+		'DOF 104, DOFPulse
+	End If
 End Sub
 
 Sub RightSlingShot_Timer
@@ -4871,16 +4879,22 @@ Sub RightSlingShot_Timer
 	RStep = RStep + 1
 End Sub
 
-Sub LeftSlingShot_Slingshot
-	LS.VelocityCorrect(ActiveBall)
-	Addscore 10000
-	LSling1.Visible = 1
-	Sling2.TransY =  - 20   'Sling Metal Bracket
-	LStep = 0
-	LeftSlingShot.TimerEnabled = 1
-	LeftSlingShot.TimerInterval = 10
-	'   vpmTimer.PulseSw 51	'Slingshot Rom Switch
-	RandomSoundSlingshotLeft Sling2
+Sub LeftSlingShot_Slingshot(args)
+	Dim enabled, ball : enabled = args(0)
+	If enabled then
+		If Not IsNull(args(1)) Then
+			LS.VelocityCorrect(args(1))
+		End If
+		Addscore 10000
+		LSling1.Visible = 1
+		Sling2.TransY =  - 20   'Sling Metal Bracket		
+		LStep = 0
+		LeftSlingShot_Timer
+		LeftSlingShot.TimerEnabled = 1
+		LeftSlingShot.TimerInterval = 17
+		RandomSoundSlingshotLeft Sling2
+		'DOF 103, DOFPulse
+	End If
 End Sub
 
 Sub LeftSlingShot_Timer
@@ -6161,22 +6175,6 @@ Sub ConfigureGlfDevices
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started", "enable_flippers")
     End With
-
-	Sub LeftFlipperAction(Enabled)
-		If Enabled Then
-			LeftFlipper.RotateToEnd
-		Else
-			LeftFlipper.RotateToStart
-		End If
-	End Sub
-
-	Sub RightFlipperAction(Enabled)
-		If Enabled Then
-			RightFlipper.RotateToEnd
-		Else
-			RightFlipper.RotateToStart
-		End If
-	End Sub
 	
 	' Slingshots
     With CreateGlfAutoFireDevice("left_sling")
@@ -6199,7 +6197,24 @@ Sub ConfigureGlfDevices
 
     CreateBaseMode()
 	CreateGIMode()
+	CreateScoreMode()
 
+End Sub
+
+Sub LeftFlipperAction(Enabled)
+	If Enabled Then
+		LeftFlipper.RotateToEnd
+	Else
+		LeftFlipper.RotateToStart
+	End If
+End Sub
+
+Sub RightFlipperAction(Enabled)
+	If Enabled Then
+		RightFlipper.RotateToEnd
+	Else
+		RightFlipper.RotateToStart
+	End If
 End Sub
 
 
@@ -6219,13 +6234,136 @@ Public Sub CreateGIMode()
         .StartEvents = Array("game_started")
         .StopEvents = Array("game_ended") 
         With .LightPlayer()
-            With .Events("mode_gi_control_started")
+            With .EventName("mode_gi_control_started")
                 With .Lights("GI")
                     .Color = "ffffff"
                 End With
             End With
         End With
     End With
+
+End Sub
+
+Public Sub CreateScoreMode()
+
+    With CreateGlfMode("score", 2000)
+        .StartEvents = Array("game_started")
+        .StopEvents = Array("game_ended")
+
+        With .VariablePlayer()
+            With .EventName("score_10k") 
+                With .Variable("score")
+                    .Action = "add"
+                    .Int = "10000"
+                End With
+            End With
+            With .EventName("score_100k") 
+                With .Variable("score")
+                    .Action = "add"
+                    .Int = "100000"
+                End With
+            End With
+            With .EventName("score_500k") 
+                With .Variable("score")
+                    .Action = "add"
+                    .Int = "500000"
+                End With
+            End With
+            With .EventName("score_1m") 
+                With .Variable("score")
+                    .Action = "add"
+                    .Int = "1000000"
+                End With
+            End With
+
+		End With
+
+        
+    End With
+
+End Sub
+
+Public Sub CreateLitModes()
+
+	' Left bumper and slignshots lit for 100k
+	With CreateGlfMode("left_lit", 500)
+		.StartEvents = Array("light_left")
+		.StopEvents = Array("light_right")
+
+		With .EventPlayer()
+			.Add "Bumper1_hit", Array("score_100k")
+			.Add "LeftSlingShot_hit", Array("score_100k")
+			.Add "Bumper3_hit", Array("score_10k")
+			.Add "RightSlingShot_hit", Array("score_10k")
+			.Add "RubberSWx_hit", Array("light_right") ' TODO: hook up individual rubber switches 
+		End With
+		
+		With .LightPlayer()
+			With .EventName("light_left")
+				With .Lights("GI_LEFT_BUMP")
+					.Color = "ffffff"
+				End With
+			End With
+			With .EventName("light_left")
+				With .Lights("GI_LEFT_SLING")
+					.Color = "ffffff"
+				End With
+			End With
+			
+			' Turn out lights for other side
+			With .EventName("light_left")
+				With .Lights("GI_RIGHT_BUMP")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("light_left")
+				With .Lights("GI_RIGHT_SLING")
+					.Color = "000000"
+				End With
+			End With
+		End With
+        
+	End With
+	
+	' Right bumper and slignshots lit for 100k
+	With CreateGlfMode("right_lit", 500)
+		.StartEvents = Array("light_right")
+		.StopEvents = Array("light_left")
+
+		With .EventPlayer()
+			.Add "Bumper1_hit", Array("score_10k")
+			.Add "LeftSlingShot_hit", Array("score_10k")
+			.Add "Bumper3_hit", Array("score_100k")
+			.Add "RightSlingShot_hit", Array("score_100k")
+			.Add "RubberSWx_hit", Array("light_left") ' TODO: hook up individual rubber switches 
+		End With
+		
+		With .LightPlayer()
+			With .EventName("light_right")
+				With .Lights("GI_RIGHT_BUMP")
+					.Color = "ffffff"
+				End With
+			End With
+			With .EventName("light_right")
+				With .Lights("GI_RIGHT_SLING")
+					.Color = "ffffff"
+				End With
+			End With
+			
+			' Turn out lights for other side
+			With .EventName("light_right")
+				With .Lights("GI_LEFT_BUMP")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("light_right")
+				With .Lights("GI_LEFT_SLING")
+					.Color = "000000"
+				End With
+			End With
+		End With
+        
+	End With
 
 End Sub
 'VPX Game Logic Framework (https://mpcarr.github.io/vpx-glf/)
@@ -20998,3 +21136,45 @@ Sub UpdateTroughDebounced(args)
 
 	If glf_lastTroughSw.BallCntOver = 0 Then Drain.kick 57, 10
 End Sub
+
+' VLM  Arrays - Start
+' Arrays per baked part
+Dim BP_Parts: BP_Parts=Array(BM_Parts, LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight021_Parts, LM_All_Lights_l1_Parts, LM_All_Lights_l2_Parts, LM_All_Lights_l3_Parts, LM_All_Lights_l4_Parts, LM_All_Lights_l5_Parts, LM_All_Lights_ls1_Parts, LM_All_Lights_ls2_Parts, LM_All_Lights_ls3_Parts, LM_All_Lights_ls4_Parts, LM_All_Lights_ls5_Parts, LM_All_Lights_lstarget_Parts)
+Dim BP_Playfield: BP_Playfield=Array(BM_Playfield, LM_All_Lights_GIlight001_Playfi, LM_All_Lights_GIlight002_Playfi, LM_All_Lights_GIlight005_Playfi, LM_All_Lights_GIlight006_Playfi, LM_All_Lights_GIlight007_Playfi, LM_All_Lights_GIlight008_Playfi, LM_All_Lights_GIlight011_Playfi, LM_All_Lights_GIlight012_Playfi, LM_All_Lights_GIlight013_Playfi, LM_All_Lights_GIlight014_Playfi, LM_All_Lights_GIlight015_Playfi, LM_All_Lights_GIlight016_Playfi, LM_All_Lights_GIlight017_Playfi, LM_All_Lights_GIlight018_Playfi, LM_All_Lights_GIlight019_Playfi, LM_All_Lights_GIlight020_Playfi, LM_All_Lights_GIlight021_Playfi, LM_All_Lights_l1_Playfield, LM_All_Lights_l2_Playfield, LM_All_Lights_l3_Playfield, LM_All_Lights_l4_Playfield, LM_All_Lights_l5_Playfield, LM_All_Lights_ls1_Playfield, LM_All_Lights_ls2_Playfield, LM_All_Lights_ls3_Playfield, LM_All_Lights_ls4_Playfield, LM_All_Lights_ls5_Playfield, LM_All_Lights_lstarget_Playfiel)
+' Arrays per lighting scenario
+Dim BL_All_Lights_GIlight001: BL_All_Lights_GIlight001=Array(LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight001_Playfi)
+Dim BL_All_Lights_GIlight002: BL_All_Lights_GIlight002=Array(LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight002_Playfi)
+Dim BL_All_Lights_GIlight005: BL_All_Lights_GIlight005=Array(LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight005_Playfi)
+Dim BL_All_Lights_GIlight006: BL_All_Lights_GIlight006=Array(LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight006_Playfi)
+Dim BL_All_Lights_GIlight007: BL_All_Lights_GIlight007=Array(LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight007_Playfi)
+Dim BL_All_Lights_GIlight008: BL_All_Lights_GIlight008=Array(LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight008_Playfi)
+Dim BL_All_Lights_GIlight011: BL_All_Lights_GIlight011=Array(LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight011_Playfi)
+Dim BL_All_Lights_GIlight012: BL_All_Lights_GIlight012=Array(LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight012_Playfi)
+Dim BL_All_Lights_GIlight013: BL_All_Lights_GIlight013=Array(LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight013_Playfi)
+Dim BL_All_Lights_GIlight014: BL_All_Lights_GIlight014=Array(LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight014_Playfi)
+Dim BL_All_Lights_GIlight015: BL_All_Lights_GIlight015=Array(LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight015_Playfi)
+Dim BL_All_Lights_GIlight016: BL_All_Lights_GIlight016=Array(LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight016_Playfi)
+Dim BL_All_Lights_GIlight017: BL_All_Lights_GIlight017=Array(LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight017_Playfi)
+Dim BL_All_Lights_GIlight018: BL_All_Lights_GIlight018=Array(LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight018_Playfi)
+Dim BL_All_Lights_GIlight019: BL_All_Lights_GIlight019=Array(LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight019_Playfi)
+Dim BL_All_Lights_GIlight020: BL_All_Lights_GIlight020=Array(LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight020_Playfi)
+Dim BL_All_Lights_GIlight021: BL_All_Lights_GIlight021=Array(LM_All_Lights_GIlight021_Parts, LM_All_Lights_GIlight021_Playfi)
+Dim BL_All_Lights_l1: BL_All_Lights_l1=Array(LM_All_Lights_l1_Parts, LM_All_Lights_l1_Playfield)
+Dim BL_All_Lights_l2: BL_All_Lights_l2=Array(LM_All_Lights_l2_Parts, LM_All_Lights_l2_Playfield)
+Dim BL_All_Lights_l3: BL_All_Lights_l3=Array(LM_All_Lights_l3_Parts, LM_All_Lights_l3_Playfield)
+Dim BL_All_Lights_l4: BL_All_Lights_l4=Array(LM_All_Lights_l4_Parts, LM_All_Lights_l4_Playfield)
+Dim BL_All_Lights_l5: BL_All_Lights_l5=Array(LM_All_Lights_l5_Parts, LM_All_Lights_l5_Playfield)
+Dim BL_All_Lights_ls1: BL_All_Lights_ls1=Array(LM_All_Lights_ls1_Parts, LM_All_Lights_ls1_Playfield)
+Dim BL_All_Lights_ls2: BL_All_Lights_ls2=Array(LM_All_Lights_ls2_Parts, LM_All_Lights_ls2_Playfield)
+Dim BL_All_Lights_ls3: BL_All_Lights_ls3=Array(LM_All_Lights_ls3_Parts, LM_All_Lights_ls3_Playfield)
+Dim BL_All_Lights_ls4: BL_All_Lights_ls4=Array(LM_All_Lights_ls4_Parts, LM_All_Lights_ls4_Playfield)
+Dim BL_All_Lights_ls5: BL_All_Lights_ls5=Array(LM_All_Lights_ls5_Parts, LM_All_Lights_ls5_Playfield)
+Dim BL_All_Lights_lstarget: BL_All_Lights_lstarget=Array(LM_All_Lights_lstarget_Parts, LM_All_Lights_lstarget_Playfiel)
+Dim BL_World: BL_World=Array(BM_Parts, BM_Playfield)
+' Global arrays
+Dim BG_Bakemap: BG_Bakemap=Array(BM_Parts, BM_Playfield)
+Dim BG_Lightmap: BG_Lightmap=Array(LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight001_Playfi, LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight002_Playfi, LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight005_Playfi, LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight006_Playfi, LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight007_Playfi, LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight008_Playfi, LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight011_Playfi, LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight012_Playfi, LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight013_Playfi, LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight014_Playfi, LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight015_Playfi, LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight016_Playfi, LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight017_Playfi, LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight018_Playfi, LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight019_Playfi, _
+	LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight020_Playfi, LM_All_Lights_GIlight021_Parts, LM_All_Lights_GIlight021_Playfi, LM_All_Lights_l1_Parts, LM_All_Lights_l1_Playfield, LM_All_Lights_l2_Parts, LM_All_Lights_l2_Playfield, LM_All_Lights_l3_Parts, LM_All_Lights_l3_Playfield, LM_All_Lights_l4_Parts, LM_All_Lights_l4_Playfield, LM_All_Lights_l5_Parts, LM_All_Lights_l5_Playfield, LM_All_Lights_ls1_Parts, LM_All_Lights_ls1_Playfield, LM_All_Lights_ls2_Parts, LM_All_Lights_ls2_Playfield, LM_All_Lights_ls3_Parts, LM_All_Lights_ls3_Playfield, LM_All_Lights_ls4_Parts, LM_All_Lights_ls4_Playfield, LM_All_Lights_ls5_Parts, LM_All_Lights_ls5_Playfield, LM_All_Lights_lstarget_Parts, LM_All_Lights_lstarget_Playfiel)
+Dim BG_All: BG_All=Array(BM_Parts, BM_Playfield, LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight001_Playfi, LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight002_Playfi, LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight005_Playfi, LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight006_Playfi, LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight007_Playfi, LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight008_Playfi, LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight011_Playfi, LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight012_Playfi, LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight013_Playfi, LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight014_Playfi, LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight015_Playfi, LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight016_Playfi, LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight017_Playfi, LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight018_Playfi, LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight019_Playfi, _
+	LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight020_Playfi, LM_All_Lights_GIlight021_Parts, LM_All_Lights_GIlight021_Playfi, LM_All_Lights_l1_Parts, LM_All_Lights_l1_Playfield, LM_All_Lights_l2_Parts, LM_All_Lights_l2_Playfield, LM_All_Lights_l3_Parts, LM_All_Lights_l3_Playfield, LM_All_Lights_l4_Parts, LM_All_Lights_l4_Playfield, LM_All_Lights_l5_Parts, LM_All_Lights_l5_Playfield, LM_All_Lights_ls1_Parts, LM_All_Lights_ls1_Playfield, LM_All_Lights_ls2_Parts, LM_All_Lights_ls2_Playfield, LM_All_Lights_ls3_Parts, LM_All_Lights_ls3_Playfield, LM_All_Lights_ls4_Parts, LM_All_Lights_ls4_Playfield, LM_All_Lights_ls5_Parts, LM_All_Lights_ls5_Playfield, LM_All_Lights_lstarget_Parts, LM_All_Lights_lstarget_Playfiel)
+' VLM  Arrays - End

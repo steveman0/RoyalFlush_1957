@@ -34,7 +34,7 @@
     "bulb_halo_height": 1.0,
     "shadows": "raytraced_ball_shadows",
     "fader": "incandescent",
-    "visible": true,
+    "visible": false,
     "drag_points": [
       {
         "x": 93.343124,
