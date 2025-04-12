@@ -52,18 +52,18 @@ Sub ConfigureGlfDevices
 	' Bumpers
     With CreateGlfAutoFireDevice("left_bumper")
         .Switch = "Bumper1"
-        .ActionCallback = "Bumper1_Action"
-'        .DisabledCallback = "LeftSlingshotDisabled"
-'        .EnabledCallback = "LeftSlingshotEnabled"
+        .ActionCallback = "Bumper1Action"
+        .DisabledCallback = "Bumper1Disabled"
+        .EnabledCallback = "Bumper1Enabled"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started","enable_flippers")
     End With
 
     With CreateGlfAutoFireDevice("right_bumper")
         .Switch = "Bumper3"
-        .ActionCallback = "Bumper3_Action"
-'        .DisabledCallback = "RightSlingshotDisabled"
-'        .EnabledCallback = "RightSlingshotEnabled"
+        .ActionCallback = "Bumper3Action"
+        .DisabledCallback = "Bumper3Disabled"
+        .EnabledCallback = "Bumper3Enabled"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started","enable_flippers")
     End With
@@ -71,6 +71,7 @@ Sub ConfigureGlfDevices
     CreateBaseMode()
 	CreateGIMode()
 	CreateScoreMode()
+	CreateLitModes()
 
 End Sub
 

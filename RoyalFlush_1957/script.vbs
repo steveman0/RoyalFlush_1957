@@ -252,11 +252,11 @@ End Sub
 '*******************************************
 
 Sub TriggerLaneL_Hit
-	AddScore 100000
+	DispatchPinEvent "score_100k", ActiveBall
 End Sub
 
 Sub TriggerLaneL_Hit
-	AddScore 100000
+	DispatchPinEvent "score_100k", ActiveBall
 End Sub
 ' '******************************************************
 ' ' 	Z3DI:   3D INSERTS
@@ -512,11 +512,13 @@ End Sub
 '	ZBMP: Bumpers
 '*******************************************
 
-Sub Bumper1_Hit
-'	Addscore 250
+Sub Bumper1Action(args)
+    Dim enabled, ball : enabled = args(0)
+    If enabled Then
+        
+        'DOF 105, DOFPulse
+    End If
 	RandomSoundBumperMiddle Bumper1
-'	FlBumperFadeTarget(1) = 1   'Flupper bumper demo
-'	Bumper1.timerenabled = True
 End Sub
 
 ' Sub Bumper1_Timer
@@ -527,7 +529,7 @@ Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
 End Sub
 
-Sub Bumper3_Hit
+Sub Bumper3Action(args)
 	RandomSoundBumperMiddle Bumper3
 End Sub
 
@@ -6194,10 +6196,30 @@ Sub ConfigureGlfDevices
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started","enable_flippers")
     End With
+	
+	' Bumpers
+    With CreateGlfAutoFireDevice("left_bumper")
+        .Switch = "Bumper1"
+        .ActionCallback = "Bumper1Action"
+        .DisabledCallback = "Bumper1Disabled"
+        .EnabledCallback = "Bumper1Enabled"
+        .DisableEvents = Array("kill_flippers")
+        .EnableEvents = Array("ball_started","enable_flippers")
+    End With
+
+    With CreateGlfAutoFireDevice("right_bumper")
+        .Switch = "Bumper3"
+        .ActionCallback = "Bumper3Action"
+        .DisabledCallback = "Bumper3Disabled"
+        .EnabledCallback = "Bumper3Enabled"
+        .DisableEvents = Array("kill_flippers")
+        .EnableEvents = Array("ball_started","enable_flippers")
+    End With
 
     CreateBaseMode()
 	CreateGIMode()
 	CreateScoreMode()
+	'CreateLitModes()
 
 End Sub
 
@@ -6287,15 +6309,20 @@ Public Sub CreateLitModes()
 
 	' Left bumper and slignshots lit for 100k
 	With CreateGlfMode("left_lit", 500)
-		.StartEvents = Array("light_left")
+		.StartEvents = Array("light_left","ball_started")
 		.StopEvents = Array("light_right")
 
 		With .EventPlayer()
-			.Add "Bumper1_hit", Array("score_100k")
-			.Add "LeftSlingShot_hit", Array("score_100k")
-			.Add "Bumper3_hit", Array("score_10k")
-			.Add "RightSlingShot_hit", Array("score_10k")
-			.Add "RubberSWx_hit", Array("light_right") ' TODO: hook up individual rubber switches 
+			.Add "Bumper1_active", Array("score_100k")
+			.Add "LeftSlingShot_active", Array("score_100k")
+			.Add "Bumper3_active", Array("score_10k")
+			.Add "RightSlingShot_active", Array("score_10k")
+			.Add "RubberBand_active", Array("light_right")
+			.Add "RubberBand001_active", Array("light_right")
+			.Add "RubberBand002_active", Array("light_right")
+			.Add "RubberBand003_active", Array("light_right")
+			.Add "RubberBand010_active", Array("light_right")
+			.Add "RubberBand011_active", Array("light_right")
 		End With
 		
 		With .LightPlayer()
@@ -6303,23 +6330,16 @@ Public Sub CreateLitModes()
 				With .Lights("GI_LEFT_BUMP")
 					.Color = "ffffff"
 				End With
-			End With
-			With .EventName("light_left")
-				With .Lights("GI_LEFT_SLING")
-					.Color = "ffffff"
-				End With
-			End With
-			
-			' Turn out lights for other side
-			With .EventName("light_left")
-				With .Lights("GI_RIGHT_BUMP")
-					.Color = "000000"
-				End With
-			End With
-			With .EventName("light_left")
-				With .Lights("GI_RIGHT_SLING")
-					.Color = "000000"
-				End With
+'				With .Lights("GI_LEFT_SLING")
+'					.Color = "ffffff"
+'				End With
+'			' Turn out lights for other side
+'				With .Lights("GI_RIGHT_BUMP")
+'					.Color = "000000"
+'				End With
+'				With .Lights("GI_RIGHT_SLING")
+'					.Color = "000000"
+'				End With
 			End With
 		End With
         
@@ -6331,40 +6351,43 @@ Public Sub CreateLitModes()
 		.StopEvents = Array("light_left")
 
 		With .EventPlayer()
-			.Add "Bumper1_hit", Array("score_10k")
-			.Add "LeftSlingShot_hit", Array("score_10k")
-			.Add "Bumper3_hit", Array("score_100k")
-			.Add "RightSlingShot_hit", Array("score_100k")
-			.Add "RubberSWx_hit", Array("light_left") ' TODO: hook up individual rubber switches 
+			.Add "Bumper1_active", Array("score_10k")
+			.Add "LeftSlingShot_active", Array("score_10k")
+			.Add "Bumper3_active", Array("score_100k")
+			.Add "RightSlingShot_active", Array("score_100k")
+			.Add "RubberBand_active", Array("light_left")
+			.Add "RubberBand001_active", Array("light_left")
+			.Add "RubberBand002_active", Array("light_left")
+			.Add "RubberBand003_active", Array("light_left")
+			.Add "RubberBand010_active", Array("light_left")
+			.Add "RubberBand011_active", Array("light_left")
 		End With
 		
-		With .LightPlayer()
-			With .EventName("light_right")
-				With .Lights("GI_RIGHT_BUMP")
-					.Color = "ffffff"
-				End With
-			End With
-			With .EventName("light_right")
-				With .Lights("GI_RIGHT_SLING")
-					.Color = "ffffff"
-				End With
-			End With
-			
-			' Turn out lights for other side
-			With .EventName("light_right")
-				With .Lights("GI_LEFT_BUMP")
-					.Color = "000000"
-				End With
-			End With
-			With .EventName("light_right")
-				With .Lights("GI_LEFT_SLING")
-					.Color = "000000"
-				End With
-			End With
-		End With
-        
+'		With .LightPlayer()
+'			With .EventName("light_right")
+'				With .Lights("GI_RIGHT_BUMP")
+'					.Color = "ffffff"
+'				End With
+'			End With
+'			With .EventName("light_right")
+'				With .Lights("GI_RIGHT_SLING")
+'					.Color = "ffffff"
+'				End With
+'			End With
+'
+'			' Turn out lights for other side
+'			With .EventName("light_right")
+'				With .Lights("GI_LEFT_BUMP")
+'					.Color = "000000"
+'				End With
+'			End With
+'			With .EventName("light_right")
+'				With .Lights("GI_LEFT_SLING")
+'					.Color = "000000"
+'				End With
+'			End With
+'		End With
 	End With
-
 End Sub
 'VPX Game Logic Framework (https://mpcarr.github.io/vpx-glf/)
 
