@@ -1,6 +1,6 @@
 {
   "Wall": {
-    "hit_event": false,
+    "hit_event": true,
     "is_droppable": false,
     "is_flipbook": false,
     "is_bottom_solid": true,
@@ -17,7 +17,7 @@
     "height_top": 50.0,
     "name": "Lane4WallR",
     "display_texture": false,
-    "slingshot_force": 80.0,
+    "slingshot_force": 0.0,
     "slingshot_threshold": 0.0,
     "elasticity": 0.3,
     "elasticity_falloff": 0.0,

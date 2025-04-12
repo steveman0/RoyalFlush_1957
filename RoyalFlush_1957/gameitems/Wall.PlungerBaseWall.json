@@ -1,6 +1,6 @@
 {
   "Wall": {
-    "hit_event": false,
+    "hit_event": true,
     "is_droppable": false,
     "is_flipbook": false,
     "is_bottom_solid": true,
@@ -15,7 +15,7 @@
     "slingshot_material": "",
     "height_bottom": 0.0,
     "height_top": 50.0,
-    "name": "Wall15",
+    "name": "PlungerBaseWall",
     "display_texture": false,
     "slingshot_force": 80.0,
     "slingshot_threshold": 0.0,

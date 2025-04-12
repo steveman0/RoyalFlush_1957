@@ -1,0 +1,1 @@
+vpxtool extract E:\Games\Pinball\Dev\RoyalFlush_1957\RoyalFlush_1957.vpx

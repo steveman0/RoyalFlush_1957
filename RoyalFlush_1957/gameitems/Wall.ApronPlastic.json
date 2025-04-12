@@ -15,7 +15,7 @@
     "slingshot_material": "",
     "height_bottom": 50.0,
     "height_top": 53.0,
-    "name": "Apron",
+    "name": "ApronPlastic",
     "display_texture": false,
     "slingshot_force": 80.0,
     "slingshot_threshold": 0.0,

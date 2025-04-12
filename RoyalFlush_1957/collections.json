@@ -8,10 +8,101 @@
   },
   {
     "name": "Rubbers",
-    "items": [],
+    "items": [
+      "Rubber001",
+      "Rubber002",
+      "Rubber003",
+      "Rubber004",
+      "Rubber005",
+      "Rubber006",
+      "Rubber007",
+      "Rubber008",
+      "Rubber009",
+      "Rubber010",
+      "Rubber011",
+      "Rubber012",
+      "Rubber013",
+      "Rubber014",
+      "Rubber015",
+      "Rubber016",
+      "Rubber017",
+      "Rubber018",
+      "Rubber019",
+      "Rubber020",
+      "Rubber021",
+      "Rubber022",
+      "Rubber023",
+      "Rubber024",
+      "Rubber025",
+      "Rubber026",
+      "Rubber027",
+      "Rubber028",
+      "Rubber029",
+      "Rubber030",
+      "Rubber031",
+      "Rubber032",
+      "Rubber033",
+      "Rubber034",
+      "Rubber035",
+      "Rubber036",
+      "Rubber037",
+      "Rubber22",
+      "Rubber23",
+      "RubberBand",
+      "RubberBand001",
+      "RubberBand002",
+      "RubberBand003",
+      "RubberBand004",
+      "RubberBand005",
+      "RubberBand006",
+      "RubberBand007",
+      "RubberBand008",
+      "RubberBand009",
+      "RubberBand010",
+      "RubberBand011",
+      "zCol_Rubber_Post001",
+      "zCol_Rubber_Post002",
+      "zCol_Rubber_Post003",
+      "zCol_Rubber_Post004",
+      "zCol_Rubber_Post005",
+      "zCol_Rubber_Post006",
+      "zCol_Rubber_Post007",
+      "zCol_Rubber_Post008",
+      "zCol_Rubber_Post009",
+      "zCol_Rubber_Post010",
+      "zCol_Rubber_Post011",
+      "zCol_Rubber_Post012",
+      "zCol_Rubber_Post013",
+      "zCol_Rubber_Post014",
+      "zCol_Rubber_Post015",
+      "zCol_Rubber_Post016",
+      "zCol_Rubber_Post017",
+      "zCol_Rubber_Post018",
+      "zCol_Rubber_Post019",
+      "zCol_Rubber_Post020",
+      "zCol_Rubber_Post021",
+      "zCol_Rubber_Post022",
+      "zCol_Rubber_Post023",
+      "zCol_Rubber_Post024",
+      "zCol_Rubber_Post025",
+      "zCol_Rubber_Post026",
+      "zCol_Rubber_Post027",
+      "zCol_Rubber_Post028",
+      "zCol_Rubber_Post029",
+      "zCol_Rubber_Post030",
+      "zCol_Rubber_Post031",
+      "zCol_Rubber_Post032",
+      "zCol_Rubber_Post033",
+      "zCol_Rubber_Post034",
+      "zCol_Rubber_Post035",
+      "zCol_Rubber_Post036",
+      "zCol_Rubber_Post037",
+      "zCol_Rubber_Post038",
+      "zCol_Rubber_Post039"
+    ],
     "fire_events": true,
     "stop_single_events": false,
-    "group_elements": true
+    "group_elements": false
   },
   {
     "name": "Posts",
@@ -29,7 +120,9 @@
   },
   {
     "name": "Targets",
-    "items": [],
+    "items": [
+      "RotoTarget"
+    ],
     "fire_events": true,
     "stop_single_events": false,
     "group_elements": true
@@ -49,8 +142,11 @@
     "group_elements": true
   },
   {
-    "name": "Metals2",
-    "items": [],
+    "name": "Metals",
+    "items": [
+      "MetalWallGuideR",
+      "MetalWallGuideL"
+    ],
     "fire_events": true,
     "stop_single_events": false,
     "group_elements": true
@@ -95,10 +191,10 @@
       "BumperTR",
       "Bumper3",
       "Bumper2",
-      "Bumper1",
-      "BumperTL"
+      "BumperTL",
+      "Bumper1"
     ],
-    "fire_events": false,
+    "fire_events": true,
     "stop_single_events": false,
     "group_elements": true
   },
@@ -108,7 +204,7 @@
       "LeftSlingShot",
       "RightSlingShot"
     ],
-    "fire_events": false,
+    "fire_events": true,
     "stop_single_events": false,
     "group_elements": true
   },
@@ -116,6 +212,70 @@
     "name": "glf_spinners",
     "items": [],
     "fire_events": false,
+    "stop_single_events": false,
+    "group_elements": true
+  },
+  {
+    "name": "Apron",
+    "items": [
+      "PlungerBaseWall",
+      "WallOutsideRVisual",
+      "ShooterLaneWall",
+      "WallDrainB",
+      "WallDrainT",
+      "WallDrainL",
+      "WallOutsideR"
+    ],
+    "fire_events": true,
+    "stop_single_events": false,
+    "group_elements": true
+  },
+  {
+    "name": "Walls",
+    "items": [
+      "WallOutsideB",
+      "WallOutsideL",
+      "WallOutsideR",
+      "WallOutsideT",
+      "WallBRCorner",
+      "Wall18",
+      "Wall19",
+      "Wall24",
+      "Wall25",
+      "ShooterLaneWall",
+      "ElevatorWall",
+      "Lane4WallL",
+      "Lane4WallR",
+      "Lane5WallL",
+      "Lane5WallR"
+    ],
+    "fire_events": true,
+    "stop_single_events": false,
+    "group_elements": true
+  },
+  {
+    "name": "Rollovers",
+    "items": [
+      "TriggerLane1",
+      "TriggerLane2",
+      "TriggerLane3",
+      "TriggerLane4",
+      "TriggerLane5",
+      "TriggerLaneL",
+      "TriggerLaneR",
+      "TriggerLF",
+      "TriggerRF"
+    ],
+    "fire_events": true,
+    "stop_single_events": false,
+    "group_elements": true
+  },
+  {
+    "name": "GatesWire",
+    "items": [
+      "Gate"
+    ],
+    "fire_events": true,
     "stop_single_events": false,
     "group_elements": true
   }

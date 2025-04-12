@@ -229,7 +229,7 @@ End Sub
 
 Sub Table1_Init
 	ConfigureGlfDevices()
-    Glf_Init()
+	Glf_Init()
 	glf_ballsPerGame = 5
 	
 End Sub
@@ -402,7 +402,7 @@ Const offsetX = 0			   'Offset x position under ball (These are if you want to c
 Const offsetY = 0			   'Offset y position under ball (^^for example 5,5 if the light is in the back left corner)
 
 ' *** Trim or extend these to match the number of balls/primitives/flashers on the table!  (will throw errors if there aren't enough objects)
-Dim objBallShadow(7)
+Dim objBallShadow(5)
 
 'Initialization
 BSInit
@@ -3428,54 +3428,54 @@ Dim RF : Set RF = New FlipperPolarity
 
 InitPolarity
 
-'
-''*******************************************
-'' Late 70's to early 80's
-'
-'Sub InitPolarity()
-'   dim x, a : a = Array(LF, RF)
-'	for each x in a
-'		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
-'		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
-'		x.enabled = True
-'		x.TimeDelay = 80
-'		x.DebugOn=False ' prints some info in debugger
-'
-'
-'        x.AddPt "Polarity", 0, 0, 0
-'        x.AddPt "Polarity", 1, 0.05, - 2.7
-'        x.AddPt "Polarity", 2, 0.16, - 2.7
-'        x.AddPt "Polarity", 3, 0.22, - 0
-'        x.AddPt "Polarity", 4, 0.25, - 0
-'        x.AddPt "Polarity", 5, 0.3, - 1
-'        x.AddPt "Polarity", 6, 0.4, - 2
-'        x.AddPt "Polarity", 7, 0.5, - 2.7
-'        x.AddPt "Polarity", 8, 0.65, - 1.8
-'        x.AddPt "Polarity", 9, 0.75, - 0.5
-'        x.AddPt "Polarity", 10, 0.81, - 0.5
-'        x.AddPt "Polarity", 11, 0.88, 0
-'        x.AddPt "Polarity", 12, 1.3, 0
-'
-'		x.AddPt "Velocity", 0, 0, 0.85
-'		x.AddPt "Velocity", 1, 0.15, 0.85
-'		x.AddPt "Velocity", 2, 0.2, 0.9
-'		x.AddPt "Velocity", 3, 0.23, 0.95
-'		x.AddPt "Velocity", 4, 0.41, 0.95
-'		x.AddPt "Velocity", 5, 0.53, 0.95 '0.982
-'		x.AddPt "Velocity", 6, 0.62, 1.0
-'		x.AddPt "Velocity", 7, 0.702, 0.968
-'		x.AddPt "Velocity", 8, 0.95,  0.968
-'		x.AddPt "Velocity", 9, 1.03,  0.945
-'		x.AddPt "Velocity", 10, 1.5,  0.945
-'
-'	Next
-'
-'	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
-'    LF.SetObjects "LF", LeftFlipper, TriggerLF
-'    RF.SetObjects "RF", RightFlipper, TriggerRF
-'End Sub
-'
-'
+
+'*******************************************
+' Late 70's to early 80's
+
+Sub InitPolarity()
+   dim x, a : a = Array(LF, RF)
+	for each x in a
+		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
+		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
+		x.enabled = True
+		x.TimeDelay = 80
+		x.DebugOn=False ' prints some info in debugger
+
+
+        x.AddPt "Polarity", 0, 0, 0
+        x.AddPt "Polarity", 1, 0.05, - 2.7
+        x.AddPt "Polarity", 2, 0.16, - 2.7
+        x.AddPt "Polarity", 3, 0.22, - 0
+        x.AddPt "Polarity", 4, 0.25, - 0
+        x.AddPt "Polarity", 5, 0.3, - 1
+        x.AddPt "Polarity", 6, 0.4, - 2
+        x.AddPt "Polarity", 7, 0.5, - 2.7
+        x.AddPt "Polarity", 8, 0.65, - 1.8
+        x.AddPt "Polarity", 9, 0.75, - 0.5
+        x.AddPt "Polarity", 10, 0.81, - 0.5
+        x.AddPt "Polarity", 11, 0.88, 0
+        x.AddPt "Polarity", 12, 1.3, 0
+
+		x.AddPt "Velocity", 0, 0, 0.85
+		x.AddPt "Velocity", 1, 0.15, 0.85
+		x.AddPt "Velocity", 2, 0.2, 0.9
+		x.AddPt "Velocity", 3, 0.23, 0.95
+		x.AddPt "Velocity", 4, 0.41, 0.95
+		x.AddPt "Velocity", 5, 0.53, 0.95 '0.982
+		x.AddPt "Velocity", 6, 0.62, 1.0
+		x.AddPt "Velocity", 7, 0.702, 0.968
+		x.AddPt "Velocity", 8, 0.95,  0.968
+		x.AddPt "Velocity", 9, 1.03,  0.945
+		x.AddPt "Velocity", 10, 1.5,  0.945
+
+	Next
+
+	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
+    LF.SetObjects "LF", LeftFlipper, TriggerLF
+    RF.SetObjects "RF", RightFlipper, TriggerRF
+End Sub
+
+
 '
 ''*******************************************
 '' Mid 80's
@@ -3574,53 +3574,53 @@ InitPolarity
 '*******************************************
 ' Early 90's and after
 
-Sub InitPolarity()
-	Dim x, a
-	a = Array(LF, RF)
-	For Each x In a
-		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
-		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
-		x.enabled = True
-		x.TimeDelay = 60
-		x.DebugOn=False ' prints some info in debugger
-
-		x.AddPt "Polarity", 0, 0, 0
-		x.AddPt "Polarity", 1, 0.05, - 5.5
-		x.AddPt "Polarity", 2, 0.16, - 5.5
-		x.AddPt "Polarity", 3, 0.20, - 0.75
-		x.AddPt "Polarity", 4, 0.25, - 1.25
-		x.AddPt "Polarity", 5, 0.3, - 1.75
-		x.AddPt "Polarity", 6, 0.4, - 3.5
-		x.AddPt "Polarity", 7, 0.5, - 5.25
-		x.AddPt "Polarity", 8, 0.7, - 4.0
-		x.AddPt "Polarity", 9, 0.75, - 3.5
-		x.AddPt "Polarity", 10, 0.8, - 3.0
-		x.AddPt "Polarity", 11, 0.85, - 2.5
-		x.AddPt "Polarity", 12, 0.9, - 2.0
-		x.AddPt "Polarity", 13, 0.95, - 1.5
-		x.AddPt "Polarity", 14, 1, - 1.0
-		x.AddPt "Polarity", 15, 1.05, -0.5
-		x.AddPt "Polarity", 16, 1.1, 0
-		x.AddPt "Polarity", 17, 1.3, 0
-
-		x.AddPt "Velocity", 0, 0, 0.85
-		x.AddPt "Velocity", 1, 0.23, 0.85
-		x.AddPt "Velocity", 2, 0.27, 1
-		x.AddPt "Velocity", 3, 0.3, 1
-		x.AddPt "Velocity", 4, 0.35, 1
-		x.AddPt "Velocity", 5, 0.6, 1 '0.982
-		x.AddPt "Velocity", 6, 0.62, 1.0
-		x.AddPt "Velocity", 7, 0.702, 0.968
-		x.AddPt "Velocity", 8, 0.95,  0.968
-		x.AddPt "Velocity", 9, 1.03,  0.945
-		x.AddPt "Velocity", 10, 1.5,  0.945
-
-	Next
-	
-	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
-	LF.SetObjects "LF", LeftFlipper, TriggerLF
-	RF.SetObjects "RF", RightFlipper, TriggerRF
-End Sub
+'Sub InitPolarity()
+'	Dim x, a
+'	a = Array(LF, RF)
+'	For Each x In a
+'		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
+'		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
+'		x.enabled = True
+'		x.TimeDelay = 60
+'		x.DebugOn=False ' prints some info in debugger
+'
+'		x.AddPt "Polarity", 0, 0, 0
+'		x.AddPt "Polarity", 1, 0.05, - 5.5
+'		x.AddPt "Polarity", 2, 0.16, - 5.5
+'		x.AddPt "Polarity", 3, 0.20, - 0.75
+'		x.AddPt "Polarity", 4, 0.25, - 1.25
+'		x.AddPt "Polarity", 5, 0.3, - 1.75
+'		x.AddPt "Polarity", 6, 0.4, - 3.5
+'		x.AddPt "Polarity", 7, 0.5, - 5.25
+'		x.AddPt "Polarity", 8, 0.7, - 4.0
+'		x.AddPt "Polarity", 9, 0.75, - 3.5
+'		x.AddPt "Polarity", 10, 0.8, - 3.0
+'		x.AddPt "Polarity", 11, 0.85, - 2.5
+'		x.AddPt "Polarity", 12, 0.9, - 2.0
+'		x.AddPt "Polarity", 13, 0.95, - 1.5
+'		x.AddPt "Polarity", 14, 1, - 1.0
+'		x.AddPt "Polarity", 15, 1.05, -0.5
+'		x.AddPt "Polarity", 16, 1.1, 0
+'		x.AddPt "Polarity", 17, 1.3, 0
+'
+'		x.AddPt "Velocity", 0, 0, 0.85
+'		x.AddPt "Velocity", 1, 0.23, 0.85
+'		x.AddPt "Velocity", 2, 0.27, 1
+'		x.AddPt "Velocity", 3, 0.3, 1
+'		x.AddPt "Velocity", 4, 0.35, 1
+'		x.AddPt "Velocity", 5, 0.6, 1 '0.982
+'		x.AddPt "Velocity", 6, 0.62, 1.0
+'		x.AddPt "Velocity", 7, 0.702, 0.968
+'		x.AddPt "Velocity", 8, 0.95,  0.968
+'		x.AddPt "Velocity", 9, 1.03,  0.945
+'		x.AddPt "Velocity", 10, 1.5,  0.945
+'
+'	Next
+'	
+'	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
+'	LF.SetObjects "LF", LeftFlipper, TriggerLF
+'	RF.SetObjects "RF", RightFlipper, TriggerRF
+'End Sub
 
 '******************************************************
 '  FLIPPER CORRECTION FUNCTIONS
@@ -4071,8 +4071,8 @@ EOSA = leftflipper.eostorqueangle
 Frampup = LeftFlipper.rampup
 FElasticity = LeftFlipper.elasticity
 FReturn = LeftFlipper.return
-'Const EOSTnew = 1.5 'EM's to late 80's - new recommendation by rothbauerw (previously 1)
-Const EOSTnew = 1.2 '90's and later - new recommendation by rothbauerw (previously 0.8)
+Const EOSTnew = 1.5 'EM's to late 80's - new recommendation by rothbauerw (previously 1)
+'Const EOSTnew = 1.2 '90's and later - new recommendation by rothbauerw (previously 0.8)
 Const EOSAnew = 1
 Const EOSRampup = 0
 Dim SOSRampup
@@ -4088,9 +4088,9 @@ End Select
 Const LiveCatch = 16
 Const LiveElasticity = 0.45
 Const SOSEM = 0.815
-'   Const EOSReturn = 0.055  'EM's
+Const EOSReturn = 0.055  'EM's
 '   Const EOSReturn = 0.045  'late 70's to mid 80's
-Const EOSReturn = 0.035  'mid 80's to early 90's
+'   Const EOSReturn = 0.035  'mid 80's to early 90's
 '   Const EOSReturn = 0.025  'mid 90's and later
 
 LFEndAngle = Leftflipper.endangle
@@ -5378,10 +5378,10 @@ Const VRRoomChoice = 0			  ' 1 - Minimal Room, 2 - Ultra Minimal Room
 
 Dim LightLevel : LightLevel = 0.25				' Level of room lighting (0 to 1), where 0 is dark and 100 is brightest
 Dim ColorLUT : ColorLUT = 1						' Color desaturation LUTs: 1 to 11, where 1 is normal and 11 is black'n'white
-Dim VolumeDial : VolumeDial = 0.8           	' Overall Mechanical sound effect volume. Recommended values should be no greater than 1.
-Dim BallRollVolume : BallRollVolume = 0.5   	' Level of ball rolling volume. Value between 0 and 1
-Dim RampRollVolume : RampRollVolume = 0.5 		' Level of ramp rolling volume. Value between 0 and 1
-Dim StagedFlippers : StagedFlippers = 0         ' Staged Flippers. 0 = Disabled, 1 = Enabled
+Dim VolumeDial : VolumeDial = 0.8				' Overall Mechanical sound effect volume. Recommended values should be no greater than 1.
+Dim BallRollVolume : BallRollVolume = 0.5		' Level of ball rolling volume. Value between 0 and 1
+Dim RampRollVolume : RampRollVolume = 0.5		' Level of ramp rolling volume. Value between 0 and 1
+Dim StagedFlippers : StagedFlippers = 0			' Staged Flippers. 0 = Disabled, 1 = Enabled
 Dim RotoDofMode : RotoDofMode = 0				' Shaker/Gear motor DOF preference. 1 = Both, 2 = Gear Only, 3 = Shaker Only, 4 = None
 Dim TiltWarnings : TiltWarnings = 2				' Number of tilt warnings before full tilt.
 
@@ -6964,7 +6964,7 @@ Sub Glf_WriteMachineVars()
 End Sub
 
 Sub Glf_Options(ByVal eventId)
-	Dim ballsPerGame : ballsPerGame = Table1.Option("Balls Per Game", 1, 2, 1, 1, 0, Array("3 Balls", "5 Balls"))
+	Dim ballsPerGame : ballsPerGame = Table1.Option("Balls Per Game", 1, 2, 1, 2, 0, Array("3 Balls", "5 Balls"))
 	If ballsPerGame = 1 Then
 		glf_ballsPerGame = 3
 	Else
@@ -21136,45 +21136,3 @@ Sub UpdateTroughDebounced(args)
 
 	If glf_lastTroughSw.BallCntOver = 0 Then Drain.kick 57, 10
 End Sub
-
-' VLM  Arrays - Start
-' Arrays per baked part
-Dim BP_Parts: BP_Parts=Array(BM_Parts, LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight021_Parts, LM_All_Lights_l1_Parts, LM_All_Lights_l2_Parts, LM_All_Lights_l3_Parts, LM_All_Lights_l4_Parts, LM_All_Lights_l5_Parts, LM_All_Lights_ls1_Parts, LM_All_Lights_ls2_Parts, LM_All_Lights_ls3_Parts, LM_All_Lights_ls4_Parts, LM_All_Lights_ls5_Parts, LM_All_Lights_lstarget_Parts)
-Dim BP_Playfield: BP_Playfield=Array(BM_Playfield, LM_All_Lights_GIlight001_Playfi, LM_All_Lights_GIlight002_Playfi, LM_All_Lights_GIlight005_Playfi, LM_All_Lights_GIlight006_Playfi, LM_All_Lights_GIlight007_Playfi, LM_All_Lights_GIlight008_Playfi, LM_All_Lights_GIlight011_Playfi, LM_All_Lights_GIlight012_Playfi, LM_All_Lights_GIlight013_Playfi, LM_All_Lights_GIlight014_Playfi, LM_All_Lights_GIlight015_Playfi, LM_All_Lights_GIlight016_Playfi, LM_All_Lights_GIlight017_Playfi, LM_All_Lights_GIlight018_Playfi, LM_All_Lights_GIlight019_Playfi, LM_All_Lights_GIlight020_Playfi, LM_All_Lights_GIlight021_Playfi, LM_All_Lights_l1_Playfield, LM_All_Lights_l2_Playfield, LM_All_Lights_l3_Playfield, LM_All_Lights_l4_Playfield, LM_All_Lights_l5_Playfield, LM_All_Lights_ls1_Playfield, LM_All_Lights_ls2_Playfield, LM_All_Lights_ls3_Playfield, LM_All_Lights_ls4_Playfield, LM_All_Lights_ls5_Playfield, LM_All_Lights_lstarget_Playfiel)
-' Arrays per lighting scenario
-Dim BL_All_Lights_GIlight001: BL_All_Lights_GIlight001=Array(LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight001_Playfi)
-Dim BL_All_Lights_GIlight002: BL_All_Lights_GIlight002=Array(LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight002_Playfi)
-Dim BL_All_Lights_GIlight005: BL_All_Lights_GIlight005=Array(LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight005_Playfi)
-Dim BL_All_Lights_GIlight006: BL_All_Lights_GIlight006=Array(LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight006_Playfi)
-Dim BL_All_Lights_GIlight007: BL_All_Lights_GIlight007=Array(LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight007_Playfi)
-Dim BL_All_Lights_GIlight008: BL_All_Lights_GIlight008=Array(LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight008_Playfi)
-Dim BL_All_Lights_GIlight011: BL_All_Lights_GIlight011=Array(LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight011_Playfi)
-Dim BL_All_Lights_GIlight012: BL_All_Lights_GIlight012=Array(LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight012_Playfi)
-Dim BL_All_Lights_GIlight013: BL_All_Lights_GIlight013=Array(LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight013_Playfi)
-Dim BL_All_Lights_GIlight014: BL_All_Lights_GIlight014=Array(LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight014_Playfi)
-Dim BL_All_Lights_GIlight015: BL_All_Lights_GIlight015=Array(LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight015_Playfi)
-Dim BL_All_Lights_GIlight016: BL_All_Lights_GIlight016=Array(LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight016_Playfi)
-Dim BL_All_Lights_GIlight017: BL_All_Lights_GIlight017=Array(LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight017_Playfi)
-Dim BL_All_Lights_GIlight018: BL_All_Lights_GIlight018=Array(LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight018_Playfi)
-Dim BL_All_Lights_GIlight019: BL_All_Lights_GIlight019=Array(LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight019_Playfi)
-Dim BL_All_Lights_GIlight020: BL_All_Lights_GIlight020=Array(LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight020_Playfi)
-Dim BL_All_Lights_GIlight021: BL_All_Lights_GIlight021=Array(LM_All_Lights_GIlight021_Parts, LM_All_Lights_GIlight021_Playfi)
-Dim BL_All_Lights_l1: BL_All_Lights_l1=Array(LM_All_Lights_l1_Parts, LM_All_Lights_l1_Playfield)
-Dim BL_All_Lights_l2: BL_All_Lights_l2=Array(LM_All_Lights_l2_Parts, LM_All_Lights_l2_Playfield)
-Dim BL_All_Lights_l3: BL_All_Lights_l3=Array(LM_All_Lights_l3_Parts, LM_All_Lights_l3_Playfield)
-Dim BL_All_Lights_l4: BL_All_Lights_l4=Array(LM_All_Lights_l4_Parts, LM_All_Lights_l4_Playfield)
-Dim BL_All_Lights_l5: BL_All_Lights_l5=Array(LM_All_Lights_l5_Parts, LM_All_Lights_l5_Playfield)
-Dim BL_All_Lights_ls1: BL_All_Lights_ls1=Array(LM_All_Lights_ls1_Parts, LM_All_Lights_ls1_Playfield)
-Dim BL_All_Lights_ls2: BL_All_Lights_ls2=Array(LM_All_Lights_ls2_Parts, LM_All_Lights_ls2_Playfield)
-Dim BL_All_Lights_ls3: BL_All_Lights_ls3=Array(LM_All_Lights_ls3_Parts, LM_All_Lights_ls3_Playfield)
-Dim BL_All_Lights_ls4: BL_All_Lights_ls4=Array(LM_All_Lights_ls4_Parts, LM_All_Lights_ls4_Playfield)
-Dim BL_All_Lights_ls5: BL_All_Lights_ls5=Array(LM_All_Lights_ls5_Parts, LM_All_Lights_ls5_Playfield)
-Dim BL_All_Lights_lstarget: BL_All_Lights_lstarget=Array(LM_All_Lights_lstarget_Parts, LM_All_Lights_lstarget_Playfiel)
-Dim BL_World: BL_World=Array(BM_Parts, BM_Playfield)
-' Global arrays
-Dim BG_Bakemap: BG_Bakemap=Array(BM_Parts, BM_Playfield)
-Dim BG_Lightmap: BG_Lightmap=Array(LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight001_Playfi, LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight002_Playfi, LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight005_Playfi, LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight006_Playfi, LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight007_Playfi, LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight008_Playfi, LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight011_Playfi, LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight012_Playfi, LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight013_Playfi, LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight014_Playfi, LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight015_Playfi, LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight016_Playfi, LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight017_Playfi, LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight018_Playfi, LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight019_Playfi, _
-	LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight020_Playfi, LM_All_Lights_GIlight021_Parts, LM_All_Lights_GIlight021_Playfi, LM_All_Lights_l1_Parts, LM_All_Lights_l1_Playfield, LM_All_Lights_l2_Parts, LM_All_Lights_l2_Playfield, LM_All_Lights_l3_Parts, LM_All_Lights_l3_Playfield, LM_All_Lights_l4_Parts, LM_All_Lights_l4_Playfield, LM_All_Lights_l5_Parts, LM_All_Lights_l5_Playfield, LM_All_Lights_ls1_Parts, LM_All_Lights_ls1_Playfield, LM_All_Lights_ls2_Parts, LM_All_Lights_ls2_Playfield, LM_All_Lights_ls3_Parts, LM_All_Lights_ls3_Playfield, LM_All_Lights_ls4_Parts, LM_All_Lights_ls4_Playfield, LM_All_Lights_ls5_Parts, LM_All_Lights_ls5_Playfield, LM_All_Lights_lstarget_Parts, LM_All_Lights_lstarget_Playfiel)
-Dim BG_All: BG_All=Array(BM_Parts, BM_Playfield, LM_All_Lights_GIlight001_Parts, LM_All_Lights_GIlight001_Playfi, LM_All_Lights_GIlight002_Parts, LM_All_Lights_GIlight002_Playfi, LM_All_Lights_GIlight005_Parts, LM_All_Lights_GIlight005_Playfi, LM_All_Lights_GIlight006_Parts, LM_All_Lights_GIlight006_Playfi, LM_All_Lights_GIlight007_Parts, LM_All_Lights_GIlight007_Playfi, LM_All_Lights_GIlight008_Parts, LM_All_Lights_GIlight008_Playfi, LM_All_Lights_GIlight011_Parts, LM_All_Lights_GIlight011_Playfi, LM_All_Lights_GIlight012_Parts, LM_All_Lights_GIlight012_Playfi, LM_All_Lights_GIlight013_Parts, LM_All_Lights_GIlight013_Playfi, LM_All_Lights_GIlight014_Parts, LM_All_Lights_GIlight014_Playfi, LM_All_Lights_GIlight015_Parts, LM_All_Lights_GIlight015_Playfi, LM_All_Lights_GIlight016_Parts, LM_All_Lights_GIlight016_Playfi, LM_All_Lights_GIlight017_Parts, LM_All_Lights_GIlight017_Playfi, LM_All_Lights_GIlight018_Parts, LM_All_Lights_GIlight018_Playfi, LM_All_Lights_GIlight019_Parts, LM_All_Lights_GIlight019_Playfi, _
-	LM_All_Lights_GIlight020_Parts, LM_All_Lights_GIlight020_Playfi, LM_All_Lights_GIlight021_Parts, LM_All_Lights_GIlight021_Playfi, LM_All_Lights_l1_Parts, LM_All_Lights_l1_Playfield, LM_All_Lights_l2_Parts, LM_All_Lights_l2_Playfield, LM_All_Lights_l3_Parts, LM_All_Lights_l3_Playfield, LM_All_Lights_l4_Parts, LM_All_Lights_l4_Playfield, LM_All_Lights_l5_Parts, LM_All_Lights_l5_Playfield, LM_All_Lights_ls1_Parts, LM_All_Lights_ls1_Playfield, LM_All_Lights_ls2_Parts, LM_All_Lights_ls2_Playfield, LM_All_Lights_ls3_Parts, LM_All_Lights_ls3_Playfield, LM_All_Lights_ls4_Parts, LM_All_Lights_ls4_Playfield, LM_All_Lights_ls5_Parts, LM_All_Lights_ls5_Playfield, LM_All_Lights_lstarget_Parts, LM_All_Lights_lstarget_Playfiel)
-' VLM  Arrays - End
