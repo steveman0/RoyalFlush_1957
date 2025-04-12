@@ -3,9 +3,9 @@
 '*******************************************
 
 Sub TriggerLaneL_Hit
-	AddScore 100000
+	DispatchPinEvent "score_100k"
 End Sub
 
 Sub TriggerLaneL_Hit
-	AddScore 100000
+	DispatchPinEvent "score_100k"
 End Sub

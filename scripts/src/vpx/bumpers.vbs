@@ -2,7 +2,7 @@
 '	ZBMP: Bumpers
 '*******************************************
 
-Sub Bumper1_Hit
+Sub Bumper1_Action
 '	Addscore 250
 	RandomSoundBumperMiddle Bumper1
 '	FlBumperFadeTarget(1) = 1   'Flupper bumper demo
@@ -17,7 +17,7 @@ Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
 End Sub
 
-Sub Bumper3_Hit
+Sub Bumper3_Action
 	RandomSoundBumperMiddle Bumper3
 End Sub
 

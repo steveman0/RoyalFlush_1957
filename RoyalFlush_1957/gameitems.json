@@ -11,14 +11,14 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber23.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic1.json",
@@ -32,28 +32,28 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT20.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw5.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw6.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post027.json",
@@ -74,21 +74,21 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber001.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber002.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic001.json",
@@ -102,28 +102,28 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT002.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw001.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw002.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post001.json",
@@ -137,7 +137,7 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post002.json",
@@ -151,14 +151,14 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber004.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic002.json",
@@ -172,28 +172,28 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT004.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw003.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw004.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post003.json",
@@ -207,7 +207,7 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post004.json",
@@ -221,14 +221,14 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber006.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic003.json",
@@ -242,28 +242,28 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT006.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw005.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw006.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post005.json",
@@ -277,7 +277,7 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post006.json",
@@ -291,7 +291,7 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Plunger.plunger.json",
@@ -767,14 +767,14 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber008.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand.json",
@@ -788,28 +788,28 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT008.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw007.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw008.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post007.json",
@@ -830,21 +830,21 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber009.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber010.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand001.json",
@@ -858,35 +858,35 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT010.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw009.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw010.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap005.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post009.json",
@@ -907,21 +907,21 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber013.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber014.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand002.json",
@@ -935,28 +935,28 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT014.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw013.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw014.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post013.json",
@@ -977,21 +977,21 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber015.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber016.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand003.json",
@@ -1005,28 +1005,28 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT016.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw015.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw016.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post015.json",
@@ -1040,7 +1040,7 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post016.json",
@@ -1124,21 +1124,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT017.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw017.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post017.json",
@@ -1152,21 +1152,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT018.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw018.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post018.json",
@@ -1180,21 +1180,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT019.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw019.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post019.json",
@@ -1208,21 +1208,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT020.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw020.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post020.json",
@@ -1236,21 +1236,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT021.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw021.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post021.json",
@@ -1264,21 +1264,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT022.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw022.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post022.json",
@@ -1292,21 +1292,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT023.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw023.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post023.json",
@@ -1320,21 +1320,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT024.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw024.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post024.json",
@@ -1348,21 +1348,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT025.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw025.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post025.json",
@@ -1376,21 +1376,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT026.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw026.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post026.json",
@@ -1404,21 +1404,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT027.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw027.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post029.json",
@@ -1432,21 +1432,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT028.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw028.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post030.json",
@@ -1460,21 +1460,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT029.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw029.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post031.json",
@@ -1488,21 +1488,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT030.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw030.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post032.json",
@@ -1516,21 +1516,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT031.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw031.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post033.json",
@@ -1544,21 +1544,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT032.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw032.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post034.json",
@@ -1572,21 +1572,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT033.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw033.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post035.json",
@@ -1600,21 +1600,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT034.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw034.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post036.json",
@@ -1628,21 +1628,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT035.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw035.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post037.json",
@@ -1656,21 +1656,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT011.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw011.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post011.json",
@@ -1684,21 +1684,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT012.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw012.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post012.json",
@@ -1894,21 +1894,21 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallOutsideB.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallOutsideR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand004.json",
@@ -1971,21 +1971,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT036.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw036.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post038.json",
@@ -1999,21 +1999,21 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT037.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw037.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Screws and Bolts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post039.json",
@@ -2027,35 +2027,35 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Lane4WallR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Lane5WallL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Lane5WallR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.ShooterLaneWall.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.Drain.json",
@@ -2111,42 +2111,42 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallBRCorner.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallOutsideRVisual.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallDrainL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallDrainB.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallDrainT.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "HitTarget.RotoTarget.json",
@@ -2160,49 +2160,49 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerLane2.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerLane3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerLane4.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerLane5.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerLaneL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerLaneR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerRF.json",
@@ -2272,14 +2272,14 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.TroughTeleport.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.BallShadow0.json",
@@ -2426,7 +2426,7 @@
     "is_locked": false,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.PlungerBaseWall.json",
@@ -2930,13 +2930,13 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.MetalWallGuideR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   }
 ]
