@@ -12,7 +12,7 @@ Const offsetX = 0			   'Offset x position under ball (These are if you want to c
 Const offsetY = 0			   'Offset y position under ball (^^for example 5,5 if the light is in the back left corner)
 
 ' *** Trim or extend these to match the number of balls/primitives/flashers on the table!  (will throw errors if there aren't enough objects)
-Dim objBallShadow(7)
+Dim objBallShadow(5)
 
 'Initialization
 BSInit

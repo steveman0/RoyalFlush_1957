@@ -11,7 +11,7 @@
     "image": "",
     "side_image": "sidewood_h",
     "side_material": "",
-    "top_material": "",
+    "top_material": "Plastic White",
     "slingshot_material": "",
     "height_bottom": 0.0,
     "height_top": 50.0,
@@ -34,8 +34,8 @@
     "overwrite_physics": true,
     "drag_points": [
       {
-        "x": 358.7194,
-        "y": 1791.1244,
+        "x": 358.4349,
+        "y": 1792.547,
         "z": 0.0,
         "smooth": false,
         "is_slingshot": false,
@@ -47,8 +47,8 @@
         "editor_layer_visibility": true
       },
       {
-        "x": 379.38007,
-        "y": 1899.4792,
+        "x": 379.10754,
+        "y": 1901.2264,
         "z": 0.0,
         "smooth": false,
         "is_slingshot": false,
@@ -61,7 +61,7 @@
       },
       {
         "x": 831.54913,
-        "y": 1902.7993,
+        "y": 1902.7158,
         "z": 0.0,
         "smooth": false,
         "is_slingshot": false,

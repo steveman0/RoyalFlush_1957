@@ -80,54 +80,54 @@ Dim RF : Set RF = New FlipperPolarity
 
 InitPolarity
 
-'
-''*******************************************
-'' Late 70's to early 80's
-'
-'Sub InitPolarity()
-'   dim x, a : a = Array(LF, RF)
-'	for each x in a
-'		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
-'		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
-'		x.enabled = True
-'		x.TimeDelay = 80
-'		x.DebugOn=False ' prints some info in debugger
-'
-'
-'        x.AddPt "Polarity", 0, 0, 0
-'        x.AddPt "Polarity", 1, 0.05, - 2.7
-'        x.AddPt "Polarity", 2, 0.16, - 2.7
-'        x.AddPt "Polarity", 3, 0.22, - 0
-'        x.AddPt "Polarity", 4, 0.25, - 0
-'        x.AddPt "Polarity", 5, 0.3, - 1
-'        x.AddPt "Polarity", 6, 0.4, - 2
-'        x.AddPt "Polarity", 7, 0.5, - 2.7
-'        x.AddPt "Polarity", 8, 0.65, - 1.8
-'        x.AddPt "Polarity", 9, 0.75, - 0.5
-'        x.AddPt "Polarity", 10, 0.81, - 0.5
-'        x.AddPt "Polarity", 11, 0.88, 0
-'        x.AddPt "Polarity", 12, 1.3, 0
-'
-'		x.AddPt "Velocity", 0, 0, 0.85
-'		x.AddPt "Velocity", 1, 0.15, 0.85
-'		x.AddPt "Velocity", 2, 0.2, 0.9
-'		x.AddPt "Velocity", 3, 0.23, 0.95
-'		x.AddPt "Velocity", 4, 0.41, 0.95
-'		x.AddPt "Velocity", 5, 0.53, 0.95 '0.982
-'		x.AddPt "Velocity", 6, 0.62, 1.0
-'		x.AddPt "Velocity", 7, 0.702, 0.968
-'		x.AddPt "Velocity", 8, 0.95,  0.968
-'		x.AddPt "Velocity", 9, 1.03,  0.945
-'		x.AddPt "Velocity", 10, 1.5,  0.945
-'
-'	Next
-'
-'	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
-'    LF.SetObjects "LF", LeftFlipper, TriggerLF
-'    RF.SetObjects "RF", RightFlipper, TriggerRF
-'End Sub
-'
-'
+
+'*******************************************
+' Late 70's to early 80's
+
+Sub InitPolarity()
+   dim x, a : a = Array(LF, RF)
+	for each x in a
+		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
+		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
+		x.enabled = True
+		x.TimeDelay = 80
+		x.DebugOn=False ' prints some info in debugger
+
+
+        x.AddPt "Polarity", 0, 0, 0
+        x.AddPt "Polarity", 1, 0.05, - 2.7
+        x.AddPt "Polarity", 2, 0.16, - 2.7
+        x.AddPt "Polarity", 3, 0.22, - 0
+        x.AddPt "Polarity", 4, 0.25, - 0
+        x.AddPt "Polarity", 5, 0.3, - 1
+        x.AddPt "Polarity", 6, 0.4, - 2
+        x.AddPt "Polarity", 7, 0.5, - 2.7
+        x.AddPt "Polarity", 8, 0.65, - 1.8
+        x.AddPt "Polarity", 9, 0.75, - 0.5
+        x.AddPt "Polarity", 10, 0.81, - 0.5
+        x.AddPt "Polarity", 11, 0.88, 0
+        x.AddPt "Polarity", 12, 1.3, 0
+
+		x.AddPt "Velocity", 0, 0, 0.85
+		x.AddPt "Velocity", 1, 0.15, 0.85
+		x.AddPt "Velocity", 2, 0.2, 0.9
+		x.AddPt "Velocity", 3, 0.23, 0.95
+		x.AddPt "Velocity", 4, 0.41, 0.95
+		x.AddPt "Velocity", 5, 0.53, 0.95 '0.982
+		x.AddPt "Velocity", 6, 0.62, 1.0
+		x.AddPt "Velocity", 7, 0.702, 0.968
+		x.AddPt "Velocity", 8, 0.95,  0.968
+		x.AddPt "Velocity", 9, 1.03,  0.945
+		x.AddPt "Velocity", 10, 1.5,  0.945
+
+	Next
+
+	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
+    LF.SetObjects "LF", LeftFlipper, TriggerLF
+    RF.SetObjects "RF", RightFlipper, TriggerRF
+End Sub
+
+
 '
 ''*******************************************
 '' Mid 80's
@@ -226,53 +226,53 @@ InitPolarity
 '*******************************************
 ' Early 90's and after
 
-Sub InitPolarity()
-	Dim x, a
-	a = Array(LF, RF)
-	For Each x In a
-		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
-		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
-		x.enabled = True
-		x.TimeDelay = 60
-		x.DebugOn=False ' prints some info in debugger
-
-		x.AddPt "Polarity", 0, 0, 0
-		x.AddPt "Polarity", 1, 0.05, - 5.5
-		x.AddPt "Polarity", 2, 0.16, - 5.5
-		x.AddPt "Polarity", 3, 0.20, - 0.75
-		x.AddPt "Polarity", 4, 0.25, - 1.25
-		x.AddPt "Polarity", 5, 0.3, - 1.75
-		x.AddPt "Polarity", 6, 0.4, - 3.5
-		x.AddPt "Polarity", 7, 0.5, - 5.25
-		x.AddPt "Polarity", 8, 0.7, - 4.0
-		x.AddPt "Polarity", 9, 0.75, - 3.5
-		x.AddPt "Polarity", 10, 0.8, - 3.0
-		x.AddPt "Polarity", 11, 0.85, - 2.5
-		x.AddPt "Polarity", 12, 0.9, - 2.0
-		x.AddPt "Polarity", 13, 0.95, - 1.5
-		x.AddPt "Polarity", 14, 1, - 1.0
-		x.AddPt "Polarity", 15, 1.05, -0.5
-		x.AddPt "Polarity", 16, 1.1, 0
-		x.AddPt "Polarity", 17, 1.3, 0
-
-		x.AddPt "Velocity", 0, 0, 0.85
-		x.AddPt "Velocity", 1, 0.23, 0.85
-		x.AddPt "Velocity", 2, 0.27, 1
-		x.AddPt "Velocity", 3, 0.3, 1
-		x.AddPt "Velocity", 4, 0.35, 1
-		x.AddPt "Velocity", 5, 0.6, 1 '0.982
-		x.AddPt "Velocity", 6, 0.62, 1.0
-		x.AddPt "Velocity", 7, 0.702, 0.968
-		x.AddPt "Velocity", 8, 0.95,  0.968
-		x.AddPt "Velocity", 9, 1.03,  0.945
-		x.AddPt "Velocity", 10, 1.5,  0.945
-
-	Next
-	
-	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
-	LF.SetObjects "LF", LeftFlipper, TriggerLF
-	RF.SetObjects "RF", RightFlipper, TriggerRF
-End Sub
+'Sub InitPolarity()
+'	Dim x, a
+'	a = Array(LF, RF)
+'	For Each x In a
+'		x.AddPt "Ycoef", 0, RightFlipper.Y-65, 1 'disabled
+'		x.AddPt "Ycoef", 1, RightFlipper.Y-11, 1
+'		x.enabled = True
+'		x.TimeDelay = 60
+'		x.DebugOn=False ' prints some info in debugger
+'
+'		x.AddPt "Polarity", 0, 0, 0
+'		x.AddPt "Polarity", 1, 0.05, - 5.5
+'		x.AddPt "Polarity", 2, 0.16, - 5.5
+'		x.AddPt "Polarity", 3, 0.20, - 0.75
+'		x.AddPt "Polarity", 4, 0.25, - 1.25
+'		x.AddPt "Polarity", 5, 0.3, - 1.75
+'		x.AddPt "Polarity", 6, 0.4, - 3.5
+'		x.AddPt "Polarity", 7, 0.5, - 5.25
+'		x.AddPt "Polarity", 8, 0.7, - 4.0
+'		x.AddPt "Polarity", 9, 0.75, - 3.5
+'		x.AddPt "Polarity", 10, 0.8, - 3.0
+'		x.AddPt "Polarity", 11, 0.85, - 2.5
+'		x.AddPt "Polarity", 12, 0.9, - 2.0
+'		x.AddPt "Polarity", 13, 0.95, - 1.5
+'		x.AddPt "Polarity", 14, 1, - 1.0
+'		x.AddPt "Polarity", 15, 1.05, -0.5
+'		x.AddPt "Polarity", 16, 1.1, 0
+'		x.AddPt "Polarity", 17, 1.3, 0
+'
+'		x.AddPt "Velocity", 0, 0, 0.85
+'		x.AddPt "Velocity", 1, 0.23, 0.85
+'		x.AddPt "Velocity", 2, 0.27, 1
+'		x.AddPt "Velocity", 3, 0.3, 1
+'		x.AddPt "Velocity", 4, 0.35, 1
+'		x.AddPt "Velocity", 5, 0.6, 1 '0.982
+'		x.AddPt "Velocity", 6, 0.62, 1.0
+'		x.AddPt "Velocity", 7, 0.702, 0.968
+'		x.AddPt "Velocity", 8, 0.95,  0.968
+'		x.AddPt "Velocity", 9, 1.03,  0.945
+'		x.AddPt "Velocity", 10, 1.5,  0.945
+'
+'	Next
+'	
+'	' SetObjects arguments: 1: name of object 2: flipper object: 3: Trigger object around flipper
+'	LF.SetObjects "LF", LeftFlipper, TriggerLF
+'	RF.SetObjects "RF", RightFlipper, TriggerRF
+'End Sub
 
 '******************************************************
 '  FLIPPER CORRECTION FUNCTIONS
@@ -723,8 +723,8 @@ EOSA = leftflipper.eostorqueangle
 Frampup = LeftFlipper.rampup
 FElasticity = LeftFlipper.elasticity
 FReturn = LeftFlipper.return
-'Const EOSTnew = 1.5 'EM's to late 80's - new recommendation by rothbauerw (previously 1)
-Const EOSTnew = 1.2 '90's and later - new recommendation by rothbauerw (previously 0.8)
+Const EOSTnew = 1.5 'EM's to late 80's - new recommendation by rothbauerw (previously 1)
+'Const EOSTnew = 1.2 '90's and later - new recommendation by rothbauerw (previously 0.8)
 Const EOSAnew = 1
 Const EOSRampup = 0
 Dim SOSRampup
@@ -740,9 +740,9 @@ End Select
 Const LiveCatch = 16
 Const LiveElasticity = 0.45
 Const SOSEM = 0.815
-'   Const EOSReturn = 0.055  'EM's
+Const EOSReturn = 0.055  'EM's
 '   Const EOSReturn = 0.045  'late 70's to mid 80's
-Const EOSReturn = 0.035  'mid 80's to early 90's
+'   Const EOSReturn = 0.035  'mid 80's to early 90's
 '   Const EOSReturn = 0.025  'mid 90's and later
 
 LFEndAngle = Leftflipper.endangle

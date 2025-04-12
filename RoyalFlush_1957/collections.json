@@ -89,14 +89,25 @@
   },
   {
     "name": "glf_switches",
-    "items": [],
+    "items": [
+      "BumperBL",
+      "BumperBR",
+      "BumperTR",
+      "Bumper3",
+      "Bumper2",
+      "Bumper1",
+      "BumperTL"
+    ],
     "fire_events": false,
     "stop_single_events": false,
     "group_elements": true
   },
   {
     "name": "glf_slingshots",
-    "items": [],
+    "items": [
+      "LeftSlingShot",
+      "RightSlingShot"
+    ],
     "fire_events": false,
     "stop_single_events": false,
     "group_elements": true
