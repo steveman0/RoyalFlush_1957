@@ -231,7 +231,6 @@ Sub Table1_Init
 	ConfigureGlfDevices()
 	Glf_Init()
 	glf_ballsPerGame = 5
-	
 End Sub
 
 
@@ -253,6 +252,7 @@ End Sub
 
 Sub TriggerLaneL_Hit
 	DispatchPinEvent "score_100k", ActiveBall
+	debug.print "SOMETHING!!!"
 End Sub
 
 Sub TriggerLaneL_Hit
@@ -512,13 +512,9 @@ End Sub
 '	ZBMP: Bumpers
 '*******************************************
 
-Sub Bumper1Action(args)
-    Dim enabled, ball : enabled = args(0)
-    If enabled Then
-        
-        'DOF 105, DOFPulse
-    End If
+Sub Bumper1Action
 	RandomSoundBumperMiddle Bumper1
+	debug.print "Bumper 1 Hit"
 End Sub
 
 ' Sub Bumper1_Timer
@@ -529,7 +525,7 @@ Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
 End Sub
 
-Sub Bumper3Action(args)
+Sub Bumper3Action
 	RandomSoundBumperMiddle Bumper3
 End Sub
 
@@ -692,7 +688,7 @@ Sub DebugShotTableKeyDownCheck (Keycode)
 			If keycode = LeftFlipperKey Then
 				debugKickAim.Visible = True
 				TestKickerVar = TestKickerVar - 1
-				Debug.print TestKickerVar
+				debug.print TestKickerVar
 			ElseIf keycode = RightFlipperKey Then
 				debugKickAim.Visible = True
 				TestKickerVar = TestKickerVar + 1
@@ -6165,14 +6161,14 @@ Sub ConfigureGlfDevices
 	
 	' Flippers
     With CreateGlfFlipper("left")
-        .Switch = "s_left_flipper"
+        .Switch = "LeftFlipper"
         .ActionCallback = "LeftFlipperAction"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started", "enable_flippers")
     End With
 
     With CreateGlfFlipper("right")
-        .Switch = "s_right_flipper"
+        .Switch = "RightFlipper"
         .ActionCallback = "RightFlipperAction"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started", "enable_flippers")
@@ -6181,18 +6177,12 @@ Sub ConfigureGlfDevices
 	' Slingshots
     With CreateGlfAutoFireDevice("left_sling")
         .Switch = "LeftSlingShot"
-        .ActionCallback = "LeftSlingshotAction"
-        .DisabledCallback = "LeftSlingshotDisabled"
-        .EnabledCallback = "LeftSlingshotEnabled"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started","enable_flippers")
     End With
 
     With CreateGlfAutoFireDevice("right_sling")
         .Switch = "RightSlingShot"
-        .ActionCallback = "RightSlingshotAction"
-        .DisabledCallback = "RightSlingshotDisabled"
-        .EnabledCallback = "RightSlingshotEnabled"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started","enable_flippers")
     End With
@@ -6201,8 +6191,6 @@ Sub ConfigureGlfDevices
     With CreateGlfAutoFireDevice("left_bumper")
         .Switch = "Bumper1"
         .ActionCallback = "Bumper1Action"
-        .DisabledCallback = "Bumper1Disabled"
-        .EnabledCallback = "Bumper1Enabled"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started","enable_flippers")
     End With
@@ -6210,16 +6198,40 @@ Sub ConfigureGlfDevices
     With CreateGlfAutoFireDevice("right_bumper")
         .Switch = "Bumper3"
         .ActionCallback = "Bumper3Action"
-        .DisabledCallback = "Bumper3Disabled"
-        .EnabledCallback = "Bumper3Enabled"
         .DisableEvents = Array("kill_flippers")
         .EnableEvents = Array("ball_started","enable_flippers")
+    End With
+	
+	' Rubber band switches
+	With CreateGlfAutoFireDevice("rubber_band")
+        .Switch = "RubberBand"
+		.EnableEvents = Array("ball_started")
+    End With
+	With CreateGlfAutoFireDevice("rubber_band1")
+        .Switch = "RubberBand001"
+		.EnableEvents = Array("ball_started")
+    End With
+	With CreateGlfAutoFireDevice("rubber_band2")
+        .Switch = "RubberBand002"
+		.EnableEvents = Array("ball_started")
+    End With
+	With CreateGlfAutoFireDevice("rubber_band3")
+        .Switch = "RubberBand003"
+		.EnableEvents = Array("ball_started")
+    End With
+	With CreateGlfAutoFireDevice("rubber_band10")
+        .Switch = "RubberBand010"
+		.EnableEvents = Array("ball_started")
+    End With
+	With CreateGlfAutoFireDevice("rubber_band11")
+        .Switch = "RubberBand011"
+		.EnableEvents = Array("ball_started")
     End With
 
     CreateBaseMode()
 	CreateGIMode()
 	CreateScoreMode()
-	'CreateLitModes()
+	CreateLitModes()
 
 End Sub
 
@@ -6317,29 +6329,24 @@ Public Sub CreateLitModes()
 			.Add "LeftSlingShot_active", Array("score_100k")
 			.Add "Bumper3_active", Array("score_10k")
 			.Add "RightSlingShot_active", Array("score_10k")
-			.Add "RubberBand_active", Array("light_right")
-			.Add "RubberBand001_active", Array("light_right")
-			.Add "RubberBand002_active", Array("light_right")
-			.Add "RubberBand003_active", Array("light_right")
-			.Add "RubberBand010_active", Array("light_right")
-			.Add "RubberBand011_active", Array("light_right")
+			.Add "RubberBand_active", Array("light_left_stopping", "light_right")
+			.Add "RubberBand001_active", Array("light_left_stopping", "light_right")
+			.Add "RubberBand002_active", Array("light_left_stopping", "light_right")
+			.Add "RubberBand003_active", Array("light_left_stopping", "light_right")
+			.Add "RubberBand010_active", Array("light_left_stopping", "light_right")
+			.Add "RubberBand011_active", Array("light_left_stopping", "light_right")
 		End With
 		
 		With .LightPlayer()
 			With .EventName("light_left")
-				With .Lights("GI_LEFT_BUMP")
+				With .Lights("GI_LEFT")
 					.Color = "ffffff"
 				End With
-'				With .Lights("GI_LEFT_SLING")
-'					.Color = "ffffff"
-'				End With
-'			' Turn out lights for other side
-'				With .Lights("GI_RIGHT_BUMP")
-'					.Color = "000000"
-'				End With
-'				With .Lights("GI_RIGHT_SLING")
-'					.Color = "000000"
-'				End With
+			End With
+			With .EventName("light_left_stopping")
+				With .Lights("GI_LEFT")
+					.Color = "000000"
+				End With
 			End With
 		End With
         
@@ -6355,39 +6362,28 @@ Public Sub CreateLitModes()
 			.Add "LeftSlingShot_active", Array("score_10k")
 			.Add "Bumper3_active", Array("score_100k")
 			.Add "RightSlingShot_active", Array("score_100k")
-			.Add "RubberBand_active", Array("light_left")
-			.Add "RubberBand001_active", Array("light_left")
-			.Add "RubberBand002_active", Array("light_left")
-			.Add "RubberBand003_active", Array("light_left")
-			.Add "RubberBand010_active", Array("light_left")
-			.Add "RubberBand011_active", Array("light_left")
+			.Add "RubberBand_active", Array("light_right_stopping", "light_left")
+			.Add "RubberBand001_active", Array("light_right_stopping", "light_left")
+			.Add "RubberBand002_active", Array("light_right_stopping", "light_left")
+			.Add "RubberBand003_active", Array("light_right_stopping", "light_left")
+			.Add "RubberBand010_active", Array("light_right_stopping", "light_left")
+			.Add "RubberBand011_active", Array("light_right_stopping", "light_left")
 		End With
 		
-'		With .LightPlayer()
-'			With .EventName("light_right")
-'				With .Lights("GI_RIGHT_BUMP")
-'					.Color = "ffffff"
-'				End With
-'			End With
-'			With .EventName("light_right")
-'				With .Lights("GI_RIGHT_SLING")
-'					.Color = "ffffff"
-'				End With
-'			End With
-'
-'			' Turn out lights for other side
-'			With .EventName("light_right")
-'				With .Lights("GI_LEFT_BUMP")
-'					.Color = "000000"
-'				End With
-'			End With
-'			With .EventName("light_right")
-'				With .Lights("GI_LEFT_SLING")
-'					.Color = "000000"
-'				End With
-'			End With
-'		End With
+		With .LightPlayer()
+			With .EventName("light_right")
+				With .Lights("GI_RIGHT")
+					.Color = "ffffff"
+				End With
+			End With
+			With .EventName("light_right_stopping")
+				With .Lights("GI_RIGHT")
+					.Color = "000000"
+				End With
+			End With
+		End With
 	End With
+
 End Sub
 'VPX Game Logic Framework (https://mpcarr.github.io/vpx-glf/)
 
@@ -6527,6 +6523,7 @@ Public Sub Glf_Init()
 	For Each switch in Glf_Switches
 		switchHitSubs = switchHitSubs & "Sub " & switch.Name & "_Hit() : If Not glf_gameTilted Then : DispatchPinEvent """ & switch.Name & "_active"", ActiveBall : glf_last_switch_hit_time = gametime : glf_last_switch_hit = """& switch.Name &""": End If : End Sub" & vbCrLf
 		switchHitSubs = switchHitSubs & "Sub " & switch.Name & "_UnHit() : If Not glf_gameTilted Then : DispatchPinEvent """ & switch.Name & "_inactive"", ActiveBall : End If  : End Sub" & vbCrLf
+		Debug.Print "Adding " & switch.Name
 	Next
 	
 	ExecuteGlobal switchHitSubs
@@ -10432,6 +10429,7 @@ Class GlfEventPlayer
             Log "Adding Event Listener for: " & m_events(evt).EventName
             AddPinEventListener m_events(evt).EventName, m_mode & "_" & m_events(evt).Name & "_event_player_play", "EventPlayerEventHandler", m_priority+m_events(evt).Priority, Array("play", Me, evt)
         Next
+		Debug.Print "Activating events for " & m_mode
     End Sub
 
     Public Sub Deactivate()
@@ -10439,10 +10437,12 @@ Class GlfEventPlayer
         For Each evt In m_events.Keys()
             RemovePinEventListener m_events(evt).EventName, m_mode & "_" & m_events(evt).Name & "_event_player_play"
         Next
+		Debug.Print "Deactivating events for " & m_mode
     End Sub
 
     Public Sub FireEvent(evt)
         Log "Dispatching Event: " & evt
+		Debug.Print "Dispatching Event: " & evt
         If Not IsNull(m_events(evt).Condition) Then
             'msgbox m_events(evt).Condition
             If GetRef(m_events(evt).Condition)() = False Then
@@ -10665,6 +10665,7 @@ Class GlfLightPlayer
             Log "Adding Event Listener for event: " & evt
             AddPinEventListener evt, m_mode & "_light_player_play", "LightPlayerEventHandler", m_priority, Array("play", Me, m_events(evt), evt)
         Next
+		Debug.Print "Activating light mode " & m_mode
     End Sub
 
     Public Sub Deactivate()
@@ -16854,6 +16855,7 @@ Class GlfVariablePlayer
 
     Public Sub Activate()
         Log "Activating"
+		Debug.Print "Activating " & m_name
         Dim evt
         For Each evt In m_events.Keys()
             AddPinEventListener m_events(evt).BaseEvent.EventName, m_mode & "_variable_player_play", "VariablePlayerEventHandler", m_priority+m_events(evt).BaseEvent.Priority, Array("play", Me, evt)
@@ -17193,7 +17195,8 @@ Class GlfAutoFireDevice
 
     Public Sub Enable()
         Log "Enabling"
-        m_enabled = True
+        Debug.Print "Enabling autofire " & m_name
+		m_enabled = True
         If Not IsEmpty(m_enabled_cb) Then
             GetRef(m_enabled_cb)()
         End If
@@ -17216,6 +17219,7 @@ Class GlfAutoFireDevice
 
     Public Sub Activate(active_ball)
         Log "Activating"
+		Debug.Print "Activating action for " & m_name
         If Not IsEmpty(m_action_cb) Then
             GetRef(m_action_cb)(Array(1, active_ball))
         End If

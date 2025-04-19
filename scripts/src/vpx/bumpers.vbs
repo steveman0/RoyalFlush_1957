@@ -2,8 +2,10 @@
 '	ZBMP: Bumpers
 '*******************************************
 
-Sub Bumper1Action
-	RandomSoundBumperMiddle Bumper1
+Sub Bumper1Action(Enabled)
+	If Enabled Then
+		RandomSoundBumperMiddle Bumper1
+	End If
 End Sub
 
 ' Sub Bumper1_Timer
@@ -14,8 +16,10 @@ Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
 End Sub
 
-Sub Bumper3Action
-	RandomSoundBumperMiddle Bumper3
+Sub Bumper3Action(Enabled)
+	If Enabled Then
+		RandomSoundBumperMiddle Bumper3
+	End If
 End Sub
 
 Sub BumperTL_Hit
