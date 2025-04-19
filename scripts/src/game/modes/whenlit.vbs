@@ -16,14 +16,9 @@ Public Sub CreateLitModes()
 		End With
 		
 		With .LightPlayer()
-			With .EventName("light_left")
+			With .EventName("mode_left_lit_started")
 				With .Lights("GI_LEFT")
 					.Color = "ffffff"
-				End With
-			End With
-			With .EventName("light_right")
-				With .Lights("GI_LEFT")
-					.Color = "000000"
 				End With
 			End With
 		End With
@@ -44,14 +39,9 @@ Public Sub CreateLitModes()
 		End With
 		
 		With .LightPlayer()
-			With .EventName("light_right")
+			With .EventName("mode_right_lit_started")
 				With .Lights("GI_RIGHT")
 					.Color = "ffffff"
-				End With
-			End With
-			With .EventName("light_left")
-				With .Lights("GI_RIGHT")
-					.Color = "000000"
 				End With
 			End With
 		End With

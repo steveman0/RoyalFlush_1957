@@ -2,8 +2,9 @@
 '	ZBMP: Bumpers
 '*******************************************
 
-Sub Bumper1Action(Enabled)
-	If Enabled Then
+Sub Bumper1Action(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
 		RandomSoundBumperMiddle Bumper1
 	End If
 End Sub
@@ -16,8 +17,9 @@ Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
 End Sub
 
-Sub Bumper3Action(Enabled)
-	If Enabled Then
+Sub Bumper3Action(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
 		RandomSoundBumperMiddle Bumper3
 	End If
 End Sub
