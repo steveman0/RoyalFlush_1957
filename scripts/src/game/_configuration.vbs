@@ -57,6 +57,34 @@ Sub ConfigureGlfDevices
 		.EnableEvents = Array("ball_started","enable_flippers")
 	End With
 	
+	With CreateGlfAutoFireDevice("top_left_bumper")
+		.Switch = "BumperTL"
+		.ActionCallback = "BumperTLAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
+	With CreateGlfAutoFireDevice("top_right_bumper")
+		.Switch = "BumperTR"
+		.ActionCallback = "BumperTRAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
+	With CreateGlfAutoFireDevice("bottom_left_bumper")
+		.Switch = "BumperBL"
+		.ActionCallback = "BumperBLAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
+	With CreateGlfAutoFireDevice("bottom_right_bumper")
+		.Switch = "BumperBR"
+		.ActionCallback = "BumperBRAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
 	' Rubber band switches
 	With CreateGlfAutoFireDevice("rubber_band")
 		.Switch = "RubberBand"

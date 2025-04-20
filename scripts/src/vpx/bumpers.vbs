@@ -24,18 +24,42 @@ Sub Bumper3Action(args)
 	End If
 End Sub
 
-Sub BumperTL_Hit
-	RandomSoundBumperTop BumperTL
+' Spin Bumpers
+Sub BumperTLAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperTop BumperTL
+		SpinRoto
+	End If
 End Sub
 
-Sub BumperTR_Hit
-	RandomSoundBumperTop BumperTR
+Sub BumperTRAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperTop BumperTR
+		SpinRoto
+	End If
 End Sub
 
-Sub BumperBL_Hit
-	RandomSoundBumperBottom BumperBL
+Sub BumperBLAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperBottom BumperBL
+		SpinRoto
+	End If
 End Sub
 
-Sub BumperBR_Hit
-	RandomSoundBumperBottom BumperBR
+Sub BumperBRAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperBottom BumperBR
+		SpinRoto
+	End If
+End Sub
+
+Dim RotoSpinning : RotoSpinning = false
+Sub SpinRoto
+	If RotoSpinning Then
+		Exit Sub
+	End If
 End Sub
