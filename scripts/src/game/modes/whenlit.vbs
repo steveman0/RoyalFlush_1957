@@ -13,6 +13,8 @@ Public Sub CreateLitModes()
 			.Add "Bumper3_active", Array("score_10k")
 			.Add "RightSlingShot_active", Array("score_10k")
 			.Add "score_10k", Array("light_right")
+			' Opposite side gobble lit with lanes 1 and 3 hit
+			.Add "mode_left_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_right_gobble")
 		End With
 		
 		With .LightPlayer()
@@ -21,6 +23,12 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
+			' Gobble lights not yet implemented
+			' With .EventName("light_right_gobble")
+				' With .Lights("RGobbleLight")
+					' .Color = "ffffff"
+				' End With
+			' End With
 		End With
 	End With
 	
@@ -36,6 +44,8 @@ Public Sub CreateLitModes()
 			.Add "Bumper3_active", Array("score_100k")
 			.Add "RightSlingShot_active", Array("score_100k")
 			.Add "score_10k", Array("light_left")
+			' Opposite side gobble lit with lanes 1 and 3 hit
+			.Add "mode_right_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_left_gobble")
 		End With
 		
 		With .LightPlayer()
@@ -44,6 +54,12 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
+			' Gobble lights not yet implemented
+			' With .EventName("light_left_gobble")
+				' With .Lights("LGobbleLight")
+					' .Color = "ffffff"
+				' End With
+			' End With
 		End With
 	End With
 

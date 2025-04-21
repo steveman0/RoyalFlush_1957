@@ -527,26 +527,51 @@ Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
 End Sub
 
-Sub Bumper3Action(Enabled)
-'	If Enabled Then
+Sub Bumper3Action(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
 		RandomSoundBumperMiddle Bumper3
-'	End If
+	End If
 End Sub
 
-Sub BumperTL_Hit
-	RandomSoundBumperTop BumperTL
+' Spin Bumpers
+Sub BumperTLAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperTop BumperTL
+		SpinRoto
+	End If
 End Sub
 
-Sub BumperTR_Hit
-	RandomSoundBumperTop BumperTR
+Sub BumperTRAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperTop BumperTR
+		SpinRoto
+	End If
 End Sub
 
-Sub BumperBL_Hit
-	RandomSoundBumperBottom BumperBL
+Sub BumperBLAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperBottom BumperBL
+		SpinRoto
+	End If
 End Sub
 
-Sub BumperBR_Hit
-	RandomSoundBumperBottom BumperBR
+Sub BumperBRAction(args)
+	Dim enabled : enabled = args(0)
+	If enabled Then
+		RandomSoundBumperBottom BumperBR
+		SpinRoto
+	End If
+End Sub
+
+Dim RotoSpinning : RotoSpinning = false
+Sub SpinRoto
+	If RotoSpinning Then
+		Exit Sub
+	End If
 End Sub
 '******************************************************
 ' 	ZTST:  Debug Shot Tester
@@ -6205,6 +6230,34 @@ Sub ConfigureGlfDevices
 		.EnableEvents = Array("ball_started","enable_flippers")
 	End With
 	
+	With CreateGlfAutoFireDevice("top_left_bumper")
+		.Switch = "BumperTL"
+		.ActionCallback = "BumperTLAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
+	With CreateGlfAutoFireDevice("top_right_bumper")
+		.Switch = "BumperTR"
+		.ActionCallback = "BumperTRAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
+	With CreateGlfAutoFireDevice("bottom_left_bumper")
+		.Switch = "BumperBL"
+		.ActionCallback = "BumperBLAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
+	With CreateGlfAutoFireDevice("bottom_right_bumper")
+		.Switch = "BumperBR"
+		.ActionCallback = "BumperBRAction"
+		.DisableEvents = Array("kill_flippers")
+		.EnableEvents = Array("ball_started","enable_flippers")
+	End With
+	
 	' Rubber band switches
 	With CreateGlfAutoFireDevice("rubber_band")
 		.Switch = "RubberBand"
@@ -6236,6 +6289,14 @@ Sub ConfigureGlfDevices
 	CreateScoreMode()
 	CreateLitModes()
 
+	With CreateGlfSound("10pts")
+		.File = "10pts" 'Name in VPX Sound Manager
+		.Bus = "sfx" ' Sound bus to play on
+		'.Volume = 0.6 'Override bus volume
+		.Duration = 0.5 * 1000
+		.EventsWhenStopped = Array("10pts_stopped")
+	End With
+
 End Sub
 
 Sub LeftFlipperAction(Enabled)
@@ -6258,26 +6319,32 @@ End Sub
 
 Sub CreateBaseMode()
 
-    With CreateGlfMode("base", 100)
-        .StartEvents = Array("ball_started")
-        .StopEvents = Array("ball_ended")   
-    End With
-
+	With CreateGlfMode("base", 100)
+		.StartEvents = Array("ball_started")
+		.StopEvents = Array("ball_ended")   
+		
+		With .Tilt
+			.WarningsToTilt = TiltWarnings
+			.SettleTime = 5000  ' 5000 milliseconds (5 seconds) settle time
+			.MultipleHitWindow = 1000  ' 1000 milliseconds (1 second) multiple hit window
+			.ResetWarningEvents = Array("reset_warnings_event")
+		End With
+	End With
 End Sub
 
 Public Sub CreateGIMode()
 
-    With CreateGlfMode("gi_control", 1000)
-        .StartEvents = Array("game_started")
-        .StopEvents = Array("game_ended") 
-        With .LightPlayer()
-            With .EventName("mode_gi_control_started")
-                With .Lights("GI")
-                    .Color = "ffffff"
-                End With
-            End With
-        End With
-    End With
+	With CreateGlfMode("gi_control", 1000)
+		.StartEvents = Array("game_started")
+		.StopEvents = Array("game_ended") 
+		With .LightPlayer()
+			With .EventName("mode_gi_control_started")
+				With .Lights("GI")
+					.Color = "ffffff"
+				End With
+			End With
+		End With
+	End With
 
 End Sub
 
@@ -6286,6 +6353,30 @@ Public Sub CreateScoreMode()
 	With CreateGlfMode("score", 2000)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended")
+		
+		With .EventPlayer()
+			.Add "BumperTL_active", Array("score_50k")
+			.Add "BumperTR_active", Array("score_50k")
+			.Add "BumperBL_active", Array("score_50k")
+			.Add "BumperBR_active", Array("score_50k")
+			.Add "score_50k_timer_tick", Array("score_10k")
+			.Add "score_500k_timer_tick", Array("score_100k")
+		End With
+		
+		With .SoundPlayer
+			With .EventName("score_10k")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+			With .EventName("score_100k")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+			With .EventName("score_1m")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+		End With
 		
 		With .VariablePlayer()
 			With .EventName("score_10k") 
@@ -6300,18 +6391,38 @@ Public Sub CreateScoreMode()
 					.Int = "100000"
 				End With
 			End With
-			With .EventName("score_500k") 
-				With .Variable("score")
-					.Action = "add"
-					.Int = "500000"
-				End With
-			End With
 			With .EventName("score_1m") 
 				With .Variable("score")
 					.Action = "add"
 					.Int = "1000000"
 				End With
 			End With
+		End With
+		
+		' 50k points awarded by ticking 10k 5 times
+		With .Timers("score_50k_timer")
+			' Configure start and stop events
+			With .ControlEvents()
+				.EventName = "score_50k"
+				.Action = "start"
+			End With
+			.Direction = "down"
+			.StartValue = 1
+			.EndValue = 0
+			.TickInterval = 200    ' In ms
+		End With
+		
+		' 500k points awarded by ticking 100k 5 times
+		With .Timers("score_500k_timer")
+			' Configure start and stop events
+			With .ControlEvents()
+				.EventName = "score_500k"
+				.Action = "start"
+			End With
+			.Direction = "down"
+			.StartValue = 1
+			.EndValue = 0
+			.TickInterval = 200    ' In ms
 		End With
 	End With
 End Sub

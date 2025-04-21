@@ -111,10 +111,41 @@ Sub ConfigureGlfDevices
 		.EnableEvents = Array("ball_started")
 	End With
 
+	' Rollover Switches TriggerLane1
+	With CreateGlfAutoFireDevice("rollover1")
+		.Switch = "TriggerLane1"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover2")
+		.Switch = "TriggerLane2"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover3")
+		.Switch = "TriggerLane3"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover4")
+		.Switch = "TriggerLane4"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover5")
+		.Switch = "TriggerLane5"
+		.EnableEvents = Array("ball_started")
+	End With
+
 	CreateBaseMode()
 	CreateGIMode()
 	CreateScoreMode()
 	CreateLitModes()
+	CreateRolloversMode()
+	
+	With CreateGlfSound("10pts")
+		.File = "10pts" 'Name in VPX Sound Manager
+		.Bus = "sfx" ' Sound bus to play on
+		'.Volume = 0.6 'Override bus volume
+		.Duration = 0.5 * 1000
+		'.EventsWhenStopped = Array("10pts_stopped")
+	End With
 
 End Sub
 

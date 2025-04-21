@@ -14,20 +14,20 @@ Public Sub CreateScoreMode()
 			.Add "score_500k_timer_tick", Array("score_100k")
 		End With
 		
-		With .SoundPlayer
-			With .EventName("score_10k")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-			With .EventName("score_100k")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-			With .EventName("score_1m")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-		End With
+		' With .SoundPlayer
+			' With .EventName("score_10k")
+				' .Sound = "10pts"
+				' .Action = "play"
+			' End With
+			' With .EventName("score_100k")
+				' .Sound = "10pts"
+				' .Action = "play"
+			' End With
+			' With .EventName("score_1m")
+				' .Sound = "10pts"
+				' .Action = "play"
+			' End With
+		' End With
 		
 		With .VariablePlayer()
 			With .EventName("score_10k") 
@@ -51,9 +51,12 @@ Public Sub CreateScoreMode()
 		End With
 		
 		' 50k points awarded by ticking 10k 5 times
-		With .Timer("score_50k_timer")
+		With .Timers("score_50k_timer")
 			' Configure start and stop events
-			.StartEvents = Array("score_50k")
+			With .ControlEvents()
+				.EventName = "score_50k"
+				.Action = "start"
+			End With
 			.Direction = "down"
 			.StartValue = 1
 			.EndValue = 0
@@ -61,9 +64,12 @@ Public Sub CreateScoreMode()
 		End With
 		
 		' 500k points awarded by ticking 100k 5 times
-		With .Timer("score_500k_timer")
+		With .Timers("score_500k_timer")
 			' Configure start and stop events
-			.StartEvents = Array("score_500k")
+			With .ControlEvents()
+				.EventName = "score_500k"
+				.Action = "start"
+			End With
 			.Direction = "down"
 			.StartValue = 1
 			.EndValue = 0
