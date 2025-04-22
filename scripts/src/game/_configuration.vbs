@@ -147,6 +147,10 @@ Sub ConfigureGlfDevices
 		'.EventsWhenStopped = Array("10pts_stopped")
 	End With
 
+	With CreateGlfSoundBus("sfx")
+        .SimultaneousSounds = 8
+        .Volume = 0.5
+    End With
 End Sub
 
 Sub LeftFlipperAction(Enabled)
