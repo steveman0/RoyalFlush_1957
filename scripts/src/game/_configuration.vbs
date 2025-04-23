@@ -148,9 +148,9 @@ Sub ConfigureGlfDevices
 	End With
 
 	With CreateGlfSoundBus("sfx")
-        .SimultaneousSounds = 8
-        .Volume = 0.5
-    End With
+		.SimultaneousSounds = 8
+		.Volume = 0.5
+	End With
 End Sub
 
 Sub LeftFlipperAction(Enabled)

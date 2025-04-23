@@ -6284,17 +6284,40 @@ Sub ConfigureGlfDevices
 		.EnableEvents = Array("ball_started")
 	End With
 
+	' Rollover Switches TriggerLane1
+	With CreateGlfAutoFireDevice("rollover1")
+		.Switch = "TriggerLane1"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover2")
+		.Switch = "TriggerLane2"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover3")
+		.Switch = "TriggerLane3"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover4")
+		.Switch = "TriggerLane4"
+		.EnableEvents = Array("ball_started")
+	End With
+		With CreateGlfAutoFireDevice("rollover5")
+		.Switch = "TriggerLane5"
+		.EnableEvents = Array("ball_started")
+	End With
+
 	CreateBaseMode()
 	CreateGIMode()
 	CreateScoreMode()
 	CreateLitModes()
-
+	CreateRolloversMode()
+	
 	With CreateGlfSound("10pts")
 		.File = "10pts" 'Name in VPX Sound Manager
 		.Bus = "sfx" ' Sound bus to play on
 		'.Volume = 0.6 'Override bus volume
 		.Duration = 0.5 * 1000
-		.EventsWhenStopped = Array("10pts_stopped")
+		'.EventsWhenStopped = Array("10pts_stopped")
 	End With
 
 End Sub
@@ -6348,6 +6371,117 @@ Public Sub CreateGIMode()
 
 End Sub
 
+
+Sub CreateRolloversMode()
+
+	With CreateGlfMode("rollovers", 500)
+		.StartEvents = Array("game_started")
+		.StopEvents = Array("game_ended")   
+		
+		With .LightPlayer()
+			With .EventName("mode_rollovers_started")
+				With .Lights("I1")
+					.Color = "ffffff"
+				End With
+				With .Lights("I2")
+					.Color = "ffffff"
+				End With
+				With .Lights("I3")
+					.Color = "ffffff"
+				End With
+				With .Lights("I4")
+					.Color = "ffffff"
+				End With
+				With .Lights("I5")
+					.Color = "ffffff"
+				End With
+			End With
+			
+			With .EventName("rollover1_active")
+				With .Lights("I1")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("rollover2_active")
+				With .Lights("I2")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("rollover3_active")
+				With .Lights("I3")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("rollover4_active")
+				With .Lights("I4")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("rollover5_active")
+				With .Lights("I5")
+					.Color = "000000"
+				End With
+			End With
+		End With
+		
+		With .VariablePlayer
+			With .EventName("mode_rollovers_started")
+				With .Variable("rollover1_hit")
+					.Action = "set"
+					.Int = 0
+				End With
+				With .Variable("rollover2_hit")
+					.Action = "set"
+					.Int = 0
+				End With
+				With .Variable("rollover3_hit")
+					.Action = "set"
+					.Int = 0
+				End With
+				With .Variable("rollover4_hit")
+					.Action = "set"
+					.Int = 0
+				End With
+				With .Variable("rollover5_hit")
+					.Action = "set"
+					.Int = 0
+				End With
+			End With
+			
+			With .EventName("rollover1_active")
+				With .Variable("rollover1_hit")
+					.Action = "set"
+					.Int = 1
+				End With
+			End With
+			With .EventName("rollover2_active")
+				With .Variable("rollover2_hit")
+					.Action = "set"
+					.Int = 1
+				End With
+			End With
+			With .EventName("rollover3_active")
+				With .Variable("rollover3_hit")
+					.Action = "set"
+					.Int = 1
+				End With
+			End With
+			With .EventName("rollover4_active")
+				With .Variable("rollover4_hit")
+					.Action = "set"
+					.Int = 1
+				End With
+			End With
+			With .EventName("rollover5_active")
+				With .Variable("rollover5_hit")
+					.Action = "set"
+					.Int = 1
+				End With
+			End With
+		End With
+	End With
+End Sub
+
 Public Sub CreateScoreMode()
 
 	With CreateGlfMode("score", 2000)
@@ -6363,20 +6497,20 @@ Public Sub CreateScoreMode()
 			.Add "score_500k_timer_tick", Array("score_100k")
 		End With
 		
-		With .SoundPlayer
-			With .EventName("score_10k")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-			With .EventName("score_100k")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-			With .EventName("score_1m")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-		End With
+		' With .SoundPlayer
+			' With .EventName("score_10k")
+				' .Sound = "10pts"
+				' .Action = "play"
+			' End With
+			' With .EventName("score_100k")
+				' .Sound = "10pts"
+				' .Action = "play"
+			' End With
+			' With .EventName("score_1m")
+				' .Sound = "10pts"
+				' .Action = "play"
+			' End With
+		' End With
 		
 		With .VariablePlayer()
 			With .EventName("score_10k") 
@@ -6441,6 +6575,8 @@ Public Sub CreateLitModes()
 			.Add "Bumper3_active", Array("score_10k")
 			.Add "RightSlingShot_active", Array("score_10k")
 			.Add "score_10k", Array("light_right")
+			' Opposite side gobble lit with lanes 1 and 3 hit
+			.Add "mode_left_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_right_gobble")
 		End With
 		
 		With .LightPlayer()
@@ -6449,6 +6585,12 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
+			' Gobble lights not yet implemented
+			' With .EventName("light_right_gobble")
+				' With .Lights("RGobbleLight")
+					' .Color = "ffffff"
+				' End With
+			' End With
 		End With
 	End With
 	
@@ -6464,6 +6606,8 @@ Public Sub CreateLitModes()
 			.Add "Bumper3_active", Array("score_100k")
 			.Add "RightSlingShot_active", Array("score_100k")
 			.Add "score_10k", Array("light_left")
+			' Opposite side gobble lit with lanes 1 and 3 hit
+			.Add "mode_right_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_left_gobble")
 		End With
 		
 		With .LightPlayer()
@@ -6472,6 +6616,12 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
+			' Gobble lights not yet implemented
+			' With .EventName("light_left_gobble")
+				' With .Lights("LGobbleLight")
+					' .Color = "ffffff"
+				' End With
+			' End With
 		End With
 	End With
 

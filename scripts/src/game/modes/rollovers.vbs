@@ -6,6 +6,16 @@ Sub CreateRolloversMode()
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended")   
 		
+		With .EventPlayer()
+			.Add "rollover1_active{current_player.rollover3_hit == 1}", Array("rollover1_3_hit")
+			.Add "rollover3_active{current_player.rollover1_hit == 1}", Array("rollover1_3_hit")
+			.Add "rollover1_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover2_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover3_active{current_player.rollover2_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover4_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover5_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover1_hit == 1}", Array("all_rollovers_hit")
+		End With
+		
 		With .LightPlayer()
 			With .EventName("mode_rollovers_started")
 				With .Lights("I1")
@@ -74,6 +84,10 @@ Sub CreateRolloversMode()
 					.Action = "set"
 					.Int = 0
 				End With
+				With .Variable("all_rollovers")
+					.Action = "set"
+					.Int = 0
+				End With
 			End With
 			
 			With .EventName("rollover1_active")
@@ -102,6 +116,12 @@ Sub CreateRolloversMode()
 			End With
 			With .EventName("rollover5_active")
 				With .Variable("rollover5_hit")
+					.Action = "set"
+					.Int = 1
+				End With
+			End With
+			With .EventName("all_rollovers_hit")
+				With .Variable("all_rollovers")
 					.Action = "set"
 					.Int = 1
 				End With

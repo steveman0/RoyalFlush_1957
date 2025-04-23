@@ -177,7 +177,9 @@
       "GIlight007",
       "GIlight006",
       "GIlight005",
-      "GIlight001"
+      "GIlight001",
+      "RGL",
+      "LGL"
     ],
     "fire_events": false,
     "stop_single_events": false,

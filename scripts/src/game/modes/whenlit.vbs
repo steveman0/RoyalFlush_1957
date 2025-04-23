@@ -1,7 +1,7 @@
 
 Public Sub CreateLitModes()
 
-	' Left bumper and slignshots lit for 100k
+	' Left bumper and slignshots lit for 100k / right gobble for 1m
 	With CreateGlfMode("left_lit", 500)
 		.StartEvents = Array("light_left","game_started")
 		.StopEvents = Array("light_right")
@@ -15,6 +15,11 @@ Public Sub CreateLitModes()
 			.Add "score_10k", Array("light_right")
 			' Opposite side gobble lit with lanes 1 and 3 hit
 			.Add "mode_left_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_right_gobble")
+			.Add "rollover1_3_hit", Array("light_right_gobble")
+			' Score gobble holes based on lighted status
+			.Add "gobbleL_active", Array("score_500k")
+			.Add "gobbleR_active{current_player.rollover1_hit == 0 || current_player.rollover3_hit == 0}", Array("score_500k")
+			.Add "gobbleR_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("score_1m")
 		End With
 		
 		With .LightPlayer()
@@ -23,16 +28,15 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
-			' Gobble lights not yet implemented
-			' With .EventName("light_right_gobble")
-				' With .Lights("RGobbleLight")
-					' .Color = "ffffff"
-				' End With
-			' End With
+			With .EventName("light_right_gobble")
+				With .Lights("RGL")
+					.Color = "ffffff"
+				End With
+			End With
 		End With
 	End With
 	
-	' Right bumper and slignshots lit for 100k
+	' Right bumper and slignshots lit for 100k / left gobble for 1m
 	With CreateGlfMode("right_lit", 500)
 		.StartEvents = Array("light_right")
 		.StopEvents = Array("light_left")
@@ -46,6 +50,11 @@ Public Sub CreateLitModes()
 			.Add "score_10k", Array("light_left")
 			' Opposite side gobble lit with lanes 1 and 3 hit
 			.Add "mode_right_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_left_gobble")
+			.Add "rollover1_3_hit", Array("light_left_gobble")
+			' Score gobble holes based on lighted status
+			.Add "gobbleR_active", Array("score_500k")
+			.Add "gobbleL_active{current_player.rollover1_hit == 0 || current_player.rollover3_hit == 0}", Array("score_500k")
+			.Add "gobbleL_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("score_1m")
 		End With
 		
 		With .LightPlayer()
@@ -54,12 +63,11 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
-			' Gobble lights not yet implemented
-			' With .EventName("light_left_gobble")
-				' With .Lights("LGobbleLight")
-					' .Color = "ffffff"
-				' End With
-			' End With
+			With .EventName("light_left_gobble")
+				With .Lights("LGL")
+					.Color = "ffffff"
+				End With
+			End With
 		End With
 	End With
 

@@ -14,20 +14,20 @@ Public Sub CreateScoreMode()
 			.Add "score_500k_timer_tick", Array("score_100k")
 		End With
 		
-		' With .SoundPlayer
-			' With .EventName("score_10k")
-				' .Sound = "10pts"
-				' .Action = "play"
-			' End With
-			' With .EventName("score_100k")
-				' .Sound = "10pts"
-				' .Action = "play"
-			' End With
-			' With .EventName("score_1m")
-				' .Sound = "10pts"
-				' .Action = "play"
-			' End With
-		' End With
+		With .SoundPlayer
+			With .EventName("score_10k")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+			With .EventName("score_100k")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+			With .EventName("score_1m")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+		End With
 		
 		With .VariablePlayer()
 			With .EventName("score_10k") 
