@@ -60,6 +60,7 @@ End Sub
 
 Dim RotoSpinning : RotoSpinning = false
 Sub SpinRoto
+	DispatchPinEvent "score_50k", ActiveBall
 	If RotoSpinning Then
 		Exit Sub
 	End If

@@ -525,6 +525,7 @@ End Sub
 
 Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
+	DispatchPinEvent "score_10k", ActiveBall
 End Sub
 
 Sub Bumper3Action(args)
@@ -6305,12 +6306,6 @@ Sub ConfigureGlfDevices
 		.Switch = "TriggerLane5"
 		.EnableEvents = Array("ball_started")
 	End With
-
-	CreateBaseMode()
-	CreateGIMode()
-	CreateScoreMode()
-	CreateLitModes()
-	CreateRolloversMode()
 	
 	With CreateGlfSound("10pts")
 		.File = "10pts" 'Name in VPX Sound Manager
@@ -6320,6 +6315,17 @@ Sub ConfigureGlfDevices
 		'.EventsWhenStopped = Array("10pts_stopped")
 	End With
 
+	With CreateGlfSoundBus("sfx")
+		.SimultaneousSounds = 8
+		.Volume = 0.5
+	End With
+	
+	CreateBaseMode()
+	CreateGIMode()
+	CreateScoreMode()
+	CreateLitModes()
+	CreateRolloversMode()
+	
 End Sub
 
 Sub LeftFlipperAction(Enabled)
@@ -6377,6 +6383,16 @@ Sub CreateRolloversMode()
 	With CreateGlfMode("rollovers", 500)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended")   
+		
+		With .EventPlayer()
+			.Add "rollover1_active{current_player.rollover3_hit == 1}", Array("rollover1_3_hit")
+			.Add "rollover3_active{current_player.rollover1_hit == 1}", Array("rollover1_3_hit")
+			.Add "rollover1_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover2_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover3_active{current_player.rollover2_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover4_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover5_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover1_hit == 1}", Array("all_rollovers_hit")
+		End With
 		
 		With .LightPlayer()
 			With .EventName("mode_rollovers_started")
@@ -6446,6 +6462,10 @@ Sub CreateRolloversMode()
 					.Action = "set"
 					.Int = 0
 				End With
+				With .Variable("all_rollovers")
+					.Action = "set"
+					.Int = 0
+				End With
 			End With
 			
 			With .EventName("rollover1_active")
@@ -6478,6 +6498,12 @@ Sub CreateRolloversMode()
 					.Int = 1
 				End With
 			End With
+			With .EventName("all_rollovers_hit")
+				With .Variable("all_rollovers")
+					.Action = "set"
+					.Int = 1
+				End With
+			End With
 		End With
 	End With
 End Sub
@@ -6497,20 +6523,20 @@ Public Sub CreateScoreMode()
 			.Add "score_500k_timer_tick", Array("score_100k")
 		End With
 		
-		' With .SoundPlayer
-			' With .EventName("score_10k")
-				' .Sound = "10pts"
-				' .Action = "play"
-			' End With
-			' With .EventName("score_100k")
-				' .Sound = "10pts"
-				' .Action = "play"
-			' End With
-			' With .EventName("score_1m")
-				' .Sound = "10pts"
-				' .Action = "play"
-			' End With
-		' End With
+		With .SoundPlayer
+			With .EventName("score_10k")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+			With .EventName("score_100k")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+			With .EventName("score_1m")
+				.Sound = "10pts"
+				.Action = "play"
+			End With
+		End With
 		
 		With .VariablePlayer()
 			With .EventName("score_10k") 
@@ -6563,7 +6589,7 @@ End Sub
 
 Public Sub CreateLitModes()
 
-	' Left bumper and slignshots lit for 100k
+	' Left bumper and slignshots lit for 100k / right gobble for 1m
 	With CreateGlfMode("left_lit", 500)
 		.StartEvents = Array("light_left","game_started")
 		.StopEvents = Array("light_right")
@@ -6577,6 +6603,11 @@ Public Sub CreateLitModes()
 			.Add "score_10k", Array("light_right")
 			' Opposite side gobble lit with lanes 1 and 3 hit
 			.Add "mode_left_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_right_gobble")
+			.Add "rollover1_3_hit", Array("light_right_gobble")
+			' Score gobble holes based on lighted status
+			.Add "gobbleL_active", Array("score_500k")
+			.Add "gobbleR_active{current_player.rollover1_hit == 0 Or current_player.rollover3_hit == 0}", Array("score_500k")
+			.Add "gobbleR_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("score_1m")
 		End With
 		
 		With .LightPlayer()
@@ -6585,16 +6616,15 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
-			' Gobble lights not yet implemented
-			' With .EventName("light_right_gobble")
-				' With .Lights("RGobbleLight")
-					' .Color = "ffffff"
-				' End With
-			' End With
+			With .EventName("light_right_gobble")
+				With .Lights("RGL")
+					.Color = "ffffff"
+				End With
+			End With
 		End With
 	End With
 	
-	' Right bumper and slignshots lit for 100k
+	' Right bumper and slignshots lit for 100k / left gobble for 1m
 	With CreateGlfMode("right_lit", 500)
 		.StartEvents = Array("light_right")
 		.StopEvents = Array("light_left")
@@ -6608,6 +6638,11 @@ Public Sub CreateLitModes()
 			.Add "score_10k", Array("light_left")
 			' Opposite side gobble lit with lanes 1 and 3 hit
 			.Add "mode_right_lit_started{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("light_left_gobble")
+			.Add "rollover1_3_hit", Array("light_left_gobble")
+			' Score gobble holes based on lighted status
+			.Add "gobbleR_active", Array("score_500k")
+			.Add "gobbleL_active{current_player.rollover1_hit == 0 Or current_player.rollover3_hit == 0}", Array("score_500k")
+			.Add "gobbleL_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("score_1m")
 		End With
 		
 		With .LightPlayer()
@@ -6616,12 +6651,11 @@ Public Sub CreateLitModes()
 					.Color = "ffffff"
 				End With
 			End With
-			' Gobble lights not yet implemented
-			' With .EventName("light_left_gobble")
-				' With .Lights("LGobbleLight")
-					' .Color = "ffffff"
-				' End With
-			' End With
+			With .EventName("light_left_gobble")
+				With .Lights("LGL")
+					.Color = "ffffff"
+				End With
+			End With
 		End With
 	End With
 

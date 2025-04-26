@@ -6,6 +6,6 @@ Sub TriggerLaneL_Hit
 	DispatchPinEvent "score_100k", ActiveBall
 End Sub
 
-Sub TriggerLaneL_Hit
+Sub TriggerLaneR_Hit
 	DispatchPinEvent "score_100k", ActiveBall
 End Sub
