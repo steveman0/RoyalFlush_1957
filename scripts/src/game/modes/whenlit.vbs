@@ -5,7 +5,6 @@ Public Sub CreateLitModes()
 	With CreateGlfMode("left_lit", 500)
 		.StartEvents = Array("light_left","game_started")
 		.StopEvents = Array("light_right")
-		.Debug = true
 
 		With .EventPlayer()
 			.Add "Bumper1_active", Array("score_100k")
@@ -40,7 +39,6 @@ Public Sub CreateLitModes()
 	With CreateGlfMode("right_lit", 500)
 		.StartEvents = Array("light_right")
 		.StopEvents = Array("light_left")
-		.Debug = true
 
 		With .EventPlayer()
 			.Add "Bumper1_active", Array("score_10k")

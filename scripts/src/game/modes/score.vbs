@@ -10,8 +10,8 @@ Public Sub CreateScoreMode()
 			.Add "BumperTR_active", Array("score_50k")
 			.Add "BumperBL_active", Array("score_50k")
 			.Add "BumperBR_active", Array("score_50k")
-			.Add "score_50k_timer_tick", Array("score_10k")
-			.Add "score_500k_timer_tick", Array("score_100k")
+			.Add "timer_score_50k_timer_tick", Array("score_10k")
+			.Add "timer_score_500k_timer_tick", Array("score_100k")
 		End With
 		
 		With .SoundPlayer
@@ -52,28 +52,36 @@ Public Sub CreateScoreMode()
 		
 		' 50k points awarded by ticking 10k 5 times
 		With .Timers("score_50k_timer")
-			' Configure start and stop events
 			With .ControlEvents()
 				.EventName = "score_50k"
 				.Action = "start"
 			End With
+			' Only reset on completion / don't restart while active
+			With .ControlEvents()
+				.EventName = "timer_score_50k_timer_complete"
+				.Action = "reset"
+			End With
 			.Direction = "down"
-			.StartValue = 1
+			.StartValue = 5
 			.EndValue = 0
-			.TickInterval = 200    ' In ms
+			.TickInterval = 100    ' In ms
 		End With
 		
 		' 500k points awarded by ticking 100k 5 times
 		With .Timers("score_500k_timer")
-			' Configure start and stop events
 			With .ControlEvents()
 				.EventName = "score_500k"
 				.Action = "start"
 			End With
+			' Only reset on completion / don't restart while active
+			With .ControlEvents()
+				.EventName = "timer_score_500k_timer_complete"
+				.Action = "reset"
+			End With
 			.Direction = "down"
 			.StartValue = 1
 			.EndValue = 0
-			.TickInterval = 200    ' In ms
+			.TickInterval = 100    ' In ms
 		End With
 	End With
 End Sub

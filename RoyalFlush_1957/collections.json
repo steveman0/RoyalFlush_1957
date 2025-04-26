@@ -98,7 +98,11 @@
       "zCol_Rubber_Post036",
       "zCol_Rubber_Post037",
       "zCol_Rubber_Post038",
-      "zCol_Rubber_Post039"
+      "zCol_Rubber_Post039",
+      "BumperBR",
+      "BumperBL",
+      "BumperTR",
+      "BumperTL"
     ],
     "fire_events": true,
     "stop_single_events": false,

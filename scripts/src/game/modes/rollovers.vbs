@@ -5,15 +5,15 @@ Sub CreateRolloversMode()
 	With CreateGlfMode("rollovers", 500)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended")   
-		
+		.Debug = true
 		With .EventPlayer()
-			.Add "rollover1_active{current_player.rollover3_hit == 1}", Array("rollover1_3_hit")
-			.Add "rollover3_active{current_player.rollover1_hit == 1}", Array("rollover1_3_hit")
-			.Add "rollover1_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
-			.Add "rollover2_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
-			.Add "rollover3_active{current_player.rollover2_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
-			.Add "rollover4_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
-			.Add "rollover5_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover1_hit == 1}", Array("all_rollovers_hit")
+			.Add "TriggerLane1_active{current_player.rollover3_hit == 1}", Array("rollover1_3_hit")
+			.Add "TriggerLane3_active{current_player.rollover1_hit == 1}", Array("rollover1_3_hit")
+			.Add "TriggerLane1_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "TriggerLane2_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "TriggerLane3_active{current_player.rollover2_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "TriggerLane4_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
+			.Add "TriggerLane5_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover1_hit == 1}", Array("all_rollovers_hit")
 		End With
 		
 		With .LightPlayer()

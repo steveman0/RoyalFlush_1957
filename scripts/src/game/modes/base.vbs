@@ -4,7 +4,7 @@ Sub CreateBaseMode()
 
 	With CreateGlfMode("base", 100)
 		.StartEvents = Array("ball_started")
-		.StopEvents = Array("ball_ended")   
+		.StopEvents = Array("ball_ended")
 		
 		With .Tilt
 			.WarningsToTilt = TiltWarnings

@@ -29,7 +29,6 @@ End Sub
 Sub BumperTLAction(args)
 	Dim enabled : enabled = args(0)
 	If enabled Then
-		RandomSoundBumperTop BumperTL
 		SpinRoto
 	End If
 End Sub
@@ -37,7 +36,6 @@ End Sub
 Sub BumperTRAction(args)
 	Dim enabled : enabled = args(0)
 	If enabled Then
-		RandomSoundBumperTop BumperTR
 		SpinRoto
 	End If
 End Sub
@@ -45,7 +43,6 @@ End Sub
 Sub BumperBLAction(args)
 	Dim enabled : enabled = args(0)
 	If enabled Then
-		RandomSoundBumperBottom BumperBL
 		SpinRoto
 	End If
 End Sub
@@ -53,14 +50,12 @@ End Sub
 Sub BumperBRAction(args)
 	Dim enabled : enabled = args(0)
 	If enabled Then
-		RandomSoundBumperBottom BumperBR
 		SpinRoto
 	End If
 End Sub
 
 Dim RotoSpinning : RotoSpinning = false
 Sub SpinRoto
-	DispatchPinEvent "score_50k", ActiveBall
 	If RotoSpinning Then
 		Exit Sub
 	End If
