@@ -4,7 +4,7 @@
     "is_droppable": false,
     "is_flipbook": false,
     "is_bottom_solid": true,
-    "is_collidable": true,
+    "is_collidable": false,
     "is_timer_enabled": false,
     "timer_interval": 100,
     "threshold": 2.0,

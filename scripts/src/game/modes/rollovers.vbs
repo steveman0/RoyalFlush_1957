@@ -35,34 +35,36 @@ Sub CreateRolloversMode()
 				End With
 			End With
 			
-			With .EventName("rollover1_active")
+			With .EventName("TriggerLane1_active")
 				With .Lights("I1")
 					.Color = "000000"
 				End With
 			End With
-			With .EventName("rollover2_active")
+			With .EventName("TriggerLane2_active")
 				With .Lights("I2")
 					.Color = "000000"
 				End With
 			End With
-			With .EventName("rollover3_active")
+			With .EventName("TriggerLane3_active")
 				With .Lights("I3")
 					.Color = "000000"
 				End With
 			End With
-			With .EventName("rollover4_active")
+			With .EventName("TriggerLane4_active")
 				With .Lights("I4")
 					.Color = "000000"
 				End With
 			End With
-			With .EventName("rollover5_active")
+			With .EventName("TriggerLane5_active")
 				With .Lights("I5")
 					.Color = "000000"
 				End With
 			End With
+			.Debug = true
 		End With
 		
 		With .VariablePlayer
+			.Debug = true
 			With .EventName("mode_rollovers_started")
 				With .Variable("rollover1_hit")
 					.Action = "set"
@@ -90,31 +92,31 @@ Sub CreateRolloversMode()
 				End With
 			End With
 			
-			With .EventName("rollover1_active")
+			With .EventName("TriggerLane1_active")
 				With .Variable("rollover1_hit")
 					.Action = "set"
 					.Int = 1
 				End With
 			End With
-			With .EventName("rollover2_active")
+			With .EventName("TriggerLane2_active")
 				With .Variable("rollover2_hit")
 					.Action = "set"
 					.Int = 1
 				End With
 			End With
-			With .EventName("rollover3_active")
+			With .EventName("TriggerLane3_active")
 				With .Variable("rollover3_hit")
 					.Action = "set"
 					.Int = 1
 				End With
 			End With
-			With .EventName("rollover4_active")
+			With .EventName("TriggerLane4_active")
 				With .Variable("rollover4_hit")
 					.Action = "set"
 					.Int = 1
 				End With
 			End With
-			With .EventName("rollover5_active")
+			With .EventName("TriggerLane5_active")
 				With .Variable("rollover5_hit")
 					.Action = "set"
 					.Int = 1
