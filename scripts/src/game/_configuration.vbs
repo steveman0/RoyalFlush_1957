@@ -132,12 +132,6 @@ Sub ConfigureGlfDevices
 		.Switch = "TriggerLane5"
 		.EnableEvents = Array("ball_started")
 	End With
-
-	CreateBaseMode()
-	CreateGIMode()
-	CreateScoreMode()
-	CreateLitModes()
-	CreateRolloversMode()
 	
 	With CreateGlfSound("10pts")
 		.File = "10pts" 'Name in VPX Sound Manager
@@ -151,6 +145,13 @@ Sub ConfigureGlfDevices
 		.SimultaneousSounds = 8
 		.Volume = 0.5
 	End With
+	
+	CreateBaseMode()
+	CreateGIMode()
+	CreateScoreMode()
+	CreateLitModes()
+	CreateRolloversMode()
+	
 End Sub
 
 Sub LeftFlipperAction(Enabled)

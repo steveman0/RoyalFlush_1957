@@ -18,7 +18,7 @@ Public Sub CreateLitModes()
 			.Add "rollover1_3_hit", Array("light_right_gobble")
 			' Score gobble holes based on lighted status
 			.Add "gobbleL_active", Array("score_500k")
-			.Add "gobbleR_active{current_player.rollover1_hit == 0 || current_player.rollover3_hit == 0}", Array("score_500k")
+			.Add "gobbleR_active{current_player.rollover1_hit == 0 Or current_player.rollover3_hit == 0}", Array("score_500k")
 			.Add "gobbleR_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("score_1m")
 		End With
 		
@@ -53,7 +53,7 @@ Public Sub CreateLitModes()
 			.Add "rollover1_3_hit", Array("light_left_gobble")
 			' Score gobble holes based on lighted status
 			.Add "gobbleR_active", Array("score_500k")
-			.Add "gobbleL_active{current_player.rollover1_hit == 0 || current_player.rollover3_hit == 0}", Array("score_500k")
+			.Add "gobbleL_active{current_player.rollover1_hit == 0 Or current_player.rollover3_hit == 0}", Array("score_500k")
 			.Add "gobbleL_active{current_player.rollover1_hit == 1 && current_player.rollover3_hit == 1}", Array("score_1m")
 		End With
 		

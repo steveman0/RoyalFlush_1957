@@ -15,6 +15,7 @@ End Sub
 
 Sub Bumper2_Hit
 	RandomSoundBumperMiddle Bumper2
+	DispatchPinEvent "score_10k", ActiveBall
 End Sub
 
 Sub Bumper3Action(args)
