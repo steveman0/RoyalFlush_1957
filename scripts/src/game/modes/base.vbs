@@ -20,11 +20,19 @@ Public Sub CreateGIMode()
 	With CreateGlfMode("gi_control", 1000)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended") 
+		
 		With .LightPlayer()
 			With .EventName("mode_gi_control_started")
 				With .Lights("GI")
 					.Color = "ffffff"
 				End With
+			End With
+		End With
+
+		With .DOFPlayer()
+			With .EventName("mode_gi_control_started")
+				.Action = "DOF_ON"
+				.DOFEvent = 1 ' Backglass lights
 			End With
 		End With
 	End With

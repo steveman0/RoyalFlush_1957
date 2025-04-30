@@ -1,10 +1,10 @@
 
 Public Sub CreateScoreMode()
-
+	Dim i
 	With CreateGlfMode("score", 2000)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended")
-		
+		.Debug = true
 		With .EventPlayer()
 			.Add "BumperTL_active", Array("score_50k")
 			.Add "BumperTR_active", Array("score_50k")
@@ -36,6 +36,7 @@ Public Sub CreateScoreMode()
 					.Int = "10000"
 				End With
 			End With
+			.Debug = true
 			With .EventName("score_100k") 
 				With .Variable("score")
 					.Action = "add"
@@ -48,6 +49,20 @@ Public Sub CreateScoreMode()
 					.Int = "1000000"
 				End With
 			End With
+		End With
+
+		With .DOFPlayer()
+			For i=0 to 9
+				With .EventName("score_10k.1" & i & "{(current_player.score Mod 100000) / 10000 == i}")
+					.Action = "DOF_ON"
+					.DOFEvent = 11 + i
+				End With
+				With .EventName("score_10k.2" & i & "{(current_player.score Mod 100000) / 10000 == i}")
+					.Action = "DOF_OFF"
+					.DOFEvent = 10 + i
+				End With
+			Next
+			.Debug = true
 		End With
 		
 		' 50k points awarded by ticking 10k 5 times
