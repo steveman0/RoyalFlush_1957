@@ -11,12 +11,17 @@ Sub LoadCoreFiles
 End Sub
 
 Sub Table1_Init
+	LoadEM
+
 	ConfigureGlfDevices()
 	Glf_Init()
 	glf_ballsPerGame = 5
 	
-End Sub
+	AddPinEventListener "score_10k", "score_10k_dev", "UpdateBackglassScore", 100, Null
+	AddPinEventListener "score_100k", "score_100k_dev", "UpdateBackglassScore", 100, Null
+	AddPinEventListener "score_1m", "score_1m_dev", "UpdateBackglassScore", 100, Null
 
+End Sub
 
 Sub Table1_Exit
 	'Close flexDMD
