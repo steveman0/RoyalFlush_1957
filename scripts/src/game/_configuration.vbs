@@ -151,6 +151,7 @@ Sub ConfigureGlfDevices
 	CreateScoreMode()
 	CreateLitModes()
 	CreateRolloversMode()
+	CreateRotoTargetMode()
 	
 End Sub
 

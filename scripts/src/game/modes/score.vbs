@@ -4,7 +4,7 @@ Public Sub CreateScoreMode()
 	With CreateGlfMode("score", 2000)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended")
-		.Debug = true
+
 		With .EventPlayer()
 			.Add "BumperTL_active", Array("score_50k")
 			.Add "BumperTR_active", Array("score_50k")
@@ -12,18 +12,13 @@ Public Sub CreateScoreMode()
 			.Add "BumperBR_active", Array("score_50k")
 			.Add "timer_score_50k_timer_tick", Array("score_10k")
 			.Add "timer_score_500k_timer_tick", Array("score_100k")
+			.Add "score_10k", Array("play_10pts")
+			.Add "score_100k", Array("play_10pts")
+			.Add "score_1m", Array("play_10pts")
 		End With
 		
 		With .SoundPlayer
-			With .EventName("score_10k")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-			With .EventName("score_100k")
-				.Sound = "10pts"
-				.Action = "play"
-			End With
-			With .EventName("score_1m")
+			With .EventName("play_10pts")
 				.Sound = "10pts"
 				.Action = "play"
 			End With
@@ -36,7 +31,6 @@ Public Sub CreateScoreMode()
 					.Int = "10000"
 				End With
 			End With
-			.Debug = true
 			With .EventName("score_100k") 
 				With .Variable("score")
 					.Action = "add"
