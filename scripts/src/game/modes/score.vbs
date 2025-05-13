@@ -1,6 +1,5 @@
 
 Public Sub CreateScoreMode()
-	Dim i
 	With CreateGlfMode("score", 2000)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ended")
