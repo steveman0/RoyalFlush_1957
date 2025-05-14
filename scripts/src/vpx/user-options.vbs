@@ -32,7 +32,7 @@ Sub Table1_OptionEvent(ByVal eventId)
 	If eventId = 1 And Not dspTriggered Then dspTriggered = True : DisableStaticPreRendering = True : End If
 
 	' DOF
-	RotoDofMode = Table1.Option("Roto DOF Mode", 1, 4, 1, 0, 0, Array("Both", "Gear Motor Only", "Shaker Motor Only", "None"))
+	RotoDofMode = Table1.Option("Roto DOF Mode", 1, 4, 1, 0, 0, Array("Both", "Shaker Motor Only", "Gear Motor Only", "None"))
 	
 	' Difficulty
 	TiltWarnings = Table1.Option("Tilt Warnings", 0, 5, 1, 2, 0)

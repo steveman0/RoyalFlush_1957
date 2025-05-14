@@ -156,6 +156,48 @@ Sub ConfigureGlfDevices
         .ValueType = "int"
         .Persist = True
     End With
+
+	With CreateMachineVar("ace_card")
+        .InitialValue = 0
+        .ValueType = "int"
+        .Persist = True
+    End With
+
+	With CreateMachineVar("king_card")
+        .InitialValue = 0
+        .ValueType = "int"
+        .Persist = True
+    End With
+
+	With CreateMachineVar("queen_card")
+        .InitialValue = 0
+        .ValueType = "int"
+        .Persist = True
+    End With
+
+	With CreateMachineVar("jack_card")
+        .InitialValue = 0
+        .ValueType = "int"
+        .Persist = True
+    End With
+
+	With CreateMachineVar("ten_card")
+        .InitialValue = 0
+        .ValueType = "int"
+        .Persist = True
+    End With
+
+	With CreateMachineVar("joker_card")
+        .InitialValue = 0
+        .ValueType = "int"
+        .Persist = True
+    End With
+
+	With CreateMachineVar("credits")
+        .InitialValue = 0
+        .ValueType = "int"
+        .Persist = True
+    End With
 	
 	CreateBaseMode()
 	CreateGIMode()
@@ -163,6 +205,7 @@ Sub ConfigureGlfDevices
 	CreateLitModes()
 	CreateRolloversMode()
 	CreateRotoTargetMode()
+	CreateSpecialMode()
 	
 End Sub
 
