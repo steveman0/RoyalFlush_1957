@@ -19,6 +19,11 @@ Sub CreateRolloversMode()
 			.Add "TriggerLane3_active{current_player.rollover2_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
 			.Add "TriggerLane4_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
 			.Add "TriggerLane5_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover1_hit == 1}", Array("all_rollovers_hit")
+			.Add "rollover_1_started{all_rollovers == 1}", Array("light_is1")
+			.Add "rollover_2_started{all_rollovers == 1}", Array("light_is2")
+			.Add "rollover_3_started{all_rollovers == 1}", Array("light_is3")
+			.Add "rollover_4_started{all_rollovers == 1}", Array("light_is4")
+			.Add "rollover_5_started{all_rollovers == 1}", Array("light_is5")
 		End With
 		
 		With .LightPlayer()
@@ -62,6 +67,47 @@ Sub CreateRolloversMode()
 			End With
 			With .EventName("TriggerLane5_active")
 				With .Lights("I5")
+					.Color = "000000"
+				End With
+			End With
+
+			With .EventName("light_is1")
+				With .Lights("IS1")
+					.Color = "ffffff"
+				End With
+				With .Lights("IS5")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("light_is2")
+				With .Lights("IS2")
+					.Color = "ffffff"
+				End With
+				With .Lights("IS1")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("light_is3")
+				With .Lights("IS3")
+					.Color = "ffffff"
+				End With
+				With .Lights("IS2")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("light_is4")
+				With .Lights("IS4")
+					.Color = "ffffff"
+				End With
+				With .Lights("IS3")
+					.Color = "000000"
+				End With
+			End With
+			With .EventName("light_is5")
+				With .Lights("IS5")
+					.Color = "ffffff"
+				End With
+				With .Lights("IS4")
 					.Color = "000000"
 				End With
 			End With
@@ -133,6 +179,59 @@ Sub CreateRolloversMode()
 					.Int = 1
 				End With
 			End With
+		End With
+
+		' Simple rotating state machine on 10k point scoring
+		With .StateMachines("rollover_special")
+			.PersistState = True
+			.StartingState = "rollover_1"
+
+			With .States("rollover_1")
+				.Label = "Rollover 1"
+				.EventsWhenStarted = Array("rollover_1_started")
+			End With
+			With .States("rollover_2")
+				.Label = "Rollover 2"
+				.EventsWhenStarted = Array("rollover_2_started")
+			End With
+			With .States("rollover_3")
+				.Label = "Rollover 3"
+				.EventsWhenStarted = Array("rollover_3_started")
+			End With
+			With .States("rollover_4")
+				.Label = "Rollover 4"
+				.EventsWhenStarted = Array("rollover_4_started")
+			End With
+			With .States("rollover_5")
+				.Label = "Rollover 5"
+				.EventsWhenStarted = Array("rollover_5_started")
+			End With
+
+			With .Transitions
+				.Source = Array("rollover_1")
+				.Target = "rollover_2"
+				.Events = Array("score_10k")
+        	End With
+			With .Transitions
+				.Source = Array("rollover_2")
+				.Target = "rollover_3"
+				.Events = Array("score_10k")
+        	End With
+			With .Transitions
+				.Source = Array("rollover_3")
+				.Target = "rollover_4"
+				.Events = Array("score_10k")
+        	End With
+			With .Transitions
+				.Source = Array("rollover_4")
+				.Target = "rollover_5"
+				.Events = Array("score_10k")
+        	End With
+			With .Transitions
+				.Source = Array("rollover_5")
+				.Target = "rollover_1"
+				.Events = Array("score_10k")
+        	End With
 		End With
 	End With
 End Sub
