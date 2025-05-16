@@ -3,7 +3,8 @@ Sub CreateRotoTargetMode()
 	With CreateGlfMode("rototarget", 500)
 		.StartEvents = Array("ball_started")
 		.StopEvents = Array("ball_ended")
-		
+		Dim i
+
         ' Roto target index mapping
         ' 1: Joker
         ' 2: Ace
@@ -35,6 +36,9 @@ Sub CreateRotoTargetMode()
 			.Add "BumperTR_active", Array("pick_new_card")
 			.Add "BumperBL_active", Array("pick_new_card")
 			.Add "BumperBR_active", Array("pick_new_card")
+            For i = 1 To 15
+                .Add "roto_" & i, Array("update_target_visuals")
+            Next
             .Add "RotoTarget_active{machine.roto_index == 1 && machine.joker_card == 0}", Array("set_joker_card", "set_new_card")
             .Add "RotoTarget_active{machine.roto_index == 5 && machine.joker_card == 0}", Array("set_joker_card", "set_new_card")
             .Add "RotoTarget_active{machine.roto_index == 12 && machine.joker_card == 0}", Array("set_joker_card", "set_new_card")
@@ -56,7 +60,7 @@ Sub CreateRotoTargetMode()
             .Add "RotoTarget_active{machine.ace_card == 1 && machine.king_card == 1 && machine.queen_card == 1 && machine.jack_card == 1 && machine_.ten_card == 1 && machine.joker_card == 1}", Array("award_special")
 		End With
 
-        Dim i
+        
         With .RandomEventPlayer
             With .EventName("pick_new_card")
                 For i = 1 to 15
