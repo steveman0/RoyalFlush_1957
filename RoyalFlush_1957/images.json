@@ -96,5 +96,89 @@
       "name": "VLM.Nestmap2"
     },
     "bits": false
+  },
+  {
+    "name": "Ace",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Ace.png",
+    "width": 275,
+    "height": 381,
+    "alpha_test_value": -1.0,
+    "is_opaque": true,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Ace.png",
+      "name": "Ace"
+    },
+    "bits": false
+  },
+  {
+    "name": "Jack",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Jack.png",
+    "width": 272,
+    "height": 380,
+    "alpha_test_value": -1.0,
+    "is_opaque": true,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Jack.png",
+      "name": "Jack"
+    },
+    "bits": false
+  },
+  {
+    "name": "Joker",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Joker.png",
+    "width": 269,
+    "height": 380,
+    "alpha_test_value": -1.0,
+    "is_opaque": true,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Joker.png",
+      "name": "Joker"
+    },
+    "bits": false
+  },
+  {
+    "name": "King",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\King.png",
+    "width": 268,
+    "height": 392,
+    "alpha_test_value": -1.0,
+    "is_opaque": true,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\King.png",
+      "name": "King"
+    },
+    "bits": false
+  },
+  {
+    "name": "Queen",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Queen.png",
+    "width": 288,
+    "height": 408,
+    "alpha_test_value": -1.0,
+    "is_opaque": true,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Queen.png",
+      "name": "Queen"
+    },
+    "bits": false
+  },
+  {
+    "name": "Ten",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Ten.png",
+    "width": 281,
+    "height": 393,
+    "alpha_test_value": -1.0,
+    "is_opaque": true,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\Ten.png",
+      "name": "Ten"
+    },
+    "bits": false
   }
 ]

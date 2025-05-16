@@ -1,8 +1,8 @@
 {
   "HitTarget": {
     "position": {
-      "x": 434.23752,
-      "y": 958.3337,
+      "x": 432.75873,
+      "y": 959.59894,
       "z": 0.0
     },
     "size": {
@@ -11,11 +11,11 @@
       "z": 32.0
     },
     "rot_z": 0.0,
-    "image": "",
-    "target_type": "hit_target_rectangle",
-    "name": "RotoTarget",
+    "image": "Joker",
+    "target_type": "drop_target_simple",
+    "name": "VisibleTarget",
     "material": "",
-    "is_visible": false,
+    "is_visible": true,
     "is_legacy": false,
     "use_hit_event": true,
     "threshold": 2.0,
@@ -28,12 +28,12 @@
     "disable_lighting_top": 0.0,
     "disable_lighting_below": 1.0,
     "depth_bias": 0.0,
-    "is_reflection_enabled": false,
+    "is_reflection_enabled": true,
     "is_dropped": false,
-    "drop_speed": 0.0,
+    "drop_speed": 0.5,
     "is_timer_enabled": false,
     "timer_interval": 100,
-    "raise_delay": 0,
+    "raise_delay": 100,
     "physics_material": "",
     "overwrite_physics": true
   }
