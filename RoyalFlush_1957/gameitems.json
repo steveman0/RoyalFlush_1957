@@ -749,14 +749,14 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight001.json",
+    "file_name": "Light.GI1.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight002.json",
+    "file_name": "Light.GI2.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
@@ -1708,105 +1708,105 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight005.json",
+    "file_name": "Light.GI5.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight006.json",
+    "file_name": "Light.GI6.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight007.json",
+    "file_name": "Light.GI7.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight008.json",
+    "file_name": "Light.GI8.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight011.json",
+    "file_name": "Light.GI11.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight012.json",
+    "file_name": "Light.GI12.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight013.json",
+    "file_name": "Light.GI13.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight014.json",
+    "file_name": "Light.GI14.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight015.json",
+    "file_name": "Light.GI15.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight016.json",
+    "file_name": "Light.GI16.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight017.json",
+    "file_name": "Light.GI17.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight018.json",
+    "file_name": "Light.GI18.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight019.json",
+    "file_name": "Light.GI19.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight020.json",
+    "file_name": "Light.GI20.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.GIlight021.json",
+    "file_name": "Light.GI21.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "GILights",
@@ -1848,7 +1848,7 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Light.lstarget.json",
+    "file_name": "Light.lst.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
@@ -2440,489 +2440,83 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Wall25.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.LeftSlingShot.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.Sling2.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.EndPoint1LS.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.EndPoint2LS.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Wall18.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Wall19.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RightSlingShot.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.EndPoint1RS.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.EndPoint2RS.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.Sling1.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Slings",
-    "editor_layer_visibility": true
-  },
-  {
-    "file_name": "Primitive.BM_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Visuals",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.BM_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Visuals",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight001_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight001_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight002_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight002_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight005_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight005_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight006_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight006_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight007_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight007_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight008_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight008_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight011_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight011_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight012_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight012_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight013_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight013_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight014_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight014_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight015_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight015_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight016_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight016_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight017_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight017_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight018_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight018_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight019_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight019_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight020_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight020_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight021_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_GIlight021_Playfi.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l1_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l1_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l2_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l2_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l3_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l3_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l4_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l4_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l5_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_l5_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls1_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls1_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls2_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls2_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls3_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls3_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls4_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls4_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls5_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_ls5_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_lstarget_Parts.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_All_Lights_lstarget_Playfiel.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
@@ -2958,6 +2552,1021 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Temp Objs",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_Bumper_Ring_004.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_Bumper_Ring_005.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_Bumper_Ring_006.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_Gate_Wire.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_GottliebEMSlingArm.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_GottliebEMSlingArm_001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_TriggerLane2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_TriggerLane3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_TriggerLane4.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_TriggerLane5.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_TriggerLaneL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_TriggerLaneR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_GottliebEMSlingArm.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_GottliebEMSlingArm.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_GottliebEMSlingArm_0.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI13_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI13_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI13_TriggerLaneL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI14_Bumper_Ring_005.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI14_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI14_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI15_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI15_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI16_Gate_Wire.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI16_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI16_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI17_Bumper_Ring_004.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI17_Bumper_Ring_006.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI17_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI17_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI18_Bumper_Ring_006.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI18_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI18_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI19_Bumper_Ring_005.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI19_Bumper_Ring_006.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI19_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI19_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_GottliebEMSlingArm_00.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_GottliebEMSlingArm.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI5_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI5_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI5_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI6_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI6_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI6_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI7_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI7_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI7_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI7_TriggerLane3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI8_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI8_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI8_TriggerLane3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_LGL_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_LGL_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_RGL_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_RGL_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l1_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l1_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l1_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l2_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l2_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l2_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l3_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l3_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_GottliebEMSlingArm.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_TriggerLane4.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_GottliebEMSlingArm_001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_TriggerLane5.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls1_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls1_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls1_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls2_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls2_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls2_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls3_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls3_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls3_TriggerLane1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_GottliebEMSlingArm.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_TriggerLane4.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_GottliebEMSlingArm_00.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls5_TriggerLane5.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_GottliebEMSlingArm.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_LFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_LFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_Parts.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_RFlipper.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_RFlipper___Up.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
   }
 ]
