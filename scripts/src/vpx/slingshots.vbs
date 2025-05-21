@@ -11,11 +11,8 @@ Sub RightSlingShot_Slingshot(args)
 		If Not IsNull(args(1)) Then
 			RS.VelocityCorrect(args(1))
 		End If
-		Addscore 10000
-		RSling1.Visible = 1
-		Sling1.TransY =  - 20   'Sling Metal Bracket
 		RStep = 0
-		RightSlingShot_Timer
+		' RightSlingShot_Timer
 		RightSlingShot.TimerEnabled = 1
 		RightSlingShot.TimerInterval = 17
 		RandomSoundSlingshotRight Sling1
@@ -24,16 +21,16 @@ Sub RightSlingShot_Slingshot(args)
 End Sub
 
 Sub RightSlingShot_Timer
+	Dim BL
+	Dim x1, x2, y : x1 = True : x2 = False : y = 25	
 	Select Case RStep
-		Case 3
-			RSLing1.Visible = 0
-			RSLing2.Visible = 1
-			Sling1.TransY =  - 10
-		Case 4
-			RSLing2.Visible = 0
-			Sling1.TransY = 0
-			RightSlingShot.TimerEnabled = 0
+		Case 3: x1 = False : x2 = True : y = 15
+		Case 4: x1 = False : x2 = False : y = 0
+		RightSlingShot.TimerEnabled = 0
 	End Select
+	For Each BL in BP_RSling2 : BL.Visible = x1 : Next
+	For Each BL in BP_RSling3 : BL.Visible = x2 : Next
+	For Each BL in BP_SlingArmR : BL.transx = y : Next
 	RStep = RStep + 1
 End Sub
 
@@ -42,12 +39,9 @@ Sub LeftSlingShot_Slingshot(args)
 	If enabled then
 		If Not IsNull(args(1)) Then
 			LS.VelocityCorrect(args(1))
-		End If
-		Addscore 10000
-		LSling1.Visible = 1
-		Sling2.TransY =  - 20   'Sling Metal Bracket		
+		End If	
 		LStep = 0
-		LeftSlingShot_Timer
+		' LeftSlingShot_Timer
 		LeftSlingShot.TimerEnabled = 1
 		LeftSlingShot.TimerInterval = 17
 		RandomSoundSlingshotLeft Sling2
@@ -56,16 +50,16 @@ Sub LeftSlingShot_Slingshot(args)
 End Sub
 
 Sub LeftSlingShot_Timer
+	Dim BL
+	Dim x1, x2, y : x1 = True : x2 = False : y = 25	
 	Select Case LStep
-		Case 3
-			LSLing1.Visible = 0
-			LSLing2.Visible = 1
-			Sling2.TransY =  - 10
-		Case 4
-			LSLing2.Visible = 0
-			Sling2.TransY = 0
+		Case 3: x1 = False : x2 = True : y = 15
+		Case 4: x1 = False : x2 = False : y = 0
 			LeftSlingShot.TimerEnabled = 0
 	End Select
+	For Each BL in BP_LSling2 : BL.Visible = x1 : Next
+	For Each BL in BP_LSling3 : BL.Visible = x2 : Next
+	For Each BL in BP_SlingArmL : BL.transx = y : Next
 	LStep = LStep + 1
 End Sub
 
