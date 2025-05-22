@@ -298,7 +298,7 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.CutoutRoto.json",
@@ -1054,70 +1054,70 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.GobbleR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Gate.Gate.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Bumper.Bumper1.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Bumper.Bumper2.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Bumper.Bumper3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Bumper.BumperTL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Bumper.BumperTR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Bumper.BumperBL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Bumper.BumperBR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber017.json",
@@ -2062,49 +2062,49 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.swTrough1.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.swTrough5.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.swTrough2.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.swTrough4.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.swTrough3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.LaneKicker.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.ElevatorWall.json",
@@ -2153,7 +2153,7 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Trigger.TriggerLane1.json",
@@ -2433,7 +2433,7 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Parts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Wall24.json",
@@ -2583,28 +2583,35 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.BM_GottliebEMSlingArm.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Visuals",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.BM_GottliebEMSlingArm_001.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Visuals",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.BM_LFlipper.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.BM_LFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.BM_LSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.BM_LFlipper___Up.json",
+    "file_name": "Primitive.BM_LSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_LSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Visuals",
@@ -2629,10 +2636,45 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.BM_RFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.BM_RSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.BM_RFlipper___Up.json",
+    "file_name": "Primitive.BM_RSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_RSling3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_SlingArmL.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Visuals",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.BM_SlingArmR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Visuals",
@@ -2688,13 +2730,6 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI1_GottliebEMSlingArm.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.LM_GI_GI1_LFlipper.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -2702,7 +2737,28 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI1_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI1_LFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_LSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_LSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI1_LSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -2723,14 +2779,14 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI1_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI1_RFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI11_GottliebEMSlingArm.json",
+    "file_name": "Primitive.LM_GI_GI1_SlingArmL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -2744,7 +2800,28 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI11_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI11_LFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_LSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_LSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI11_LSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -2765,21 +2842,21 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI11_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI11_RFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI12_GottliebEMSlingArm_0.json",
+    "file_name": "Primitive.LM_GI_GI11_SlingArmL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI12_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI12_LFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -2807,7 +2884,35 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI12_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI12_RFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_RSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_RSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_RSling3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI12_SlingArmR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -2968,14 +3073,7 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI2_GottliebEMSlingArm_00.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_GI_GI2_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI2_LFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3003,14 +3101,35 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI2_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI2_RFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI20_GottliebEMSlingArm.json",
+    "file_name": "Primitive.LM_GI_GI2_RSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_RSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_RSling3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI2_SlingArmR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3024,7 +3143,28 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI20_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI20_LFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_LSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_LSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_LSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3039,6 +3179,13 @@
   },
   {
     "file_name": "Primitive.LM_GI_GI20_Playfield.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI20_SlingArmL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3066,7 +3213,28 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI21_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_GI21_RFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_RSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_RSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_RSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3248,13 +3416,6 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_l4_GottliebEMSlingArm.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.LM_GI_l4_LFlipper.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -3262,7 +3423,28 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_l4_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_l4_LFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_LSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_LSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_LSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3283,7 +3465,14 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_l4_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_l4_RFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l4_SlingArmL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3297,14 +3486,7 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_l5_GottliebEMSlingArm_001.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_GI_l5_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_l5_LFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3332,7 +3514,28 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_l5_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_l5_RFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_RSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_RSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_l5_RSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3381,13 +3584,6 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls2_TriggerLane1.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.LM_GI_ls3_Parts.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -3402,20 +3598,6 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls3_TriggerLane1.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_GI_ls4_GottliebEMSlingArm.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.LM_GI_ls4_LFlipper.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -3423,7 +3605,28 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls4_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_ls4_LFlipperUp.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_LSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_LSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_ls4_LSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3444,14 +3647,14 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls4_RFlipper.json",
+    "file_name": "Primitive.LM_GI_ls4_RFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls4_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_ls4_SlingArmL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3465,21 +3668,7 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls5_GottliebEMSlingArm_00.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_GI_ls5_LFlipper.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_GI_ls5_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_ls5_LFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3507,35 +3696,35 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls5_RFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_ls5_RFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls5_TriggerLane5.json",
+    "file_name": "Primitive.LM_GI_ls5_RSling1.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_lst_GottliebEMSlingArm.json",
+    "file_name": "Primitive.LM_GI_ls5_RSling2.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_lst_LFlipper.json",
+    "file_name": "Primitive.LM_GI_ls5_RSling3.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_lst_LFlipper___Up.json",
+    "file_name": "Primitive.LM_GI_ls5_SlingArmR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3550,20 +3739,6 @@
   },
   {
     "file_name": "Primitive.LM_GI_lst_Playfield.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_GI_lst_RFlipper.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Primitive.LM_GI_lst_RFlipper___Up.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",

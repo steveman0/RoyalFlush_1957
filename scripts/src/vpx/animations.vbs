@@ -4,35 +4,35 @@
 
 ' Flippers
 Sub LeftFlipper_Animate
-	Dim a: a = LeftFlipper.CurrentAngle 
+	Dim a: a = LeftFlipper.CurrentAngle
 	FlipperLSh.RotZ = a
 
 	Dim v, BP 
-	v = 255.0 * (122.0 - LeftFlipper.CurrentAngle) / (122.0 - 75.0)
+	v = 255.0 * (121.0 - LeftFlipper.CurrentAngle) / 52
 
 	For Each BP in BP_LFlipper
-		BP.RotZ = a 
+		BP.RotZ = a - 91
 		BP.visible = v < 128.0
 	Next
-	For Each BP in BP_LFlipper___Up
-		BP.RotZ = a 
+	For Each BP in BP_LFlipperUp
+		BP.RotZ = a - 91
 		BP.visible = v >= 128.0
 	Next	
 End Sub
 
 Sub RightFlipper_Animate
-	Dim a: a = RightFlipper.CurrentAngle 
+	Dim a: a = RightFlipper.CurrentAngle
 	FlipperRSh.RotZ = a
 
 	Dim v, BP 
-	v = 255.0 * (-122.0 - RightFlipper.CurrentAngle) / (-122.0 + 75.0)
+	v = 255.0 * (121 - RightFlipper.CurrentAngle) / 52
 
 	For Each BP in BP_RFlipper
-		BP.RotZ = a 
+		BP.RotZ = a - 91
 		BP.visible = v < 128.0
 	Next
-	For Each BP in BP_RFlipper___Up
-		BP.RotZ = a 
+	For Each BP in BP_RFlipperUp
+		BP.RotZ = a - 91
 		BP.visible = v >= 128.0
 	Next	
 End Sub

@@ -142,7 +142,7 @@
   {
     "name": "VLM.Nestmap0",
     "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 0.webp",
-    "width": 3328,
+    "width": 3456,
     "height": 8192,
     "alpha_test_value": 1.0,
     "is_opaque": false,
@@ -170,7 +170,7 @@
   {
     "name": "VLM.Nestmap2",
     "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 2.exr",
-    "width": 2240,
+    "width": 1472,
     "height": 8192,
     "alpha_test_value": 1.0,
     "is_opaque": true,

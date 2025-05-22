@@ -6,20 +6,20 @@
       "z": 0.0
     },
     "size": {
-      "x": -1.0,
-      "y": -1.0,
-      "z": -1.0
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
     },
     "rot_and_tra": [
+      0.000012370659,
+      -0.000013723692,
+      150.0,
       0.0,
       0.0,
       0.0,
       0.0,
       0.0,
-      0.0,
-      -179.99998,
-      -0.00001372369,
-      -30.0
+      0.0
     ],
     "image": "VLM.Nestmap0",
     "normal_map": "",
@@ -40,7 +40,7 @@
     "is_collidable": false,
     "is_toy": true,
     "use_3d_mesh": true,
-    "static_rendering": true,
+    "static_rendering": false,
     "disable_lighting_top_old": null,
     "disable_lighting_top": 1.0,
     "disable_lighting_below": 1.0,
