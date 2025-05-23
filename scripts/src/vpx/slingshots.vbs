@@ -5,14 +5,14 @@
 ' RStep and LStep are the variables that increment the animation
 Dim RStep, LStep
 
-Sub RightSlingShot_Slingshot(args)
+Sub RightSlingShotAction(args)
 	Dim enabled, ball : enabled = args(0)
 	If enabled then
 		If Not IsNull(args(1)) Then
 			RS.VelocityCorrect(args(1))
 		End If
 		RStep = 0
-		' RightSlingShot_Timer
+		RightSlingShot_Timer
 		RightSlingShot.TimerEnabled = 1
 		RightSlingShot.TimerInterval = 17
 		RandomSoundSlingshotRight Sling1
@@ -34,14 +34,14 @@ Sub RightSlingShot_Timer
 	RStep = RStep + 1
 End Sub
 
-Sub LeftSlingShot_Slingshot(args)
+Sub LeftSlingShotAction(args)
 	Dim enabled, ball : enabled = args(0)
 	If enabled then
 		If Not IsNull(args(1)) Then
 			LS.VelocityCorrect(args(1))
 		End If	
 		LStep = 0
-		' LeftSlingShot_Timer
+		LeftSlingShot_Timer
 		LeftSlingShot.TimerEnabled = 1
 		LeftSlingShot.TimerInterval = 17
 		RandomSoundSlingshotLeft Sling2

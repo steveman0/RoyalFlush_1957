@@ -32,12 +32,14 @@ Sub ConfigureGlfDevices
 	' Slingshots
 	With CreateGlfAutoFireDevice("left_sling")
 		.Switch = "LeftSlingShot"
+		.ActionCallback = "LeftSlingShotAction"
 		.DisableEvents = Array("kill_flippers")
 		.EnableEvents = Array("ball_started","enable_flippers")
 	End With
 
 	With CreateGlfAutoFireDevice("right_sling")
 		.Switch = "RightSlingShot"
+		.ActionCallback = "RightSlingShotAction"
 		.DisableEvents = Array("kill_flippers")
 		.EnableEvents = Array("ball_started","enable_flippers")
 	End With
