@@ -1,0 +1,22 @@
+{
+  "Kicker": {
+    "center": {
+      "x": 357.569,
+      "y": 1762.5499
+    },
+    "radius": 35.0,
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "material": "",
+    "surface": "Ramp001",
+    "is_enabled": true,
+    "name": "DrainTeleport",
+    "kicker_type": "invisible",
+    "scatter": 0.0,
+    "hit_accuracy": 0.5,
+    "hit_height": 40.0,
+    "orientation": 0.0,
+    "fall_through": false,
+    "legacy_mode": true
+  }
+}

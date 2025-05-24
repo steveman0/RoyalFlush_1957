@@ -73,7 +73,7 @@ Public Sub CreateScoreMode()
 				.Action = "reset"
 			End With
 			.Direction = "down"
-			.StartValue = 1
+			.StartValue = 5
 			.EndValue = 0
 			.TickInterval = 100    ' In ms
 		End With

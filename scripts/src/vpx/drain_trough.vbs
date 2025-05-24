@@ -55,6 +55,18 @@ Sub TroughTeleport_Hit
 	End If
 End Sub
 
+' Trough current sits at Z=0, pop ball from subway to drain
+Sub DrainTeleport_Hit
+	Dim b : Set b = GetBallNear(DrainTeleport)
+	If Not b Is Nothing Then 
+		DrainTeleport.kick 90, 10
+		b.X = Drain.X
+		b.Y = Drain.Y
+		b.Z = 0
+		'KickBall b, -90, 2, 0, 0
+	End If
+End Sub
+
 Function GetBallNear(obj)
 	Dim b
 	For b = 0 To UBound(gBOT)

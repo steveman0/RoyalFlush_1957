@@ -134,6 +134,14 @@ Sub ConfigureGlfDevices
 		.Switch = "TriggerLane5"
 		.EnableEvents = Array("ball_started")
 	End With
+	With CreateGlfAutoFireDevice("gobblelsw")
+		.Switch = "GobbleLsw"
+		.EnableEvents = Array("ball_started")
+	End With
+	With CreateGlfAutoFireDevice("gobblersw")
+		.Switch = "GobbleRsw"
+		.EnableEvents = Array("ball_started")
+	End With
 
 	With CreateGlfAutoFireDevice("rototarget")
 		.Switch = "RotoTarget"

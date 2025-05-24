@@ -15,5 +15,9 @@ Sub Table1_KeyUp(ByVal keycode)
 		Plunger.Fire
 		SoundPlungerReleaseBall
 	End If
+	If KeyCode = AddCreditKey Then
+		RandomSoundCoin
+		DOF 108, DOFPulse
+	End If
 	Glf_KeyUp(keycode)
 End Sub

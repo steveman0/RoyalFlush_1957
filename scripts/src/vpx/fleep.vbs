@@ -278,6 +278,12 @@ Sub KnockerSolenoid()
 	PlaySoundAtLevelStatic SoundFX("Knocker_1",DOFKnocker), KnockerSoundLevel, KnockerPosition
 End Sub
 
+'/////////////////////////////  COIN IN  ////////////////////////////
+
+Sub RandomSoundCoin()
+	PlaySoundAtLevelStatic SoundFX("Coin_In_" & Int(Rnd * 3) + 1, DOFKnocker), CoinSoundLevel, Drain
+End Sub
+
 '/////////////////////////////  DRAIN SOUNDS  ////////////////////////////
 
 Sub RandomSoundDrain(drainswitch)
