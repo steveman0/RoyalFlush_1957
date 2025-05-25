@@ -21,6 +21,7 @@ Sub Table1_Init
 	AddPinEventListener "score_100k", "score_100k_b2s", "UpdateBackglassScore", 100, Null
 	AddPinEventListener "score_1m", "score_1m_b2s", "UpdateBackglassScore", 100, Null
 	AddPinEventListener "update_target_visuals", "update_target_visuals_render", "UpdateTargetWalls", 200, Null
+	AddPinEventListener "add_credit", "add_credit_b2s", "UpdateCreditReel", 500, Null	
 
 End Sub
 

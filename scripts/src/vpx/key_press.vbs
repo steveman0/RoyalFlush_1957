@@ -16,8 +16,31 @@ Sub Table1_KeyUp(ByVal keycode)
 		SoundPlungerReleaseBall
 	End If
 	If KeyCode = AddCreditKey Then
-		RandomSoundCoin
-		DOF 108, DOFPulse
+		If AddCredit() Then
+			RandomSoundCoin
+			DOF 108, DOFPulse
+		End If
 	End If
 	Glf_KeyUp(keycode)
+End Sub
+
+Function AddCredit()
+	Dim cred
+	cred = glf_machine_vars("credits").GetValue()
+	If cred < 26 Then
+		glf_machine_vars("credits").Value = cred + 1
+		UpdateCreditReel
+		AddCredit = True
+	Else
+		AddCredit = False
+	End If
+End Function
+
+Sub UpdateCreditReel()
+	Dim cred, ones, tens
+	cred = glf_machine_vars("credits").GetValue()
+	ones = cred mod 10
+	tens = (cred - ones) / 10
+	Controller.B2SSetCredits 27, ones
+	Controller.B2SSetCredits 26, tens
 End Sub
