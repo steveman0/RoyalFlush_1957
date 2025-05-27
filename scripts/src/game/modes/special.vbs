@@ -1,7 +1,7 @@
 Public Sub CreateSpecialMode()
     With CreateGlfMode("special", 3000)
 		.StartEvents = Array("game_started")
-		.StopEvents = Array("game_ended")
+		.StopEvents = Array("game_ending")
 
         With .EventPlayer()
             ' Credit wheel maxes out at 26, only add when below this limit
