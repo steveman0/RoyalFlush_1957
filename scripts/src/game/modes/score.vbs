@@ -2,7 +2,7 @@
 Public Sub CreateScoreMode()
 	With CreateGlfMode("score", 2000)
 		.StartEvents = Array("game_started")
-		.StopEvents = Array("game_ended")
+		.StopEvents = Array("game_ending")
 
 		With .EventPlayer()
 			.Add "BumperTL_active", Array("score_50k")

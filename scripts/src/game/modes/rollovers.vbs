@@ -4,9 +4,9 @@ Sub CreateRolloversMode()
 
 	With CreateGlfMode("rollovers", 500)
 		.StartEvents = Array("game_started")
-		.StopEvents = Array("game_ended")   
+		.StopEvents = Array("game_ending")
 		.Debug = true
-		With .EventPlayer()
+		With .EventPlayer() 
 			.Add "TriggerLane1_active", Array("score_10k")
 			.Add "TriggerLane2_active", Array("score_10k")
 			.Add "TriggerLane3_active", Array("score_10k")

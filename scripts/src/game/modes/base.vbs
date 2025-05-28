@@ -19,7 +19,7 @@ Public Sub CreateGIMode()
 	Dim i
 	With CreateGlfMode("gi_control", 1000)
 		.StartEvents = Array("game_started")
-		.StopEvents = Array("game_ended") 
+		.StopEvents = Array("game_ending") 
 		
 		With .LightPlayer()
 			With .EventName("mode_gi_control_started")
