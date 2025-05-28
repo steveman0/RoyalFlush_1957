@@ -4,7 +4,7 @@ Public Sub CreateLitModes()
 	' Left bumper and slignshots lit for 100k / right gobble for 1m
 	With CreateGlfMode("left_lit", 500)
 		.StartEvents = Array("light_left","game_started")
-		.StopEvents = Array("light_right")
+		.StopEvents = Array("light_right", "game_ending")
 
 		With .EventPlayer()
 			.Add "Bumper1_active", Array("score_100k")
@@ -38,7 +38,7 @@ Public Sub CreateLitModes()
 	' Right bumper and slignshots lit for 100k / left gobble for 1m
 	With CreateGlfMode("right_lit", 500)
 		.StartEvents = Array("light_right")
-		.StopEvents = Array("light_left")
+		.StopEvents = Array("light_left", "game_ending")
 
 		With .EventPlayer()
 			.Add "Bumper1_active", Array("score_10k")
