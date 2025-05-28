@@ -3,6 +3,12 @@
 '*******************************************
 
 Sub Table1_KeyDown(ByVal keycode)
+	If keycode = StartGameKey Then
+		Dim cred : cred = glf_machine_vars("credits").GetValue()
+		If cred = 0 Then
+			Exit Sub
+		End If
+	End If
 	Glf_KeyDown(keycode)
 	If keycode = PlungerKey Then 
 		Plunger.Pullback
