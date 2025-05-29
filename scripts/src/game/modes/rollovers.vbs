@@ -5,7 +5,7 @@ Sub CreateRolloversMode()
 	With CreateGlfMode("rollovers", 500)
 		.StartEvents = Array("game_started")
 		.StopEvents = Array("game_ending")
-		.Debug = true
+
 		With .EventPlayer() 
 			.Add "TriggerLane1_active", Array("score_10k")
 			.Add "TriggerLane2_active", Array("score_10k")
@@ -19,11 +19,16 @@ Sub CreateRolloversMode()
 			.Add "TriggerLane3_active{current_player.rollover2_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
 			.Add "TriggerLane4_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover1_hit == 1 && current_player.rollover5_hit == 1}", Array("all_rollovers_hit")
 			.Add "TriggerLane5_active{current_player.rollover2_hit == 1 && current_player.rollover3_hit == 1 && current_player.rollover4_hit == 1 && current_player.rollover1_hit == 1}", Array("all_rollovers_hit")
-			.Add "rollover_1_started{all_rollovers == 1}", Array("light_is1")
-			.Add "rollover_2_started{all_rollovers == 1}", Array("light_is2")
-			.Add "rollover_3_started{all_rollovers == 1}", Array("light_is3")
-			.Add "rollover_4_started{all_rollovers == 1}", Array("light_is4")
-			.Add "rollover_5_started{all_rollovers == 1}", Array("light_is5")
+			.Add "rollover_1_started{current_player.all_rollovers == 1}", Array("light_is1")
+			.Add "rollover_2_started{current_player.all_rollovers == 1}", Array("light_is2")
+			.Add "rollover_3_started{current_player.all_rollovers == 1}", Array("light_is3")
+			.Add "rollover_4_started{current_player.all_rollovers == 1}", Array("light_is4")
+			.Add "rollover_5_started{current_player.all_rollovers == 1}", Array("light_is5")
+			.Add "TriggerLane1_active{current_player.all_rollovers == 1 && devices.state_machines.rollover_special.state==""rollover_1""}", Array("award_special")
+			.Add "TriggerLane2_active{current_player.all_rollovers == 1 && devices.state_machines.rollover_special.state==""rollover_2""}", Array("award_special")
+			.Add "TriggerLane3_active{current_player.all_rollovers == 1 && devices.state_machines.rollover_special.state==""rollover_3""}", Array("award_special")
+			.Add "TriggerLane4_active{current_player.all_rollovers == 1 && devices.state_machines.rollover_special.state==""rollover_4""}", Array("award_special")
+			.Add "TriggerLane5_active{current_player.all_rollovers == 1 && devices.state_machines.rollover_special.state==""rollover_5""}", Array("award_special")
 		End With
 		
 		With .LightPlayer()
@@ -111,11 +116,9 @@ Sub CreateRolloversMode()
 					.Color = "000000"
 				End With
 			End With
-			.Debug = true
 		End With
 		
 		With .VariablePlayer
-			.Debug = true
 			With .EventName("mode_rollovers_started")
 				With .Variable("rollover1_hit")
 					.Action = "set"
