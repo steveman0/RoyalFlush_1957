@@ -29,7 +29,7 @@ Sub CreateRotoTargetMode()
         ' Jack: 2
         ' 10: 2
         ' Joker: 3
-        .Debug = True
+
         With .EventPlayer()
             .Add "RotoTarget_active", Array("score_100k")
 			.Add "BumperTL_active", Array("pick_new_card")
@@ -56,8 +56,8 @@ Sub CreateRotoTargetMode()
             .Add "RotoTarget_active{machine.roto_index == 9 && machine.ten_card == 0}", Array("set_ten_card", "set_new_card")
             ' On first activating the last card the special light is lit but also awards the special
             ' Subsequent hits also trigger special while the game continues
-            .Add "set_new_card{machine.ace_card == 1 && machine.king_card == 1 && machine.queen_card == 1 && machine.jack_card == 1 && machine_.ten_card == 1 && machine.joker_card == 1}", Array("light_roto_special", "award_special")
-            .Add "RotoTarget_active{machine.ace_card == 1 && machine.king_card == 1 && machine.queen_card == 1 && machine.jack_card == 1 && machine_.ten_card == 1 && machine.joker_card == 1}", Array("award_special")
+            .Add "set_new_card{machine.ace_card == 1 && machine.king_card == 1 && machine.queen_card == 1 && machine.jack_card == 1 && machine.ten_card == 1 && machine.joker_card == 1}", Array("light_roto_special", "award_special")
+            .Add "RotoTarget_active{machine.ace_card == 1 && machine.king_card == 1 && machine.queen_card == 1 && machine.jack_card == 1 && machine.ten_card == 1 && machine.joker_card == 1}", Array("award_special")
 		End With
 
         
