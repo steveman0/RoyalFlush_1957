@@ -1,8 +1,8 @@
 Sub CreateRotoTargetMode()
 
 	With CreateGlfMode("rototarget", 500)
-		.StartEvents = Array("ball_started")
-		.StopEvents = Array("ball_ended")
+		.StartEvents = Array("game_started")
+		.StopEvents = Array("game_ended")
 		Dim i
 
         ' Roto target index mapping
@@ -29,7 +29,7 @@ Sub CreateRotoTargetMode()
         ' Jack: 2
         ' 10: 2
         ' Joker: 3
-
+        .Debug = True
         With .EventPlayer()
             .Add "RotoTarget_active", Array("score_100k")
 			.Add "BumperTL_active", Array("pick_new_card")
