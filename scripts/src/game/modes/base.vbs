@@ -48,10 +48,18 @@ Public Sub CreateGIMode()
 					.Action = "DOF_OFF"
 					.DOFEvent = 30 + i
 				End With
+				With .EventName("mode_gi_control_started.3" & i)
+                    .Action = "DOF_OFF"
+                    .DOFEvent = 40 + i
+                End With
 			Next
 			With .EventName("mode_gi_control_started.10")
 				.Action = "DOF_ON"
 				.DOFEvent = 10
+			End With
+			With .EventName("mode_gi_control_started.30")
+				.Action = "DOF_OFF"
+				.DOFEvent = 40
 			End With
 
 		End With

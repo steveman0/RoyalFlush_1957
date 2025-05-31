@@ -161,6 +161,17 @@ Sub ConfigureGlfDevices
 		.Volume = 0.5
 	End With
 
+	CreateBaseMode()
+	CreateGIMode()
+	CreateScoreMode()
+	CreateLitModes()
+	CreateRolloversMode()
+	CreateRotoTargetMode()
+	CreateSpecialMode()
+	CreateMatchMode()
+End Sub
+
+Sub PrepareMachineVars
 	With CreateMachineVar("roto_index")
         .InitialValue = 1
         .ValueType = "int"
@@ -208,15 +219,6 @@ Sub ConfigureGlfDevices
         .ValueType = "int"
         .Persist = True
     End With
-	
-	CreateBaseMode()
-	CreateGIMode()
-	CreateScoreMode()
-	CreateLitModes()
-	CreateRolloversMode()
-	CreateRotoTargetMode()
-	CreateSpecialMode()
-	
 End Sub
 
 Sub LeftFlipperAction(Enabled)
