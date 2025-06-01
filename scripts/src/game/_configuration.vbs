@@ -163,12 +163,14 @@ Sub ConfigureGlfDevices
 
 	CreateBaseMode()
 	CreateGIMode()
+	CreateResetMode()
 	CreateScoreMode()
 	CreateLitModes()
 	CreateRolloversMode()
 	CreateRotoTargetMode()
 	CreateSpecialMode()
 	CreateMatchMode()
+	
 End Sub
 
 Sub PrepareMachineVars

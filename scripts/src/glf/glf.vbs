@@ -697,7 +697,7 @@ Sub Glf_Options(ByVal eventId)
 	'***GLF_DEBUG_OPTIONS_END***
 
 
-	Dim ballsPerGame : ballsPerGame = Table1.Option("Balls Per Game", 1, 2, 1, 1, 0, Array("3 Balls", "5 Balls"))
+	Dim ballsPerGame : ballsPerGame = Table1.Option("Balls Per Game", 1, 2, 1, 2, 0, Array("3 Balls", "5 Balls"))
 	If ballsPerGame = 1 Then
 		glf_ballsPerGame = 3
 	Else
