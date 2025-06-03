@@ -27,8 +27,27 @@ Sub Table1_Init
 	AddPinEventListener "update_target_visuals", "update_target_visuals_render", "UpdateTargetWalls", 200, Null
 	AddPinEventListener "add_credit", "add_credit_b2s", "UpdateCreditReel", 500, Null
 	AddPinEventListener "game_started", "subtract_credit", "SubtractCredit", 100, Null
+'	AddPinEventListener "debug_printing", "debug_monitor", "EventDebugPrint", 9999, Null
 
 End Sub
+
+Function EventDebugPrint(args)
+	Dim ownProps, kwargs : ownProps = args(0)
+    If IsObject(args(1)) Then
+        Set kwargs = args(1) 
+    Else
+        kwargs = args(1)
+    End If  
+
+	' Debug code here
+
+	'Keep this return call.
+	If IsObject(args(1)) Then
+		Set EventDebugPrint= kwargs
+    Else
+        EventDebugPrint= kwargs
+    End If
+End Function
 
 ' Restore B2S machine state
 Sub InitializeTableState

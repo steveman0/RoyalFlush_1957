@@ -1,6 +1,6 @@
 Public Sub CreateSpecialMode()
     With CreateGlfMode("special", 3000)
-		.StartEvents = Array("mode_reset_stopped") ' Start after reset to avoid score ticks awarding a special
+		.StartEvents = Array("game_started")
 		.StopEvents = Array("match_complete")
 
         With .EventPlayer()

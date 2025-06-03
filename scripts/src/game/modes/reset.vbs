@@ -8,8 +8,10 @@ Public Sub CreateResetMode()
             .Add "mode_reset_started{machine.ace_card == 1 && machine.king_card == 1 && machine.queen_card == 1 && machine.jack_card == 1 && machine.ten_card == 1 && machine.joker_card == 1}", Array("reset_ace_card", "reset_king_card", "reset_queen_card", "reset_jack_card", "reset_ten_card", "reset_joker_card", "pick_starter_card")
             .Add "mode_reset_started{machine.ace_card == 0 && machine.king_card == 0 && machine.queen_card == 0 && machine.jack_card == 0 && machine.ten_card == 0 && machine.joker_card == 0}", Array("pick_starter_card")
             .Add "mode_reset_started", Array("match_off")
-            .Add "timer_score_reset_timer_tick{current_player.score Mod 100000 != 0}", Array("score_10k")
-            .Add "timer_score_reset_timer_tick{current_player.score Mod 100000 == 0}", Array("reset_score", "update_b2s", "reset_complete")
+            ' The actual player score is reset at the end of the last game
+            ' Use a stand-in to continue updating the B2S until reset is complete
+'            .Add "timer_score_reset_timer_tick{machine.last_score Mod 100000 != 0}", Array("sim_score_tick", "play_10pts")
+'            .Add "timer_score_reset_timer_tick{machine.last_score Mod 100000 == 0}", Array("reset_score", "update_b2s", "reset_complete")
         End With
 
         With .VariablePlayer()
@@ -19,6 +21,12 @@ Public Sub CreateResetMode()
                     .Int = 0
                 End With
             End With
+            ' With .EventName("sim_score_tick") 
+            '     With .Variable("last_score")
+            '         .Action = "machine_add"
+            '         .Int = 10000
+            '     End With
+            ' End With
         End With
 
         With .DOFPlayer()

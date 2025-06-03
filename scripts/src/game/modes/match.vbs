@@ -5,16 +5,17 @@ Public Sub CreateMatchMode()
         Dim i
 
         With .EventPlayer()
-            .Add "match_0{current_player.score Mod 100000 == 0}", Array("award_special")
-            .Add "match_1{current_player.score Mod 100000 == 10000}", Array("award_special")
-            .Add "match_2{current_player.score Mod 100000 == 20000}", Array("award_special")
-            .Add "match_3{current_player.score Mod 100000 == 30000}", Array("award_special")
-            .Add "match_4{current_player.score Mod 100000 == 40000}", Array("award_special")
-            .Add "match_5{current_player.score Mod 100000 == 50000}", Array("award_special")
-            .Add "match_6{current_player.score Mod 100000 == 60000}", Array("award_special")
-            .Add "match_7{current_player.score Mod 100000 == 70000}", Array("award_special")
-            .Add "match_8{current_player.score Mod 100000 == 80000}", Array("award_special")
-            .Add "match_9{current_player.score Mod 100000 == 90000}", Array("award_special")
+            ' Game ending event resets the player score, use persisted machine variable instead
+            .Add "match_0{machine.player1_score Mod 100000 == 0}", Array("award_special")
+            .Add "match_1{machine.player1_score Mod 100000 == 10000}", Array("award_special")
+            .Add "match_2{machine.player1_score Mod 100000 == 20000}", Array("award_special")
+            .Add "match_3{machine.player1_score Mod 100000 == 30000}", Array("award_special")
+            .Add "match_4{machine.player1_score Mod 100000 == 40000}", Array("award_special")
+            .Add "match_5{machine.player1_score Mod 100000 == 50000}", Array("award_special")
+            .Add "match_6{machine.player1_score Mod 100000 == 60000}", Array("award_special")
+            .Add "match_7{machine.player1_score Mod 100000 == 70000}", Array("award_special")
+            .Add "match_8{machine.player1_score Mod 100000 == 80000}", Array("award_special")
+            .Add "match_9{machine.player1_score Mod 100000 == 90000}", Array("award_special")
             For i = 0 To 9
                 .Add "match_" & i, Array("match_complete")
             Next
