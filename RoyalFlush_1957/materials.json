@@ -625,7 +625,7 @@
     "wrap_lighting": 1.0,
     "roughness": 0.0,
     "glossy_image_lerp": 0.0,
-    "thickness": 0.047058824,
+    "thickness": 0.04705882,
     "edge": 0.0,
     "edge_alpha": 1.0,
     "opacity": 0.7,

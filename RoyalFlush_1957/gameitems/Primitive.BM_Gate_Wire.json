@@ -1,12 +1,12 @@
 {
   "Primitive": {
     "position": {
-      "x": 837.7804,
-      "y": 277.38885,
-      "z": 50.0
+      "x": 845.506,
+      "y": 293.9564,
+      "z": 61.05865
     },
     "size": {
-      "x": 0.048577495,
+      "x": 0.057576995,
       "y": 0.048577495,
       "z": 0.0485775
     },
@@ -25,7 +25,7 @@
     "normal_map": "",
     "sides": 4,
     "name": "BM_Gate_Wire",
-    "material": "",
+    "material": "VLM.Bake.Solid",
     "side_color": "#ff00ffff",
     "is_visible": true,
     "draw_textures_inside": false,

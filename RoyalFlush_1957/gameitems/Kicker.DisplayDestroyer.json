@@ -1,0 +1,22 @@
+{
+  "Kicker": {
+    "center": {
+      "x": 731.85254,
+      "y": 1690.459
+    },
+    "radius": 30.0,
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "material": "",
+    "surface": "",
+    "is_enabled": true,
+    "name": "DisplayDestroyer",
+    "kicker_type": "invisible",
+    "scatter": 0.0,
+    "hit_accuracy": 0.5,
+    "hit_height": 35.0,
+    "orientation": 0.0,
+    "fall_through": false,
+    "legacy_mode": true
+  }
+}

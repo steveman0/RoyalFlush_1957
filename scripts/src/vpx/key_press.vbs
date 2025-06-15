@@ -57,6 +57,8 @@ Function SubtractCredit(args)
 		glf_machine_vars("credits").Value = cred - 1
 		UpdateCreditReelDirect
 	End If
+
+	UsedBallTimer.Enabled = True
     
 	'Keep this return call.
 	If IsObject(args(1)) Then

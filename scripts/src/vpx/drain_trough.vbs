@@ -65,6 +65,10 @@ Sub DrainTeleport_Hit
 		b.Z = 0
 		'KickBall b, -90, 2, 0, 0
 	End If
+	If ub5 = 0 Then
+		DisplaySupply.CreateBall 'SizedballWithMass Ballsize / 2, Ballmass
+		DisplaySupply.kick 80, 10
+	End If
 End Sub
 
 Function GetBallNear(obj)
@@ -76,31 +80,96 @@ Function GetBallNear(obj)
 	Next
 End Function
 
-' Sub UpdateTrough
-	' UpdateTroughTimer.Interval = 300
-	' UpdateTroughTimer.Enabled = 1
-' End Sub
+' Display balls played as a ball counter
+Sub Drainsw_hit
+	If ub5 = 0 Then
+		DisplaySupply.CreateBall 'SizedballWithMass Ballsize / 2, Ballmass
+		DisplaySupply.kick 80, 10
+	End If
+End Sub
 
-' Sub UpdateTroughTimer_Timer
-	' If swTrough1.BallCntOver = 0 Then swTrough2.kick 57, 10
-	' If swTrough2.BallCntOver = 0 Then swTrough3.kick 57, 10
-	' If swTrough3.BallCntOver = 0 Then swTrough4.kick 57, 10
-	' If swTrough4.BallCntOver = 0 Then swTrough5.kick 57, 10
-	' Me.Enabled = 0
-' End Sub
+' Game initialization will have balls in all display slots
+Dim ub5, ub4, ub3, ub2, ub1
+ub5 = 1
+ub4 = 1
+ub3 = 1
+ub2 = 1
+ub1 = 1
 
-' ' DRAIN & RELEASE
-' Sub Drain_Hit
-	' BIP = BIP - 1
-	' DMDBigText "DRAIN BLOCK",77,1
-	' RandomSoundDrain Drain
-	' vpmTimer.AddTimer 500, "Drain.kick 57, 20'"
-' End Sub
+Sub UsedBall5_Hit
+	ub5 = 1
+	If ub4 = 0 Then
+		UsedBall5.kick 80, 10
+	End If
+End Sub
 
-' Sub SolRelease(enabled)
-	' If enabled Then
-		' BIP = BIP + 1
-		' swTrough1.kick 90, 10
-		' RandomSoundBallRelease swTrough1
-	' End If
-' End Sub
+Sub UsedBall5_Unhit
+	ub5 = 0
+End Sub
+
+Sub UsedBall4_Hit
+	ub4 = 1
+	If ub3 = 0 Then
+		UsedBall4.kick 80, 10
+	End If
+End Sub
+
+Sub UsedBall4_Unhit
+	ub4 = 0
+End Sub
+
+Sub UsedBall3_Hit
+	ub3 = 1
+	If ub2 = 0 Then
+		UsedBall3.kick 80, 10
+	End If
+End Sub
+
+Sub UsedBall3_Unhit
+	ub3 = 0
+End Sub
+
+Sub UsedBall2_Hit
+	ub2 = 1
+	If ub1 = 0 Then
+		UsedBall2.kick 80, 10
+	End If
+End Sub
+
+Sub UsedBall2_Unhit
+	ub2 = 0
+End Sub
+
+Sub UsedBall1_Hit
+	ub1 = 1
+End Sub
+
+Sub UsedBallTimer_timer()
+	If ub1 = 1 Then
+		UsedBall1.kick 80, 10
+	End If
+	If ub2 = 1 Then
+		UsedBall2.kick 80, 10
+	End If
+	If ub3 = 1 Then
+		UsedBall3.kick 80, 10
+	End If
+	If ub4 = 1 Then
+		UsedBall4.kick 80, 10
+	End If
+	If ub5 = 1 Then
+		UsedBall5.kick 80, 10
+	End If
+
+	If ub1 = 0 And ub2 = 0 And ub3 = 0 And ub4 = 0 And ub5 = 0 Then
+		UsedBallTimer.Enabled = False
+	End If
+End Sub
+
+Sub UsedBall1_Unhit
+	ub1 = 0
+End Sub
+
+Sub DisplayDestroyer_Hit
+	DisplayDestroyer.DestroyBall
+End Sub

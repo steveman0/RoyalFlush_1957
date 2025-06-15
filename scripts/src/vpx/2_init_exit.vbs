@@ -58,6 +58,13 @@ Sub InitializeTableState
 	If glf_machine_vars("queen_card").GetValue() = 1 Then : DispatchPinEvent "set_queen_card", ActiveBall : End If
 	If glf_machine_vars("jack_card").GetValue() = 1 Then : DispatchPinEvent "set_jack_card", ActiveBall : End If
 	If glf_machine_vars("ten_card").GetValue() = 1 Then : DispatchPinEvent "set_ten_card", ActiveBall : End If
+
+	' Populate the display trough
+	UsedBall1.CreateBall
+	UsedBall2.CreateBall
+	UsedBall3.CreateBall
+	UsedBall4.CreateBall
+	UsedBall5.CreateBall
 End Sub
 
 Sub Table1_Exit

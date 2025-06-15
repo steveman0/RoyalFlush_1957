@@ -1,9 +1,9 @@
 {
   "Primitive": {
     "position": {
-      "x": 476.48218,
-      "y": 964.7186,
-      "z": 2.6030858
+      "x": 476.65936,
+      "y": 965.17914,
+      "z": 2.778473
     },
     "size": {
       "x": 1.0,
@@ -21,7 +21,7 @@
       0.0,
       0.0
     ],
-    "image": "VLM.Nestmap2",
+    "image": "VLM.Nestmap1",
     "normal_map": "",
     "sides": 4,
     "name": "LM_GI_GI1_Parts",

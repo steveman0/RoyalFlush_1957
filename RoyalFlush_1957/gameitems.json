@@ -11,35 +11,35 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber23.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic1.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT19.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT20.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw5.json",
@@ -60,56 +60,56 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post028.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber001.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber002.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic001.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT001.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT002.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw001.json",
@@ -130,56 +130,56 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap001.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post002.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber003.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber004.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic002.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT003.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT004.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw003.json",
@@ -200,56 +200,56 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap002.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post004.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber005.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber006.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.plastic003.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT005.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT006.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw005.json",
@@ -270,21 +270,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap003.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post006.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallOutsideT.json",
@@ -305,448 +305,448 @@
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout002.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout003.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout004.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout005.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout006.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout007.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout008.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout009.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout010.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout011.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout012.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout013.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout014.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout015.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout016.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout017.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout018.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout019.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout020.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout021.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.CutoutL.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.CutoutR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout001.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout022.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout023.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout024.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout025.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout026.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout027.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout028.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout029.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Cutouts",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.CutoutRoto001.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout030.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout031.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout032.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout033.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout034.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout035.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout036.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout037.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout038.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout039.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout040.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout041.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout042.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout043.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout044.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout045.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout046.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout047.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout048.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.CutoutL001.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.CutoutR001.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout049.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout050.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout051.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout052.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout053.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout054.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout055.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout056.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout057.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Cutout058.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "SidewallVisuals",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.GI1.json",
@@ -767,35 +767,35 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber008.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT007.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT008.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw007.json",
@@ -816,56 +816,56 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post008.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap004.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber009.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber010.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand001.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT009.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT010.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw009.json",
@@ -886,21 +886,21 @@
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post009.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post010.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.EMWheelWall.json",
@@ -914,35 +914,35 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber014.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand002.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT013.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT014.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw013.json",
@@ -963,56 +963,56 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post014.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap006.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber015.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber016.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand003.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT015.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT016.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw015.json",
@@ -1033,21 +1033,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PostVisualCap007.json",
     "is_locked": true,
     "editor_layer": 4,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.zCol_Rubber_Post016.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Kicker.GobbleL.json",
@@ -1124,14 +1124,14 @@
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT017.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw017.json",
@@ -1145,21 +1145,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber018.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT018.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw018.json",
@@ -1173,21 +1173,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber019.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT019.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw019.json",
@@ -1201,21 +1201,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber020.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT020.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw020.json",
@@ -1229,21 +1229,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber021.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT021.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw021.json",
@@ -1257,21 +1257,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber022.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT022.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw022.json",
@@ -1285,21 +1285,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber023.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT023.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw023.json",
@@ -1313,21 +1313,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber024.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT024.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw024.json",
@@ -1341,21 +1341,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber025.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT025.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw025.json",
@@ -1369,21 +1369,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber026.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT026.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw026.json",
@@ -1397,21 +1397,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber027.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT027.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw027.json",
@@ -1425,21 +1425,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber028.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT028.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw028.json",
@@ -1453,21 +1453,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber029.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT029.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw029.json",
@@ -1481,21 +1481,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber030.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT030.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw030.json",
@@ -1509,21 +1509,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber031.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT031.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw031.json",
@@ -1537,21 +1537,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber032.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT032.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw032.json",
@@ -1565,21 +1565,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber033.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT033.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw033.json",
@@ -1593,21 +1593,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber034.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT034.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw034.json",
@@ -1621,21 +1621,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber035.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT035.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw035.json",
@@ -1649,21 +1649,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber011.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT011.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw011.json",
@@ -1677,21 +1677,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber012.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT012.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw012.json",
@@ -1705,7 +1705,7 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.GI5.json",
@@ -1817,77 +1817,77 @@
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.ls2.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.ls3.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.ls4.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.ls5.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.lst.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.l1.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.l2.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.l3.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.l4.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Light.l5.json",
     "is_locked": true,
     "editor_layer": 8,
     "editor_layer_name": "Insert Lights",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.WallOutsideL.json",
@@ -1915,70 +1915,70 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand005.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand006.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand007.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand008.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand009.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand010.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.RubberBand011.json",
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber036.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT036.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw036.json",
@@ -1992,21 +1992,21 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Rubber.Rubber037.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.PegPlasticT037.json",
     "is_locked": true,
     "editor_layer": 3,
     "editor_layer_name": "Visual Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Primitive.screw037.json",
@@ -2020,7 +2020,7 @@
     "is_locked": true,
     "editor_layer": 1,
     "editor_layer_name": "Collidable Rubbers",
-    "editor_layer_visibility": true
+    "editor_layer_visibility": false
   },
   {
     "file_name": "Wall.Lane4WallL.json",
@@ -2555,6 +2555,97 @@
     "editor_layer_visibility": false
   },
   {
+    "file_name": "Ramp.Ramp001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Ramp.Ramp002.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Wall001.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Wall002.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Ramp.Ramp003.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Wall003.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Wall004.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.Wall005.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.GobbleLsw.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.GobbleRsw.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.DrainTeleport.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Subway",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.DrainRWall1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Wall.DrainRWall2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Walls and Misc",
+    "editor_layer_visibility": true
+  },
+  {
     "file_name": "Primitive.BM_Bumper_Ring_004.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -2975,13 +3066,6 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_GI16_Gate_Wire.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.LM_GI_GI16_Parts.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -3235,6 +3319,13 @@
   },
   {
     "file_name": "Primitive.LM_GI_GI21_RSling3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_GI21_SlingArmR.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "VLM.Lightmaps",
@@ -3542,6 +3633,13 @@
     "editor_layer_visibility": false
   },
   {
+    "file_name": "Primitive.LM_GI_l5_SlingArmR.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
     "file_name": "Primitive.LM_GI_l5_TriggerLane5.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -3661,13 +3759,6 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Primitive.LM_GI_ls4_TriggerLane4.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "VLM.Lightmaps",
-    "editor_layer_visibility": false
-  },
-  {
     "file_name": "Primitive.LM_GI_ls5_LFlipperUp.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -3731,6 +3822,20 @@
     "editor_layer_visibility": false
   },
   {
+    "file_name": "Primitive.LM_GI_lst_LSling1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
+    "file_name": "Primitive.LM_GI_lst_LSling2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "VLM.Lightmaps",
+    "editor_layer_visibility": false
+  },
+  {
     "file_name": "Primitive.LM_GI_lst_Parts.json",
     "is_locked": true,
     "editor_layer": 0,
@@ -3745,94 +3850,94 @@
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Ramp.Ramp001.json",
+    "file_name": "Primitive.LM_GI_lst_RSling1.json",
     "is_locked": true,
     "editor_layer": 0,
-    "editor_layer_name": "Subway",
+    "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Ramp.Ramp002.json",
+    "file_name": "Primitive.LM_GI_lst_RSling2.json",
     "is_locked": true,
     "editor_layer": 0,
-    "editor_layer_name": "Subway",
+    "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Wall.Wall001.json",
+    "file_name": "Primitive.LM_GI_lst_RSling3.json",
     "is_locked": true,
     "editor_layer": 0,
-    "editor_layer_name": "Subway",
+    "editor_layer_name": "VLM.Lightmaps",
     "editor_layer_visibility": false
   },
   {
-    "file_name": "Wall.Wall002.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Ramp.Ramp003.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Wall.Wall003.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Wall.Wall004.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Wall.Wall005.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Trigger.GobbleLsw.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Trigger.GobbleRsw.json",
-    "is_locked": true,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Kicker.DrainTeleport.json",
-    "is_locked": false,
-    "editor_layer": 0,
-    "editor_layer_name": "Subway",
-    "editor_layer_visibility": false
-  },
-  {
-    "file_name": "Wall.DrainRWall1.json",
+    "file_name": "Wall.Wall006.json",
     "is_locked": true,
     "editor_layer": 0,
     "editor_layer_name": "Walls and Misc",
     "editor_layer_visibility": true
   },
   {
-    "file_name": "Wall.DrainRWall2.json",
+    "file_name": "Kicker.DisplayDestroyer.json",
     "is_locked": true,
     "editor_layer": 0,
-    "editor_layer_name": "Walls and Misc",
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.DisplaySupply.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.UsedBall5.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.UsedBall4.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.UsedBall3.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.UsedBall2.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Kicker.UsedBall1.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Timer.UsedBallTimer.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Trigger.Drainsw.json",
+    "is_locked": false,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
     "editor_layer_visibility": true
   }
 ]

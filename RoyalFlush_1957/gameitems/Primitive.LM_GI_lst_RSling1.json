@@ -1,17 +1,17 @@
 {
   "Primitive": {
     "position": {
-      "x": 225.74603,
-      "y": 1546.658,
-      "z": -17.839676
+      "x": 783.8807,
+      "y": 1457.1188,
+      "z": -0.02446253
     },
     "size": {
-      "x": 0.00053975,
-      "y": 0.0004,
-      "z": 0.00053975
+      "x": -1.0,
+      "y": -1.0,
+      "z": -1.0
     },
     "rot_and_tra": [
-      0.0,
+      180.0,
       -0.0,
       -0.0,
       0.0,
@@ -24,7 +24,7 @@
     "image": "VLM.Nestmap0",
     "normal_map": "",
     "sides": 4,
-    "name": "LM_GI_ls4_TriggerLane4",
+    "name": "LM_GI_lst_RSling1",
     "material": "",
     "side_color": "#ff00ffff",
     "is_visible": true,
@@ -52,13 +52,13 @@
     "object_space_normal_map": true,
     "min_aa_bound": null,
     "max_aa_bound": null,
-    "mesh_file_name": "VLM.LM.GI-ls4.TriggerLane4",
+    "mesh_file_name": "VLM.LM.GI-lst.RSling1",
     "depth_bias": 0.0,
     "add_blend": true,
     "use_depth_mask": false,
     "alpha": 100.0,
     "color": "#ff00ffff",
-    "light_map": "ls4",
+    "light_map": "lst",
     "reflection_probe": "",
     "reflection_strength": 0.3,
     "refraction_probe": "",

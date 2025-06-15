@@ -1,0 +1,12 @@
+{
+  "Timer": {
+    "center": {
+      "x": -41.788815,
+      "y": 1810.8171
+    },
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "name": "UsedBallTimer",
+    "backglass": false
+  }
+}

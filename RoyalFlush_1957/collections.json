@@ -248,11 +248,12 @@
       "WallDrainB",
       "WallDrainT",
       "WallDrainL",
-      "WallOutsideR"
+      "WallOutsideR",
+      "Wall006"
     ],
     "fire_events": true,
     "stop_single_events": false,
-    "group_elements": true
+    "group_elements": false
   },
   {
     "name": "Walls",
@@ -271,11 +272,12 @@
       "Lane4WallL",
       "Lane4WallR",
       "Lane5WallL",
-      "Lane5WallR"
+      "Lane5WallR",
+      "Wall006"
     ],
     "fire_events": true,
     "stop_single_events": false,
-    "group_elements": true
+    "group_elements": false
   },
   {
     "name": "Rollovers",

@@ -31,20 +31,20 @@ End Sub
 
 
 Sub BSUpdate
-	Dim s: For s = lob To UBound(gBOT)
-		' *** Normal "ambient light" ball shadow
+	' Dim s: For s = lob To UBound(gBOT)
+	' 	' *** Normal "ambient light" ball shadow
 		
-		'Primitive shadow on playfield, flasher shadow in ramps
-		'** If on main and upper pf
-		If gBOT(s).Z > 20 And gBOT(s).Z < 30 Then
-			objBallShadow(s).visible = 1
-			objBallShadow(s).X = gBOT(s).X + (gBOT(s).X - (tablewidth / 2)) / (Ballsize / AmbientMovement) + offsetX
-			objBallShadow(s).Y = gBOT(s).Y + offsetY
-			'objBallShadow(s).Z = gBOT(s).Z + s/1000 + 1.04 - 25	
+	' 	'Primitive shadow on playfield, flasher shadow in ramps
+	' 	'** If on main and upper pf
+	' 	If gBOT(s).Z > 20 And gBOT(s).Z < 30 Then
+	' 		objBallShadow(s).visible = 1
+	' 		objBallShadow(s).X = gBOT(s).X + (gBOT(s).X - (tablewidth / 2)) / (Ballsize / AmbientMovement) + offsetX
+	' 		objBallShadow(s).Y = gBOT(s).Y + offsetY
+	' 		'objBallShadow(s).Z = gBOT(s).Z + s/1000 + 1.04 - 25	
 
-		'** No shadow if ball is off the main playfield (this may need to be adjusted per table)
-		Else
-			objBallShadow(s).visible = 0
-		End If
-	Next
+	' 	'** No shadow if ball is off the main playfield (this may need to be adjusted per table)
+	' 	Else
+	' 		objBallShadow(s).visible = 0
+	' 	End If
+	' Next
 End Sub
