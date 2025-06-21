@@ -3939,5 +3939,19 @@
     "editor_layer": 0,
     "editor_layer_name": "Parts",
     "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Primitive.RotoTargetPrim.json",
+    "is_locked": false,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
+  },
+  {
+    "file_name": "Timer.RotoSpinTimer.json",
+    "is_locked": true,
+    "editor_layer": 0,
+    "editor_layer_name": "Parts",
+    "editor_layer_visibility": true
   }
 ]

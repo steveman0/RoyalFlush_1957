@@ -123,6 +123,9 @@ Function UpdateTargetWalls(args)
 		case 15 : VisibleTarget.Image = "Jack"
 	End Select
 
+	' Update rotational angle target of the real roto
+	RotoTargetAngle = (182 + (i - 1) * 24) Mod 360
+
 	'Keep this return call.
 	If IsObject(args(1)) Then
 		Set UpdateTargetWalls= kwargs

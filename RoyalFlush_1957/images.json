@@ -194,5 +194,19 @@
       "name": "CustomWhiteTip"
     },
     "bits": false
+  },
+  {
+    "name": "RotoTarget",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\RotoTarget.png",
+    "width": 2048,
+    "height": 2048,
+    "alpha_test_value": -1.0,
+    "is_opaque": false,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\RotoTarget.png",
+      "name": "RotoTarget"
+    },
+    "bits": false
   }
 ]

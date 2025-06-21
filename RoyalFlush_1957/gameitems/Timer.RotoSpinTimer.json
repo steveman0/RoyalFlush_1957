@@ -1,0 +1,12 @@
+{
+  "Timer": {
+    "center": {
+      "x": -38.418392,
+      "y": 1771.0396
+    },
+    "is_timer_enabled": false,
+    "timer_interval": -1,
+    "name": "RotoSpinTimer",
+    "backglass": false
+  }
+}
