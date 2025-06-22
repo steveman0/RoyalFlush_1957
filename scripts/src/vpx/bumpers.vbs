@@ -84,9 +84,8 @@ Const SpinDownEndTime = 500
 Const LockInEndTime = 600
 Const MaxSpeed = 1000 ' Speed in degrees / s
 Const DriveAcc = 10000 ' Acceleration in degrees / s^2
-Const LockInSpeed = -100 ' Speed in degrees / s
-Const SpinMinOvershoot = 3 ' Degrees
-Const SpinMaxOvershoot = 15
+Const SpinMinOvershoot = 7 ' Degrees
+Const SpinMaxOvershoot = 19
 Const LockInMinError = -2
 Const LockInMaxError = 2
 
@@ -119,18 +118,13 @@ Sub RotoSpinTimer_timer()
 		End If
 		angle = EasedLerp(RotoStartAngle, RotoLerpTarget, (1 - (TotalRotoTime - DriveSpan) / 400))
 		SetRotoAngle angle
-		' DecelRoto timeStep
-		' IncrementRotoAngle RotoSpeed * timeStep / 1000
 	Else ' Lock In
 		If RotoSpinPhase = 2 Then
 			RotoSpinPhase = 3
 			GetAngleToGo
-			' LockInAngleToGo ' Old physics model
 		End If
 		angle = EasedLerp(RotoStartAngle, RotoLerpTarget, (1 - (TotalRotoTime - SpinDownEndTime) / 100))
 		SetRotoAngle angle
-		' IncrementRotoAngle LockInSpeed * timeStep / 1000
-		' Debug.Print "New roto angle: " & RotoAngle
 		If TotalRotoTime > LockInEndTime Then
 			RotoSpinTimer.Enabled = False
 		End If
@@ -140,7 +134,7 @@ End Sub
 Function EasedLerp(start, target, t)
 	EasedLerp = start + (target - start) * (1 - (t * t))
 
-	Debug.Print "Lerp start: " & start & " Lerp target: " & target & " t: " & t & " lerp: " & EasedLerp
+	' Debug.Print "Lerp start: " & start & " Lerp target: " & target & " t: " & t & " lerp: " & EasedLerp
 End Function
 
 Sub IncrementRotoAngle(angle)
@@ -199,60 +193,5 @@ Sub GetAngleToGo()
 		RotoAngleToGo = RotoLerpTarget - RotoStartAngle
 	End If
 
-	Debug.Print "RotoStartAngle: " & RotoStartAngle & " RotoLerpTarget: " & RotoLerpTarget & " RotoAngleToGo: " & RotoAngleToGo & " True target: " & RotoTargetAngle
+	' Debug.Print "RotoStartAngle: " & RotoStartAngle & " RotoLerpTarget: " & RotoLerpTarget & " RotoAngleToGo: " & RotoAngleToGo & " True target: " & RotoTargetAngle
 End Sub
-
-' Old physics-based model
-' Sub GetAngleToGo()
-' 	Dim overshoot
-' 	overshoot = RndNum(SpinMinOvershoot, SpinMaxOvershoot)
-
-' 	RotoAngleToGo = RotoTargetAngle + overshoot - RotoAngle
-' 	If RotoAngleToGo < 0 Then
-' 		RotoAngleToGo = RotoAngleToGo + 360
-' 	End If
-' 	Dim maxDistance
-' 	' Calculate max distance in remaining time assuming uniform deceleration to a stop
-' 	maxDistance = RotoSpeed / 2 * (SpinDownEndTime - TotalRotoTime) / 1000
-' 	Debug.Print "Calculated max distance " & maxDistance & " from speed " & RotoSpeed & " and time remaining " & SpinDownEndTime - TotalRotoTime & " with RotoAngleToGo " & RotoAngleToGo
-
-	
-' 	Do While maxDistance - RotoAngleToGo > 360
-' 		RotoAngleToGo = RotoAngleToGo + 360
-' 	Loop
-' 	Debug.Print "Calculated target roto travel of " & RotoAngleToGo
-' End Sub
-
-' Sub LockInAngleToGo()
-' 	Dim overshoot
-' 	overshoot = RndNum(LockInMinError, LockInMaxError)
-' 	Dim tar
-' 	RotoAngleToGo = RotoTargetAngle + overshoot
-' 	' Debug.Print "RotoTargetAngle: " & RotoTargetAngle & " Lock in tar: " & tar & " RotoAngle: " & RotoAngle
-
-' 	' ' This should be negative as we're going backwards
-' 	' ' If it is positive, that means we're wrapping around
-' 	' RotoAngleToGo = tar - RotoAngle
-' 	' If RotoAngleToGo > 0 Then
-' 	' 	RotoAngleToGo = RotoAngleToGo - 360
-' 	' End If
-
-' 	' Debug.Print "RotoTargetAngle: " & RotoTargetAngle & " Lock in tar: " & tar & " RotoAngleToGo: " & RotoAngleToGo
-' 	RotoSpinPhase = 0
-' End Sub
-
-' Sub DecelRoto(timeStep)
-' 	Dim a
-' 	Dim dt : dt = ((SpinDownEndTime - TotalRotoTime) / 1000)
-' 	If dt < 0.001 Then
-' 		Exit Sub
-' 	End If
-' 	a = -2 * RotoAngleToGo / (dt * dt)
-' 	Debug.Print "Calculated deceleration to stop " & a & " with remaining degrees: " & RotoAngleToGo & " and time " & dt
-
-' 	RotoSpeed = RotoSpeed + a * timeStep / 1000
-' 	If (RotoSpeed < 0) Then
-' 		RotoSpeed = 0
-' 	End If
-' 	Debug.Print "New roto speed: " & RotoSpeed
-' End Sub
