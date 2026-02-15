@@ -140,48 +140,6 @@
     "bits": false
   },
   {
-    "name": "VLM.Nestmap0",
-    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 0.webp",
-    "width": 3648,
-    "height": 8192,
-    "alpha_test_value": 1.0,
-    "is_opaque": false,
-    "is_signed": false,
-    "jpeg": {
-      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 0.webp",
-      "name": "VLM.Nestmap0"
-    },
-    "bits": false
-  },
-  {
-    "name": "VLM.Nestmap1",
-    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 1.exr",
-    "width": 8192,
-    "height": 8192,
-    "alpha_test_value": 1.0,
-    "is_opaque": true,
-    "is_signed": true,
-    "jpeg": {
-      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 1.exr",
-      "name": "VLM.Nestmap1"
-    },
-    "bits": false
-  },
-  {
-    "name": "VLM.Nestmap2",
-    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 2.exr",
-    "width": 1472,
-    "height": 8192,
-    "alpha_test_value": 1.0,
-    "is_opaque": true,
-    "is_signed": true,
-    "jpeg": {
-      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 2.exr",
-      "name": "VLM.Nestmap2"
-    },
-    "bits": false
-  },
-  {
     "name": "CustomWhiteTip",
     "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Misc\\CustomWhiteTip.png",
     "width": 256,
@@ -206,6 +164,34 @@
     "jpeg": {
       "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\Targets\\RotoTarget.png",
       "name": "RotoTarget"
+    },
+    "bits": false
+  },
+  {
+    "name": "VLM.Nestmap0",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 0.webp",
+    "width": 2432,
+    "height": 8192,
+    "alpha_test_value": 1.0,
+    "is_opaque": false,
+    "is_signed": false,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 0.webp",
+      "name": "VLM.Nestmap0"
+    },
+    "bits": false
+  },
+  {
+    "name": "VLM.Nestmap1",
+    "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 1.exr",
+    "width": 7168,
+    "height": 8192,
+    "alpha_test_value": 1.0,
+    "is_opaque": true,
+    "is_signed": true,
+    "jpeg": {
+      "path": "E:\\Games\\Pinball\\Dev\\Royal Flush Resources\\Assets\\RoyalFlush_1957 - Bakes/Export/Nestmap 1.exr",
+      "name": "VLM.Nestmap1"
     },
     "bits": false
   }
